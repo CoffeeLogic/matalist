@@ -1,0 +1,817 @@
+@import "compass/css3";
+
+// alignment measurements
+$pad: 20px;
+$pad-double: $pad * 2;
+$pad-half: $pad / 2;
+$pad-and-half: $pad * 1.5;
+
+$space: 18px;
+$space-double: $space * 2;
+$space-half: $space / 2;
+$space-and-half: $space * 1.5;
+
+
+// colors
+$grey-lightest: #fafafa;
+$grey-lighter: #e3e3e3;
+$grey-light: #bfbfbf;
+$grey-medium: #979797;
+$grey-dark: #696969;
+$grey-darkest: #1d1d1d;
+
+$grey-border-lightest: #f5f5f5;
+$grey-border-lighter: #ebebeb;
+$grey-border-light: #e5e5e5;
+$grey-border-medium: #cbcbcb;
+
+$blue: #32a1d0;
+$blue-dark: #2f9bb2;
+$teal: #17d1bd;
+$green: #00bf99;
+$orange: #ff5631;
+$red: #ef331a;
+$pink: #ee3d56;
+$yellow: #f4d60e;
+
+// dimention and general chared vars
+$nav-width: 250px;
+
+@mixin setLeftShift($delay: 0s) {
+  @include animation(shiftInLeft .45s ease $delay 1 backwards);
+}
+@mixin setBottomShift($delay: 0s) {
+  @include animation(shiftInBottom .45s ease $delay 1 backwards);
+}
+@mixin fadeIn($delay: 0s) {
+  @include animation(introFadeIn .65s ease-out $delay 1 backwards);
+}
+@mixin fadeInScale($delay: 0s) {
+  @include transform-origin(center, center);
+  @include animation(introFadeInScale .45s ease-out $delay 1 backwards);
+}
+
+
+/*------------------------------------*\
+    $GENERIC
+\*------------------------------------*/
+* { box-sizing: border-box; }
+html, body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+// tags
+strong, b {
+  font-weight: 700;
+}
+
+// forms
+input {
+  -webkit-appearance: none;
+  outline: none;
+  background-color: transparent;
+  border: none;
+  display: inline-block;
+  font-family: "Roboto";
+}
+input[type="checkbox"] {
+  -webkit-appearance: checkbox;
+  padding: 0;
+}
+select {
+  -webkit-appearance: none;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
+  box-shadow: 0 0 0 1000px white inset;
+}
+
+
+
+
+/*------------------------------------*\
+    $BUTTONS
+\*------------------------------------*/
+.btn { // dont use directly, meant to be extended
+  -webkit-appearance: none;
+  display: inline-block;
+  padding: 0;
+  vertical-align: top;
+  line-height: $space-double;
+  text-align: left;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  @include transition(all .25s ease);
+}
+  .btn__seg {
+    display: inline-block;
+    vertical-align: top;
+    padding-left: $pad-half;
+    line-height: inherit;
+    font-size: inherit;
+    @include transition(all .25s ease);
+    &:first-child, &.ion + &.ion {
+      padding-left: 0; // ignore for fist element, as well as side by side icons
+    }
+    &.ion {
+      font-size: 20px;
+    }
+  }
+  .btn__seg--txt {
+    font-size: 12px;
+  }
+
+// round buttons, see header buttons
+.btn__rd {
+  @extend .btn;
+  width: $space-double;
+  height: $space-double;
+  font-size: 16px;
+  text-align: center;
+  line-height: #{$space-double - 4}; // account for border
+  border: 1px solid $grey-lighter;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover {
+    border-color: $grey-light;
+  }
+}
+
+// flat buttons, see result photos
+.btn__fl {
+  @extend .btn;
+  min-width: $space;
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+// rounded corner buttons, se "reset search" and pager
+.btn__rds {
+  @extend .btn;
+  height: $space-double;
+  font-size: 14px;
+  line-height: #{$space-double - 4}; // account for border
+  text-align: center;
+  border: 1px solid $grey-lighter;
+  border-radius: $space;
+  cursor: pointer;
+}
+  // primary button style - just a color scheme
+  .btn__prim {
+    text-transform: uppercase;
+    background-color: $red;
+    border: 1px solid $red;
+    color: white;
+    &:hover {
+      background-color: lighten($red, 10%);
+    }
+  }
+
+
+
+
+
+/*------------------------------------*\
+    $DROPDOWNS
+\*------------------------------------*/
+.ui-dd {
+  position: relative;
+  display: inline-block;
+  height: $space-and-half;
+  padding: 0 10px;
+  line-height: #{$space-and-half - 4}; // account for border
+  color: $grey-medium;
+  border: 1px solid $grey-border-medium;
+  border-radius: $space;
+  background-color: transparent;
+  select {
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+    width: 50px;
+    line-height: inherit;
+    color: inherit;
+    background-color: inherit;
+  }
+  /* covers up the annoying down arrow FF leaves in. I know this blocks the click event, theres a way around that, but I dont wanna redo how I include the icon file. A tutorial for another day */
+  .ion {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 10px;
+    height: 100%;
+    width: 18px;
+    line-height: $space-and-half;
+    text-align: center;
+    color: inherit;
+    background-color: inherit; // same as sidenav
+  }
+}
+
+
+
+/*------------------------------------*\
+    $LAYOUT
+\*------------------------------------*/
+
+.app--nav {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0; bottom: 0; left: 0;
+  width: $nav-width;
+  background-color: #f4f4f4;
+  @include setLeftShift(.6s);
+}
+
+.app--core {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0; right: 0; left: $nav-width; bottom: 0;
+  z-index: 10;
+  background-color: #fff;
+  border-left: 1px solid #d2dee2;
+  box-shadow: -2px 0 4px rgba(0,0,0,.04);
+  @include fadeIn(0s);
+}
+
+
+
+
+
+/*------------------------------------*\
+    $NAV
+\*------------------------------------*/
+
+.app--logo {
+  display: block;
+  padding: $space 0;
+  font-family: "Roboto Slab", Times New Roman;
+  font-size: 28px;
+  line-height: $space-double;
+  text-align: center;
+  color: #000;
+  border-bottom: 1px solid $grey-border-light;
+  text-decoration: none;
+}
+
+  .ui-nav-menu {
+    overflow: hidden;
+    position: relative;
+    display: block;
+    margin-left: $pad;
+  }
+  .ui-nav-menu + .ui-nav-menu {
+      border-top: 1px solid $grey-border-light;
+  }
+    .ui-nav-menu-trgr {
+      @extend .btn;
+      display: block;
+      position: absolute;
+      top: 0; left: 0;
+      z-index: 10;
+      height: 48px; // ff calculates lh differently
+      width: 100%;
+      padding-right: $pad;
+      line-height: 48px;
+      color: $grey-dark;
+      text-transform: uppercase;
+      background-color: #f4f4f4;
+      .btn__seg:first-child {
+        padding-left: 0;
+        color: $blue-dark;
+      }
+      .btn__seg.ion {
+        font-size: 16px;
+      }
+      .btn__seg--txt {
+        font-size: 10px;
+        font-weight: 400;
+        letter-spacing: .6px;
+      }
+      .menu-arrow {
+        float: right;
+        color: $grey-medium;
+      }
+    }
+    [js-ui-menu-trigger] {
+      cursor: pointer;
+      &:hover .btn__seg--txt {
+        color: #000;
+      }
+    }
+    
+    // menu options
+    .ui-nav-menu-opts {
+      overflow: hidden;
+      position: relative;
+      z-index: 5;
+      width: 100%;
+      max-height: 0;
+      padding-top: 48px;
+      opacity: 0;
+      @include transition(all .45s ease);
+      @include transform(translateY(-50%));
+      button {
+        display: block;
+        height: 30px;
+        background-color: red;
+        border-bottom: 1px solid green;
+      }
+    }
+    .state--expanded .ui-nav-menu-opts {
+      opacity: 1;
+      max-height: 300px;
+      @include transform(translateY(0%));
+    }
+
+    /* Menu Option Styles */
+    .menu__fltr {
+      @extend %clearfix;
+      padding: 0 $pad $space-half;
+      &:last-child {
+        padding-bottom: $space;
+      }
+      > span { // all inner elements
+        display: inline-block;
+        vertical-align: top;
+      }
+    }
+      .menu__fltr__lbl {
+        font-size: 12px;
+        line-height: 18px;
+        color: $grey-dark;
+      }
+      .menu__fltr__cntr {
+        float: right;
+        min-width: 30px;
+        padding: 4px 6px;
+        font-size: 9px;
+        color: white;
+        border-radius: 10px;
+        text-align: center;
+        &.cntr-clr--1 { background-color: $orange; }
+        &.cntr-clr--2 { background-color: $green; }
+        &.cntr-clr--3 { background-color: $blue; }
+      }
+      .menu__fltr__lgnd {
+        height: 12px;
+        width: 12px;
+        margin-top: 3px;
+        margin-right: 4px;
+        border: 2px solid black;        
+        background-color: transparent;
+        border-radius: 50%;
+        &.lgnd-clr--1 { border-color: $red; }
+        &.lgnd-clr--2 { border-color: $blue; }
+      }
+      .menu__fltr__clr {
+        display: inline-block;
+        vertical-align: top;
+        height: $space;
+        width: $space;
+        margin-right: 6px;
+        border-radius: 50%;
+        &:last-child {
+          margin-right: 0;
+        }
+        &.fltr__clr--white { background-color: #fff; }
+        &.fltr__clr--black { background-color: #000; }
+        &.fltr__clr--orange { background-color: $orange; }
+        &.fltr__clr--red { background-color: $red; }
+        &.fltr__clr--teal { background-color: $teal; }
+        &.fltr__clr--grey { background-color: $grey-medium; }
+        &.fltr__clr--yellow { background-color: $yellow; }
+      }
+
+    // grab the filter by its non ui class
+    @for $i from 1 through 10 {
+      .rslt__fltr:nth-child(#{$i}) {
+        @include setLeftShift(.6s + .04s * $i);
+      }
+    }
+
+    // custom filter types
+    .fltr-type__rang {
+      .ui-dd {
+        background-color: #f4f4f4;
+      }
+      .rang-brdg {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 8px;
+        font-size: 12px;
+        line-height: $space-and-half;
+        color: $grey-medium;
+      }
+    }
+    
+    .fltr-type__sldr {
+      padding: 8px $pad $space;
+      .ui-slider, .ui-slider-range {
+        display: block;
+        height: 4px;
+        border-radius: 2px;        
+      }
+      .ui-slider {
+        position: relative;
+        width: 100%;
+        background-color: rgba($green, .2);
+      }
+      .ui-slider-range {
+        position: absolute;
+        background-color: rgba($green, .4);
+      }
+      .ui-slider-handle {
+        position: absolute;
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-color: white;
+        border: 2px solid $green;
+        border-radius: 50%;
+        outline: none;
+        @include transform(translateY(-6px));
+        &:before {
+          content: attr(data-value);
+          display: inline-block;
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          width: 24px;
+          font-size: 10px;
+          line-height: 30px;
+          text-align: center;
+          color: $grey-medium;
+          @include transform(translateX(-50%));
+        }
+        &:after {
+          @extend %before-after;
+          top: 50%;
+          left: 50%;
+          width: 4px;
+          height: 4px;
+          background-color: $green;
+          border-radius: 50%;
+          @include transform(translate3d(-50%, -50%, 0));
+        }
+      }
+    }
+  
+  // action button container, in this case just the one reset one
+  .rslt__fltr__acts {
+    width: 100%;
+    padding-top: $space-double;
+    padding-bottom: $space-double;
+    text-align: center;
+    .btn-act--reset {
+      width: 65%;
+      margin: 0 auto;
+    }
+  }
+
+
+
+
+
+/*------------------------------------*\
+    $HEADER
+\*------------------------------------*/
+
+.app--hdr { // adds up to 72
+  width: 100%;
+  padding: 0 $pad-and-half;
+  @include setBottomShift(.3s);
+}
+  .hdr__inr {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid $grey-border-lighter;
+  }
+
+    .hdr__srch {
+      display: block;
+      position: relative;
+      padding: $space 0;
+      @include setBottomShift(.34s);
+    }
+      .srch__txt, .srch__icn {
+        // order matters, allows me to piggy back off input:focus
+        line-height: $space-double;
+        color: $grey-lighter;
+      }
+      .srch__txt {
+        padding: 0 0 0 $pad-double; // offset to stick the search icon to the left
+        font-size: 28px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        color: $grey-darkest;
+        &:focus + .srch__icn {
+          left: -6px;
+          color: $grey-darkest;
+        }
+      }
+      .srch__icn {
+        display: block;
+        position: absolute;
+        top: $space; left: 0;
+        font-size: 32px;
+        @include transition(all .35s ease);
+        i {
+          line-height: inherit;
+        }
+      }
+        // placeholder styling acrobatics
+        .srch__txt::-webkit-input-placeholder { font-family: "Roboto"; font-weight: 100; letter-spacing: 1px; color: $grey-light; }
+        .srch__txt::-moz-placeholder { font-family: "Roboto"; font-weight: 100; letter-spacing: 1px; color: $grey-light; }
+
+    // header action button holder
+    .hdr__acts {
+      position: absolute;
+      top: 0; right: 0; height: 100%;
+      padding: $space 0;
+      @include setBottomShift(.52s);
+      .btn__rd {
+        position: relative;
+        margin-left: $pad-half;
+        background-color: transparent;
+        color: $grey-medium;
+      }
+      // red dot augment
+      .btn--fav-cnt:before {
+        @extend %before-after;
+        top: 0; right: 0;
+        width: 8px; 
+        height: 8px;
+        background-color: $red;
+        border-radius: 50%;
+      }
+      .btn--usr-avtr {
+        overflow: hidden;
+        background: url('https://d13yacurqjgara.cloudfront.net/users/21845/avatars/normal/f8ab26b7cc2ec5bfd0b18f27ad0159d2.png?1418498122') center center no-repeat;
+        background-size: cover;
+      }
+    }
+
+
+
+
+
+/*------------------------------------*\
+    $RESULTS
+\*------------------------------------*/
+.rslt {
+  width: 100%;
+  padding: 0 $pad-double;
+  @include fadeInScale(.35s);
+}
+
+  /* Result Filter bar */
+  .rslt__view {
+    @extend %clearfix;
+    position: relative;
+    width: 100%;
+    padding: $space-double 0;
+  }
+    .rslt__view__dtl {
+      display: block;
+      float: left;
+      padding: 0;
+      line-height: $space-double;
+    }
+    .rslt__view__acts {
+      display: block;
+      float: right;
+      .btn__fl {
+        color: $grey-lighter;
+        margin-left: 4px;
+        &:hover {
+          color: $grey-light;
+        }
+        &.state--active {
+          color: $blue-dark;
+        }
+      }
+      .ui-dd {
+        margin-top: 4px;
+        margin-left: $pad;
+        background-color: #fff;
+        color: $grey-light;
+        border: 1px solid $grey-lighter;
+        select {
+          min-width: 70px;
+          max-width: auto; 
+        }
+      }
+    }
+
+  /* Result Item Feed */
+  .rslt__feed {
+    margin-left: #{$pad-double * -1};
+    @include display-flex;
+    @include flex-flow(row wrap);
+  }
+    .feed__itm {
+      width: 33.3333%;
+      padding-left: $pad-double;
+      padding-bottom: $pad-double;
+    }
+      .feed__itm__inr {
+        padding-bottom: $space;
+        border-bottom: 1px solid $grey-border-lighter;
+        @include transition(all .25s ease);
+        &:hover {
+          background-color: $grey-lightest;
+          border-bottom-color: $blue;
+          @include transition(none);
+        }
+      }
+        .feed__itm__img {
+          position: relative;
+          display: block;
+          width: 100%; height: 180px;
+          background-position: center center;
+          background-repeat: no-repeat;
+          background-size: cover;
+          .btn__fl, .feed__itm__prc {
+            display: block;
+            position: absolute;
+            top: 0;
+            line-height: $space-double;
+            color: white;
+          }
+          .btn__fl {            
+            right: 0;
+            width: $space-double;
+          }
+          .btn--fav {
+            // layer two icons on top of each other to allow a bg and border color
+            .ion {
+              position: absolute;
+              top: 0; left: 0; bottom: 0; right: 0;
+              margin: auto;
+            }
+            .ion-android-favorite {
+              z-index: 10;
+              color: rgba(#000, .45);
+            }            
+            .ion-android-favorite-outline {
+              z-index: 15;
+            }
+          }
+        }
+        .feed__itm--fav .btn--fav .ion-android-favorite {
+          // hate this nesting but whatever
+          color: rgba($red, .75);
+        }
+          .feed__itm__prc {
+            padding: 0 $pad-half;
+            font-size: 14px;
+            font-weight: 300;
+            background-color: rgba(#000, .65);
+          }
+        .feed__itm__ttl {
+          padding: $space $pad-half;
+          font-size: 16px;
+          line-height: $space;
+          color: $grey-darkest;
+        }
+        .feed__itm__lbl {
+          position: relative;
+          padding-left: 28px;
+          font-size: 12px;
+          font-weight: 300;
+          color: $grey-light;
+          &:before {
+            @extend %before-after;
+            top: 50%; left: $pad-half;
+            width: 8px;
+            height: 8px;
+            background-color: transparent;
+            border: 2px solid transparent;
+            border-radius: 50%;
+            @include transform(translatey(-50%));
+          }
+        }
+        .feed__itm__lbl.lbl--1:before { border-color: $red; }
+        .feed__itm__lbl.lbl--2:before { border-color: $blue; }
+
+  /* Result Pager */
+  .feed__pgr {
+    overflow: hidden;
+    padding: $space-half $pad $space-double;
+    .btn__rds {
+      display: block;
+      float: left;
+      margin-right: 2.25%;
+      color: $grey-light;
+      background-color: #fff;
+      &:hover {
+        color: $grey-medium;
+        border-color: $grey-medium;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      &.state--selected {
+        border-color: $blue;
+        color: $blue;
+      }
+    }
+    .pgr__itm {
+      position: relative;
+      z-index: 20;
+      width: 8%;
+      &:after {
+        @extend %before-after;
+        top: 50%; 
+        left: 100%;
+        height: 1px;
+        width: 60%; 
+        background-color: $grey-border-lighter;
+      }
+      &:last-child:after {
+        display: none;
+      }
+    }
+    .pgr__prev, .pgr__next {
+      width: 5%;
+    }
+    .pgr__str, .pgr__end {
+      width: 5%;
+    }
+  }
+
+
+
+
+
+/*------------------------------------*\
+    $EXTENDS
+\*------------------------------------*/
+%before-after {
+  content: '';
+  position: absolute;
+  display: block;
+}
+
+%clearfix {
+  &:after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+}
+
+
+
+
+
+/*------------------------------------*\
+    $KEYFRAMES
+\*------------------------------------*/
+
+// Im not even going to try to keep this neat, its purely eye candy for the initial load
+@include keyframes(shiftInLeft) {
+  0% {
+    @include transform(translateX(-100%));
+  }
+  100% {
+    @include transform(translateX(0%));
+  }
+}
+@include keyframes(shiftInBottom) {
+  0% {
+    opacity: 0;
+    @include transform(translateY(20px));
+  }
+  100% {
+    opacity: 1;
+    @include transform(translateY(0%));
+  }
+}
+@include keyframes(introFadeIn) {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@include keyframes(introFadeInScale) {
+  0% {
+    opacity: 0;
+    @include transform(scale(.96, .96));
+  }
+  100% {
+    opacity: 1;
+    @include transform(scale(1, 1));
+  }
+}
