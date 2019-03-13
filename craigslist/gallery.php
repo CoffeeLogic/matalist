@@ -1,6 +1,4 @@
-<?php
-  $_SESSION['username'] = "Admin";
-?>
+
 
 <!DOCTYPE html>
 <html>
