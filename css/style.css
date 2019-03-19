@@ -139,7 +139,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   border: 1px solid #cbcbcb;
   border-radius: 18px;
   background-color: transparent;
-  /* covers up the annoying down arrow FF leaves in. I know this blocks the click event, theres a way around that, but I dont wanna redo how I include the icon file. A tutorial for another day */
+  /* covers up the annoying down arrow FF leaves in. */
 }
 .ui-dd select {
   display: inline-block;
@@ -631,7 +631,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 .hdr__acts .btn--usr-avtr {
   overflow: hidden;
-  /*background: url("https://d13yacurqjgara.cloudfront.net/users/21845/avatars/normal/f8ab26b7cc2ec5bfd0b18f27ad0159d2.png?1418498122") center center no-repeat;*/
   background-size: cover;
 }
 

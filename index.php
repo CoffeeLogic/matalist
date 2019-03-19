@@ -37,11 +37,6 @@
 
 <body>
 
-  <!--
-  Couldnt Resist, looked too good not to try
-
-  https://dribbble.com/shots/1847266-Craigslist-Redesign?list=searches&tag=craigslist&offset=1
--->
 
 
 <nav class="app--nav state--loaded">
@@ -176,15 +171,6 @@
       </label>
     </div>
 
-<!--
-      <div class="hdr__acts">
-        <button class="btn__rd btn--fav-cnt" onclick="window.location.href='submit.html'" = 'www.yoursite.com'>
-          <i class="btn__seg ion-android-favorite"></i>
-        </button>
-        <button class="btn__rd btn--usr-avtr" onclick="window.location.href='collab.html'">
-        </button>
-      </div>
--->
 
   </header>
   
