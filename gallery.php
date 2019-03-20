@@ -17,16 +17,11 @@
 
 <body>
 
+<!---------------------------SIDEBAR START---------------------->
 <nav class="app--nav state--loaded">
-  
-  <!--Logo-->
   <a href="#" class="app--logo">MataList</a>
   
-  <!--***************IDK I THINK THE SIDEBAR ENDED?***********-->
-    <!--Side nav filters-->
-    <div class="rslt__fltr">  
-
-<!--Under CSUN-->
+<!---------NAV MENU-------->
 <div class="rslt__fltr ui-nav-menu state--expanded" js-ui-menu>
   <button class="ui-nav-menu-trgr" js-ui-menu-trigger>
     <i class="btn__seg ion ion-ios-location"></i><span class="btn__seg btn__seg--txt">CSUN</span><i class="btn__seg ion ion-ios-arrow-down menu-arrow "></i>
@@ -66,56 +61,35 @@
     </li>
   </ul>
 </div>
+<!---------NAV MENU END----->
 
-<!--sale filter-->
+
+<!--------RADIO BUTTONS------->
 <div class="rslt__fltr ui-nav-menu state--expanded" js-ui-menu>
   <button class="ui-nav-menu-trgr" js-ui-menu-trigger>
-    <i class="btn__seg ion ion-pricetag"></i><span class="btn__seg btn__seg--txt">for sale</span><i class="btn__seg ion ion-ios-arrow-down menu-arrow"></i>
+    <i class="btn__seg ion ion-pricetag"></i><span class="btn__seg btn__seg--txt">Looking for...</span><i class="btn__seg ion ion-ios-arrow-down menu-arrow"></i>
   </button>
 
   <ul class="ui-nav-menu-opts">
     <li class="menu__fltr fltr-type__row">
-      <input type="checkbox" name="sale" value="cars & trucks" />
+      <input type="radio" name="sale" value="books" />
       <span class="menu__fltr__lbl">Books</span>
       <span class="menu__fltr__cntr cntr-clr--1">0</span>
     </li>        
     <li class="menu__fltr fltr-type__row">
-      <input type="checkbox" name="sale" value="auto parts" />
-      <span class="menu__fltr__lbl">Services</span>
+      <input type="radio" name="sale" value="tutoring" />
+      <span class="menu__fltr__lbl">Tutoring</span>
       <span class="menu__fltr__cntr cntr-clr--2">0</span>
     </li>
     <li class="menu__fltr fltr-type__row">
-      <input type="checkbox" name="sale" value="wanted" />
-      <span class="menu__fltr__lbl">Home</span>
+      <input type="radio" name="sale" value="dormGoods" />
+      <span class="menu__fltr__lbl">Dorm goods/span>
       <span class="menu__fltr__cntr cntr-clr--3">0</span>
     </li>
     <li class="menu__fltr fltr-type__row">
-      <input type="checkbox" name="sale" value="wanted" />
-      <span class="menu__fltr__lbl">Wanted</span>
+      <input type="radio" name="sale" value="food" />
+      <span class="menu__fltr__lbl">Food</span>
       <span class="menu__fltr__cntr cntr-clr--4">0</span>
-    </li>
-    <li class="menu__fltr fltr-type__row">
-      <input type="checkbox" name="sale" value="wanted" />
-      <span class="menu__fltr__lbl">Other</span>
-      <span class="menu__fltr__cntr cntr-clr--5">0</span>
-    </li>
-  </ul>
-</div>
-
-<!--sold by filter-->
-<div class="rslt__fltr ui-nav-menu state--expanded">
-  <button class="ui-nav-menu-trgr">
-    <i class="btn__seg ion ion-person"></i><span class="btn__seg btn__seg--txt">Sold by</span>
-  </button>
-
-  <ul class="ui-nav-menu-opts">
-    <li class="menu__fltr fltr-type__row">
-      <span class="menu__fltr__lgnd lgnd-clr--1"></span>
-      <span class="menu__fltr__lbl">Owner</span>
-    </li>
-    <li class="menu__fltr fltr-type__row">
-      <span class="menu__fltr__lgnd lgnd-clr--2"></span>
-      <span class="menu__fltr__lbl">Dealer</span>
     </li>
   </ul>
 </div>
@@ -125,8 +99,13 @@
     <i class="btn__seg ion ion-ios-refresh-empty"></i><span class="btn__seg btn__seg--txt">reset search</span>
   </button>
 </div>
-               <!--*****&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&*&--->
-  <main class="app--core">
+<!---------------------------SIDEBAR END------------------------->
+  
+  
+
+<main class="app--core">
+  
+  
   <header class="app--hdr">
     <div class="hdr__inr">
       <label for="search" class="hdr__srch">
@@ -209,6 +188,8 @@
     
   
 </main>
+
+
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
