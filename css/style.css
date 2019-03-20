@@ -321,10 +321,14 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   background-color: #ff5631;
 }
 .menu__fltr__cntr.cntr-clr--2 {
-  background-color: #00bf99;
+  background-color: #b7c21b;
 }
 .menu__fltr__cntr.cntr-clr--3 {
   background-color: #32a1d0;
+}
+
+.menu__fltr__cntr.cntr-clr--4 {
+  background-color: #7632d0;
 }
 
 .menu__fltr__lgnd {
