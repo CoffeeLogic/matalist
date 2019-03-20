@@ -91,43 +91,6 @@
 
 
 
-<!-----------------------------sold by filter----------------------------
-    <div class="rslt__fltr ui-nav-menu state--expanded">
-      <button class="ui-nav-menu-trgr">
-        <i class="btn__seg ion ion-person"></i><span class="btn__seg btn__seg--txt">Sold by</span>
-      </button>
-      
-      <ul class="ui-nav-menu-opts">
-        <li class="menu__fltr fltr-type__row">
-          <span class="menu__fltr__lgnd lgnd-clr--1"></span>
-          <span class="menu__fltr__lbl">Owner</span>
-        </li>
-        <li class="menu__fltr fltr-type__row">
-          <span class="menu__fltr__lgnd lgnd-clr--2"></span>
-          <span class="menu__fltr__lbl">Dealer</span>
-        </li>
-      </ul>
-    </div>
---------------------------------------------------------------------------->
-
-
-
-
-
-<!-----------------------filter slider-----------------------
-    <div class="rslt__fltr ui-nav-menu state--expanded">
-      <button class="ui-nav-menu-trgr">
-        <i class="btn__seg ion ion-card"></i><span class="btn__seg btn__seg--txt">price</span>
-      </button>
-      <ul class="ui-nav-menu-opts">
-        <li class="menu__fltr fltr-type__sldr">
-          <div js-price-slider></div>
-        </li>
-        <li class="menu__fltr fltr-type__sldr"></li>
-      </ul>
-    </div>
------------------------------------------------------->
-
 
 <!----------------reset button ----------------------------
     <div class="rslt__fltr__acts">
@@ -139,7 +102,9 @@
   </div>
 </nav>
 
-
+    <?php
+      echo "Logged in as '{$_SESSION['uid']}'";
+    ?>
 
 <!-------------MAIN GALLERY------------>
 <main class="app--core">

@@ -15,3 +15,4 @@ $conn = new mysqli ( $servername,  $username, $password, $dbname);
 #  echo "Connected successfully"; 
 #mysql_select_db("$dbname");
 
+?>
