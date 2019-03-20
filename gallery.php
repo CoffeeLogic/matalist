@@ -42,7 +42,7 @@
     </nav>
       </section>
     
-
+<br>
        <section class="gallery-links">
         <div class="wrapper">
              <center><h2>Upload</h2></center>
