@@ -115,7 +115,7 @@
         <span class="srch__icn"><i class="ion-ios-search"></i></span>
       </label>
       <div class="hdr__acts">
-        <button class="btn__rd btn--fav-cnt" onclick="window.location.href='logout.php'">
+        <button class="btn__rd btn--fav-cnt" onclick="window.location.href='includes/logout.php'">
           <i class="btn__seg ion-android-favorite"></i>
         </button>
         <button class="btn__rd btn--usr-avtr" onclick="window.location.href='collab.html'"></button>
