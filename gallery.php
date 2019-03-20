@@ -150,14 +150,14 @@
         <span class="srch__icn"><i class="ion-ios-search"></i></span>
       </label>
       <div class="hdr__acts">
-        <button class="btn__rd btn--fav-cnt" onclick="window.location.href='submit.html'" = 'www.yoursite.com'>
+        <button class="btn__rd btn--fav-cnt" onclick="window.location.href='logout.php'">
           <i class="btn__seg ion-android-favorite"></i>
         </button>
         <button class="btn__rd btn--usr-avtr" onclick="window.location.href='collab.html'"></button>
       </div>
     </div>
   </header>
-  
+
   <section class="rslt">
     <nav class="rslt__view">
       <p class="rslt__view__dtl">Showing <strong>0</strong> Results for </p>

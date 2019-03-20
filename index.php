@@ -44,14 +44,26 @@
   <!--Logo-->
   <a href="#" class="app--logo">MataList</a>
   
-  <!--**************IDK I THINK THE SIDEBAR ENDED?*****************-->
-  
+
+ 
     <?php
       echo "Logged in as '{$_SESSION['uid']}'";
     ?>
     
   </div>
-</nav>
+</nav>  <!----ends sidebar*****************-->
+
+
+
+
+
+<!--------------------LOGUOT?---->
+<a href="logout.php">Logout</a>
+<!-------------------LOGOUT?----->
+
+
+
+
 
 <main class="app--core">
   <h2 class="app--logo">Buy - CSUN</h2>
