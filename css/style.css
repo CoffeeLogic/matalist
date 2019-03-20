@@ -107,13 +107,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 .btn__rds {
   height: 36px;
   font-size: 14px;
-  font-weight: 500;
   line-height: 32px;
   text-align: center;
   border: 1px solid #e3e3e3;
   border-radius: 18px;
   cursor: pointer;
-  border-color: #A9A9A9;
 }
 
 .btn__prim {
@@ -139,7 +137,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   border: 1px solid #cbcbcb;
   border-radius: 18px;
   background-color: transparent;
-  /* covers up the annoying down arrow FF leaves in. */
+  /* covers up the annoying down arrow FF leaves in. I know this blocks the click event, theres a way around that, but I dont wanna redo how I include the icon file. A tutorial for another day */
 }
 .ui-dd select {
   display: inline-block;
@@ -320,21 +318,13 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   text-align: center;
 }
 .menu__fltr__cntr.cntr-clr--1 {
-  background-color: #e74c3c;
+  background-color: #ff5631;
 }
 .menu__fltr__cntr.cntr-clr--2 {
-  background-color: #e74c3c;
+  background-color: #00bf99;
 }
 .menu__fltr__cntr.cntr-clr--3 {
-  background-color: #e74c3c;
-}
-.menu__fltr__cntr.cntr-clr--4
-{
-  background-color: #e74c3c;
-}
-.menu__fltr__cntr.cntr-clr--5
-{
-  background-color: #e74c3c;
+  background-color: #32a1d0;
 }
 
 .menu__fltr__lgnd {
@@ -351,10 +341,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 .menu__fltr__lgnd.lgnd-clr--2 {
   border-color: #32a1d0;
-}
-.menu__fltr__lgnd.lgnd-clr--3
-{
-  border-color: #00E5EE;
 }
 
 .menu__fltr__clr {
@@ -551,7 +537,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 
 .hdr__srch {
-  display: inline-block;
+  display: block;
   position: relative;
   padding: 18px 0;
   -moz-animation: shiftInBottom 0.45s ease 0.34s 1 backwards;
@@ -595,7 +581,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-family: "Roboto";
   font-weight: 100;
   letter-spacing: 1px;
-  color: #888888;
+  color: #bfbfbf;
 }
 
 .srch__txt::-moz-placeholder {
@@ -631,6 +617,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 }
 .hdr__acts .btn--usr-avtr {
   overflow: hidden;
+  /*background: url("https://d13yacurqjgara.cloudfront.net/users/21845/avatars/normal/f8ab26b7cc2ec5bfd0b18f27ad0159d2.png?1418498122") center center no-repeat;*/
   background-size: cover;
 }
 
@@ -1005,41 +992,211 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
     transform: scale(1, 1);
   }
 }
-/*CASES*/
 
-.cases-links {
-  overflow: hidden;
-  margin-bottom: 20px;
+
+/*GALLERY*/
+
+.about-me h2 {
+  font-family: Catamaran;
+  font-size: 28px;
+  color: #111;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 5px;
 }
 
-.cases-links h2 {
+.about-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  margin-left: 100px;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.gallery-links h2 {
+  font-family: Catamaran;
+  font-size: 28px;
+  color: #111;
+  text-align: center;
+  padding-top: 15px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: flex-start;
+  padding-bottom: 20px;
+  padding-left: 100px;
+  padding-right: 100px;
+  text-align: center;
+}
+
+.gallery-container a {
+  width: 230px;
+  margin: 20px 10px 0;
+}
+
+.gallery-container a:hover {
+  opacity: 0.8;
+}
+
+.gallery-container a div {
+  width: 100%;
+  height: 235px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery-container a h3 {
+  font-family: Catamaran;
+  font-size: 20px;
+  font-weight: 700;
+  color: #111;
+  padding-top: 16px;
+  line-height: 26px;
+}
+
+.gallery-container a p {
+  font-family: Catamaran;
+  font-size: 16px;
+  font-weight: 400;
+  color: #111;
+  padding-top: 4px;
+  line-height: 20px;
+}
+
+.gallery-upload {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 62%;
+  margin-top: 20px;
+  padding-bottom: 20px; 
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #f4f4f4;
+}
+
+.gallery-upload h2 {
   font-family: Catamaran;
   font-size: 28px;
   font-weight: 600;
   color: #111;
   text-transform: uppercase;
-}
-
-.cases-links .cases-link {
-  float: left;
-  width: 230px;
-  height: 230px;
-  margin: 20px 10px 0px;
-  background-color: #e3e3e3;
-}
-
-.cases-links .cases-link p {
-  padding-top: 45%;
-  font-family: Catamaran;
-  font-size: 24px;
-  font-weight: 600;
-  color: #111;
   text-align: center;
-  text-transform: uppercase;
+  padding-bottom: 10px;
 }
-a
-{
-  font-size: 12px;
-  line-height: 18px;
-  color: #696969;
+
+.gallery-upload form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.gallery-upload form input {
+  width: 600px;
+  height: 30px;
+  margin-top: 10px;
+  padding: 0 15px;
+  border-radius: 100px;
+  box-shadow: none;
+  border: 1px solid #ccc;
+  background-color: white;
+}
+
+.gallery-upload-file-input {
+  padding-top: 8px !important;
+  background-color: #fefefe;
+}
+
+.gallery-upload form button {
+  width: 120px;
+  height: 30px;
+  margin-top: 10px;
+  border-radius: 100px;
+  box-shadow: none;
+  border: none;
+  background-color: #4EADFF;
+  color: #fff;
+  font-weight: 700;
+}
+
+input:focus {
+    outline:none !important;
+}
+
+/* signup.php */
+h1 {
+  text-align: center;
+  font-size: 26px;
+  font-family: arial;
+  color: #111;
+}
+.form-signup {
+  margin: 0 auto;
+  padding-top: 20px;
+  width: 60%;
+  margin-top: 20px;
+  padding-bottom: 20px; 
+  padding-left: 30px;
+  background-color: #f4f4f4;
+}
+
+.form-signup input {
+  width: calc(100% - 30px);
+  height: 30px;
+  padding: 0 15px;
+  margin-bottom: 6px;
+  border: 3px solid #CCC;
+  border-radius: 8px;
+  background-color: #ffffff;
+  float: left;
+  font-family: arial;
+  text-align: center;
+}
+
+.form-signup button {
+  display: block;
+  height: 40px;
+  width: 90px;
+  padding: 0 10px;
+  margin-left: 10px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 4px;
+  background-color: #D22030;
+  font-family: arial;
+  font-size: 13px;
+  color: #FFF;
+  text-transform: uppercase;
+  text-align: center;
+}
+.signuperror {
+  padding-top: 14px;
+  font-family: arial;
+  font-size: 16px;
+  color: red;
+  text-align: center;
+}
+
+.signupsuccess {
+  padding-top: 14px;
+  font-family: arial;
+  font-size: 16px;
+  color: green;
+  text-align: center;
+}
+
+.login-status {
+  text-align: center;
+  font-size: 26px;
+  font-family: arial;
+  color: #111;
 }
