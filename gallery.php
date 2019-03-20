@@ -55,7 +55,9 @@
       </ul>
     </div>
 
-    <!--sale filter-->
+
+
+    <!----------------------Tag checkboxes------------------->
     <div class="rslt__fltr ui-nav-menu state--expanded" js-ui-menu>
       <button class="ui-nav-menu-trgr" js-ui-menu-trigger>
         <i class="btn__seg ion ion-pricetag"></i><span class="btn__seg btn__seg--txt">for sale</span><i class="btn__seg ion ion-ios-arrow-down menu-arrow"></i>
@@ -84,8 +86,12 @@
         </li>
       </ul>
     </div>
-    
-    <!--sold by filter-->
+    <!----------------------Tag checkboxes------------------->
+
+
+
+
+<!-----------------------------sold by filter----------------------------
     <div class="rslt__fltr ui-nav-menu state--expanded">
       <button class="ui-nav-menu-trgr">
         <i class="btn__seg ion ion-person"></i><span class="btn__seg btn__seg--txt">Sold by</span>
@@ -102,8 +108,13 @@
         </li>
       </ul>
     </div>
-    
-    <!--price filter-->
+--------------------------------------------------------------------------->
+
+
+
+
+
+<!-----------------------filter slider-----------------------
     <div class="rslt__fltr ui-nav-menu state--expanded">
       <button class="ui-nav-menu-trgr">
         <i class="btn__seg ion ion-card"></i><span class="btn__seg btn__seg--txt">price</span>
@@ -115,17 +126,22 @@
         <li class="menu__fltr fltr-type__sldr"></li>
       </ul>
     </div>
-    
+------------------------------------------------------>
 
+
+<!----------------reset button ----------------------------
     <div class="rslt__fltr__acts">
       <button class="btn__rds btn__prim btn-act--reset">
         <i class="btn__seg ion ion-ios-refresh-empty"></i><span class="btn__seg btn__seg--txt">reset search</span>
       </button>
     </div>
-    
+------------------------------------------------------------>
   </div>
 </nav>
 
+
+
+<!-------------MAIN GALLERY------------>
 <main class="app--core">
   <header class="app--hdr">
     <div class="hdr__inr">
@@ -208,7 +224,9 @@
       </section>
     
   
-</main>
+</main><!--MAIN-->
+
+
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
