@@ -102,10 +102,6 @@
   </div>
 </nav>
 
-    <?php
-      echo "Logged in as '{$_SESSION['uid']}'";
-    ?>
-
 <!-------------MAIN GALLERY------------>
 <main class="app--core">
   <header class="app--hdr">
@@ -189,6 +185,10 @@
       </section>
     
   
+      <?php
+      echo "Logged in as '{$_SESSION['uid']}'";
+      ?>
+
 </main><!--MAIN-->
 
 
