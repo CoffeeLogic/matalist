@@ -1,6 +1,26 @@
 <?php
   $_SESSION['username'] = "Admin";
-?>
+
+// Check if form was submitted:
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])) {
+    
+        // Build POST request:
+        $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
+        $recaptcha_secret = '6LcnM5UUAAAAAOQbmUg2K6C3EYgz1NY31rMqbp82';
+        $recaptcha_response = $_POST['recaptcha_response'];
+    
+        // Make and decode POST request:
+        $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
+        $recaptcha = json_decode($recaptcha);
+    
+        // Take action based on the score returned:
+        if ($recaptcha->score >= 0.5) {
+            // Verified - send email
+        } else {
+            // Not verified - show form error
+        }
+    
+    }?>
 
 <!DOCTYPE html>
 <html>
@@ -8,6 +28,16 @@
 <head>
   <meta charset="UTF-8">
   <title>Craigslist Dashboard</title>
+
+  <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LcnM5UUAAAAAOoucN6fP8FFyHgLaVw65xkzp2SF', { action: 'contact' }).then(function (token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+            });
+        });
+    </script>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
