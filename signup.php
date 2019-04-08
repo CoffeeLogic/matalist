@@ -70,7 +70,7 @@
       <ul class="ui-nav-menu-opts">
         <li class="menu__fltr fltr-type__row">
           <span class="menu__fltr__lgnd lgnd-clr--1"></span>
-          <span class="menu__fltr__lbl"><a href="index.html" title="Index">Index</span></a>
+          <span class="menu__fltr__lbl"><a href="index.php" title="Index">Index</span></a>
         </li>
          <li class="menu__fltr fltr-type__row">
           <span class="menu__fltr__lgnd lgnd-clr--1"></span>
