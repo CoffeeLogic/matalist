@@ -14,7 +14,6 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,700,300'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab'>
   <link rel="stylesheet" href="css/style.css">
-<!-- asdfsdfd-->
   
 </head>
 
