@@ -121,12 +121,7 @@
 
   <section class="rslt">
     <nav class="rslt__view">
-      <p class="rslt__view__dtl">Showing <strong>0</strong> Results for </p>
       <div class="rslt__view__acts">
-        <button class="btn__fl state--active" js-view-grid><i class="btn__seg ion ion-grid"></i></button>
-        <button class="btn__fl" js-view-rows><i class="btn__seg ion ion-navicon"></i></button>
-        <button class="btn__fl" js-view-map><i class="btn__seg ion ion-ios-location"></i></button>
-        
       <?php
       echo "Logged in as '{$_SESSION['uid']}'";
       ?>
@@ -180,11 +175,6 @@
         </div>
       </section>
     
-  
-      <?php
-      echo "Logged in as '{$_SESSION['uid']}'";
-      ?>
-
 </main><!--MAIN-->
 
 
