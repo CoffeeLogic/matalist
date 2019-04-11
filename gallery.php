@@ -13,7 +13,11 @@
   <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,700,300'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab'>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/buttoncss.css">
   
 </head>
 
@@ -106,6 +110,12 @@
 <main class="app--core">
   <header class="app--hdr">
     <div class="hdr__inr">
+      <section class="buttons">
+        <div class="buttoncont">
+          <a href="login.php" class="headerbtn headerbtn-1">Not You?</a>
+          <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
+        </div>
+      </section>
       <label for="search" class="hdr__srch">
         <input type="text" class="srch__txt" name="search" placeholder="Search" />
         <span class="srch__icn"><i class="ion-ios-search"></i></span>
