@@ -120,9 +120,9 @@
     </div>
   </header>
       
-      <div class="push-right">
+      <div>
       <?php
-      echo "Logged in as '{$_SESSION['uid']}'";
+      echo "<span class=\"push-right\"> Logged in as '{$_SESSION['uid']}' </span>";
       ?>
       </div>
 
