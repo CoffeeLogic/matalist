@@ -13,6 +13,10 @@ html, body {
   font-weight: 400;
 }
 
+.push-right
+{
+  float: right;
+}
 strong, b {
   font-weight: 700;
 }
