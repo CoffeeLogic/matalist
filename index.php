@@ -141,7 +141,7 @@
     <section class="buttons">
         <div class="buttoncont">
           <a href="login.php" class="headerbtn headerbtn-1">Not You?</a>
-          <a href="collab.html" class="headerbtn headerbtn-1">Collab</a>
+          <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
         </div>
       </section>
 
