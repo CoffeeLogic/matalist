@@ -119,16 +119,9 @@
     </div>
   </header>
 
-  <section class="rslt">
-    <nav class="rslt__view">
-      <div class="rslt__view__acts">
       <?php
       echo "Logged in as '{$_SESSION['uid']}'";
       ?>
-      </div>
-    </nav>
-      </section>
-    
 
        <section class="gallery-links">
         <div class="wrapper">
