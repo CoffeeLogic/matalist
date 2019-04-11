@@ -30,7 +30,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/buttoncss.css"><!--********-->
+    <link rel="stylesheet" href="css/buttoncss.css">
 
   
 </head>
@@ -181,6 +181,30 @@
 
 
           <div class="feed__itm__img" > <!-- INSERT IMAGE HERE FROM DB style="background-image: url('.... -->
+
+
+            <?php
+            include_once 'includes/dbh.inc.php';
+
+            $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
+            $stmt = mysqli_stmt_init($conn);
+            if (!mysqli_stmt_prepare($stmt, $sql)) {
+              echo "SQL statement failed!";
+            } else {
+              mysqli_stmt_execute($stmt);
+              $result = mysqli_stmt_get_result($stmt);
+
+              while ($row = mysqli_fetch_assoc($result)) {
+                echo '<a href="#">
+                  <div style="background-image: url(img/gallery/'.$row["imgFullNameGallery"].');"></div>
+                  <h3>'.$row["titleGallery"].'</h3>
+                  <p>'.$row["descGallery"].'</p>
+                </a>';
+              }
+            }
+            ?>
+
+            
 
            <span class="feed__itm__prc">insert price here</span>
          </div>
