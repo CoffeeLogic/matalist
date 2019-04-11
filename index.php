@@ -175,37 +175,21 @@
     </nav>
 
 <!-- ====================LIST OF ITEMS ================ -->
+
+
+
+<!-- THIS IS THE STYLING FOR THE GALLERY IMAGES, WILL CHANGE LATER ON IF WE HAVE TIME
+
+
+
+
     <ul class="rslt__feed">
-      <li class="feed__itm" js-result-item><!--item 1-->
+      <li class="feed__itm" js-result-item>
         <div class="feed__itm__inr">
 
 
-          <div class="feed__itm__img" > <!-- INSERT IMAGE HERE FROM DB style="background-image: url('.... -->
-
-
-            <?php
-            include_once 'includes/dbh.inc.php';
-
-            $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
-            $stmt = mysqli_stmt_init($conn);
-            if (!mysqli_stmt_prepare($stmt, $sql)) {
-              echo "SQL statement failed!";
-            } else {
-              mysqli_stmt_execute($stmt);
-              $result = mysqli_stmt_get_result($stmt);
-
-              while ($row = mysqli_fetch_assoc($result)) {
-                echo '<a href="#">
-                  <div style="background-image: url(img/gallery/'.$row["imgFullNameGallery"].');"></div>
-                  <h3>'.$row["titleGallery"].'</h3>
-                  <p>'.$row["descGallery"].'</p>
-                </a>';
-              }
-            }
-            ?>
-
-            
-
+          <div class="feed__itm__img" > --> <!-- INSERT IMAGE HERE FROM DB style="background-image: url('.... -->
+<!--
            <span class="feed__itm__prc">insert price here</span>
          </div>
 
@@ -214,10 +198,12 @@
         </div>
       </li>
 
-      <li class="feed__itm" js-result-item><!--item 1-->
+      <li class="feed__itm" js-result-item>
         <div class="feed__itm__inr">
+        -->
 
           <!-- INSERT IMAGE HERE FROM DB-->
+          <!--
           <div class="feed__itm__img">
 
            <span class="feed__itm__prc">insert price here</span>
@@ -228,10 +214,10 @@
         </div>
       </li>
 
-      <li class="feed__itm" js-result-item><!--item 1-->
+      <li class="feed__itm" js-result-item>
         <div class="feed__itm__inr">
 
-          <!-- INSERT IMAGE HERE FROM DB-->
+          
           <div class="feed__itm__img">
 
            <span class="feed__itm__prc">insert price here</span>
@@ -242,10 +228,10 @@
         </div>
       </li>
 
-      <li class="feed__itm" js-result-item><!--item 1-->
+      <li class="feed__itm" js-result-item>
         <div class="feed__itm__inr">
 
-          <!-- INSERT IMAGE HERE FROM DB-->
+          
           <div class="feed__itm__img">
 
            <span class="feed__itm__prc">insert price here</span>
@@ -256,10 +242,10 @@
         </div>
       </li>
 
-      <li class="feed__itm" js-result-item><!--item 1-->
+      <li class="feed__itm" js-result-item>
         <div class="feed__itm__inr">
 
-          <!-- INSERT IMAGE HERE FROM DB-->
+          
           <div class="feed__itm__img">
 
            <span class="feed__itm__prc">insert price here</span>
@@ -270,10 +256,10 @@
         </div>
       </li>
 
-      <li class="feed__itm" js-result-item><!--item 1-->
+      <li class="feed__itm" js-result-item>
         <div class="feed__itm__inr">
 
-          <!-- INSERT IMAGE HERE FROM DB-->
+          
           <div class="feed__itm__img">
 
            <span class="feed__itm__prc">insert price here</span>
@@ -283,6 +269,8 @@
           <p class="feed__itm__lbl lbl--1">Category<span>, tags</span></p>
         </div>
       </li>
+    -->
+
 
       <div class="gallery-container">
             <?php
