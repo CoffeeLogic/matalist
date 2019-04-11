@@ -127,13 +127,9 @@
         <button class="btn__fl" js-view-rows><i class="btn__seg ion ion-navicon"></i></button>
         <button class="btn__fl" js-view-map><i class="btn__seg ion ion-ios-location"></i></button>
         
-        <label class="ui-dd">
-            <select name="result-sort" id="">
-              <option value="relevant">Relevant</option>
-              <option value="relevant">Recent</option>
-            </select>
-            <i class="ion ion-ios-arrow-down"></i>
-          </label>
+      <?php
+      echo "Logged in as '{$_SESSION['uid']}'";
+      ?>
       </div>
     </nav>
       </section>
