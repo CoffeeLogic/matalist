@@ -108,6 +108,7 @@
 
 <!-------------MAIN GALLERY------------>
 <main class="app--core">
+  <h2 class="app--logo">Buy Page - CSUN</h2>
   <header class="app--hdr">
     <div class="hdr__inr">
       <section class="buttons">
