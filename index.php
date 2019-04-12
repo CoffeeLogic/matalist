@@ -146,7 +146,7 @@
         </div>
       </section>
 
-  
+  <!--
     <div class="hdr__inr">
       <label for="search" class="hdr__srch">
         <input type="text" class="srch__txt" name="search" placeholder="Search" />
@@ -159,9 +159,8 @@
   
   <section class="rslt">
     <nav class="rslt__view">
-      <!--
       <p class="rslt__view__dtl">Showing <strong>0</strong> Results for ___</p>
-      <div class="rslt__view__acts"> -->
+      <div class="rslt__view__acts">
         <button class="btn__fl state--active" js-view-grid><i class="btn__seg ion ion-grid"></i></button>
         <button class="btn__fl" js-view-rows><i class="btn__seg ion ion-navicon"></i></button>
         <button class="btn__fl" js-view-map><i class="btn__seg ion ion-ios-location"></i></button>
@@ -175,6 +174,7 @@
           </label>
       </div>
     </nav>
+  -->
     <div class="para">
       <h2>What is Matalist?</h2>
       <p align="center">MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login with your CSUN email is required, we assure you that Matalist is safe and more reliable trading site for students. There will be other features like club and organization activities posting and viewing to make it easier to access what events and fundraisers are happening on campus to increase campus activity. This is our senior design project and we hope you enjoy this!</p>
