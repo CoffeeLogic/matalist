@@ -141,7 +141,7 @@
   <header class="app--hdr">
     <section class="buttons">
         <div class="buttoncont">
-          <a href="login.php" class="headerbtn headerbtn-1">Not You?</a>
+          <a href="login.php" class="headerbtn headerbtn-1">Login</a>
           <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
         </div>
       </section>
@@ -176,11 +176,10 @@
     </nav>
   -->
     <div class="para">
-      <h2>What is Matalist?</h2>
       <p align="center">MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login with your CSUN email is required, we assure you that Matalist is safe and more reliable trading site for students. There will be other features like club and organization activities posting and viewing to make it easier to access what events and fundraisers are happening on campus to increase campus activity. This is our senior design project and we hope you enjoy this!</p>
     </div>
     <div>
-    <a href="index.php" class="matalist aboutbtn">Back to Matalist</a>
+    <a href="index.php" class="matalist aboutbtn">Matalist Gallery</a>
   </div>
 
 
