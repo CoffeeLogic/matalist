@@ -1,15 +1,5 @@
 <?php
   session_start();
-
-  if(isset($_SESSION["uid"]))
-  {
-    $uid = $_SESSION["uidUsers"];
-    echo "Logged in as '{$_SESSION['uid']}'";
-  }
-  else
-  {
-    echo "not logged in";
-  }
 #require_once('includes/dbh.inc.php');
 ?>
 <!DOCTYPE html>
@@ -273,7 +263,15 @@
 
 
     <?php
-      echo "Logged in as '{$_SESSION['uid']}'";
+        if(isset($_SESSION["uid"]))
+        {
+          $uid = $_SESSION["uidUsers"];
+          echo "Logged in as '{$_SESSION['uid']}'";
+        }
+        else
+        {
+          echo "not logged in";
+        }
     ?>
 
 
