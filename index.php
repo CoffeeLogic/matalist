@@ -275,9 +275,9 @@
     ?>
 
 
-
+<!--
       <div class="gallery-container">
-            <?php
+            <*?php
             include_once 'includes/dbh.inc.php';
 
             $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
@@ -299,7 +299,7 @@
             ?>
           </div>
     </ul>
-    <!--
+
     <footer class="feed__pgr">
       <button class="btn__rds pgr__itm pgr__str"><i class="btn__seg ion ion-ios-arrow-left"></i><i class="btn__seg ion ion-ios-arrow-left"></i></button>
       <button class="btn__rds pgr__itm pgr__prev"><i class="btn__seg ion ion-ios-arrow-left"></i></button>
