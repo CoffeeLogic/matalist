@@ -117,16 +117,18 @@
           <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
         </div>
       </section>
+      <!------------------SEARCH BAR---------------
       <label for="search" class="hdr__srch">
         <input type="text" class="srch__txt" name="search" placeholder="Search" />
         <span class="srch__icn"><i class="ion-ios-search"></i></span>
       </label>
+      --------------------------------->
 
       <div class="hdr__acts">
         <button class="btn__rd btn--fav-cnt" onclick="window.location.href='includes/logout.php'">
           <i class="btn__seg ion-android-favorite"></i>
         </button>
-        <button class="btn__rd btn--usr-avtr" onclick="window.location.href='collab.html'"></button>
+        <button class="btn__rd btn--usr-avtr" onclick="window.location.href='submit.html'"></button>
       </div>
     </div>
   </header>
