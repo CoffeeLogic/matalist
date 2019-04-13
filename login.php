@@ -88,19 +88,7 @@
       </ul>
     </div>
     <!----------------------Tag checkboxes------------------->
-
-
-
-
-
-<!----------------reset button ----------------------------
-    <div class="rslt__fltr__acts">
-      <button class="btn__rds btn__prim btn-act--reset">
-        <i class="btn__seg ion ion-ios-refresh-empty"></i><span class="btn__seg btn__seg--txt">reset search</span>
-      </button>
-    </div>
------------------------------------------------------------->
-  </div>
+</div>
 </nav>
           <section class="section-default">
             <h1>Login</h1>
