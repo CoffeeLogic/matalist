@@ -1,5 +1,5 @@
 <?php
-
+include_once 'includes/dbh.inc.php';
 $link = mysql_connect("Matalistdb.cbhzd1fnevha.us-east-2.rds.amazonaws.com", "matalist", "csunmatalist");
 $target_dir = "uploads/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
