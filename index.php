@@ -266,7 +266,7 @@
         if(isset($_SESSION["uid"]))
         {
           $uid = $_SESSION["uidUsers"];
-          echo "Logged in as '{$_SESSION['uid']}'";
+          echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
         }
         else
         {
@@ -275,9 +275,6 @@
     ?>
 
 
-<!--------------------LOGUOT?---->
-<a href="includes/logout.php">Logout</a>
-<!-------------------LOGOUT?----->
 
       <div class="gallery-container">
             <?php
