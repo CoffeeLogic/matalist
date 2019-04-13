@@ -90,25 +90,13 @@
       </ul>
     </div>
     <!----------------------Tag checkboxes------------------->
-
-
-
-
-
-<!----------------reset button ----------------------------
-    <div class="rslt__fltr__acts">
-      <button class="btn__rds btn__prim btn-act--reset">
-        <i class="btn__seg ion ion-ios-refresh-empty"></i><span class="btn__seg btn__seg--txt">reset search</span>
-      </button>
-    </div>
------------------------------------------------------------->
   </div>
 </nav>
 
 
 <!-------------MAIN GALLERY------------>
 <main class="app--core">
-  <h2 class="app--logo">Buy Page - CSUN</h2>
+  <h2 class="app--logo">Gallery - CSUN</h2>
   <header class="app--hdr">
     <div class="hdr__inr">
       <section class="buttons">
@@ -117,12 +105,6 @@
           <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
         </div>
       </section>
-      <!------------------SEARCH BAR---------------
-      <label for="search" class="hdr__srch">
-        <input type="text" class="srch__txt" name="search" placeholder="Search" />
-        <span class="srch__icn"><i class="ion-ios-search"></i></span>
-      </label>
-      --------------------------------->
 
       <div class="hdr__acts">
         <button class="btn__rd btn--fav-cnt" onclick="window.location.href='includes/logout.php'">
@@ -132,30 +114,26 @@
       </div>
     </div>
   </header>
-      
-      <div>
-      <?php
-      echo '<span class="push-right"> Logged in as '.$_SESSION['uid'].'</span>';
-      ?>
-      </div>
+
 
        <section class="gallery-links">
         <div class="wrapper">
-             <center><h2>Upload</h2></center>
-          <?php
-          if (isset($_SESSION['username'])) {
-            echo '<div class="gallery-upload">
-              <form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
-                <input type="text" name="filename" placeholder="File name...">
-                <input type="text" name="filetitle" placeholder="Image title...">
-                <input type="text" name="filedesc" placeholder="Image description...">
-                <input type="file" name="file">
-                <button type="submit" name="submit">UPLOAD</button>
-              </form>
-            </div>';
-          }
-          ?>
           <h2>Gallery</h2>
+            <!--Logged in message & logout-->
+            <div>
+              <?php
+                if(isset($_SESSION["uid"]))
+                  {
+                    $uid = $_SESSION["uidUsers"];
+                    echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+                  }
+                else
+                  {
+                    echo "not logged in";
+                  }
+              ?>
+            </div>
+<!--Logged in & logout end-->
 
           <div class="gallery-container">
             <?php
@@ -185,12 +163,6 @@
       </section>
     
 </main><!--MAIN-->
-
-<div>
-      <?php
-      echo '<span class="push-right"> Logged in as '.$_SESSION['uid'].'</span>';
-      ?>
-      </div>
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
