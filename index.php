@@ -123,14 +123,7 @@
 
 
 
-    <?php
-      echo "Logged in as '{$_SESSION['uid']}'";
-    ?>
 
-
-<!--------------------LOGUOT?---->
-<a href="includes/logout.php">Logout</a>
-<!-------------------LOGOUT?----->
 
 
 
@@ -278,6 +271,15 @@
       </li>
     -->
 
+
+    <?php
+      echo "Logged in as '{$_SESSION['uid']}'";
+    ?>
+
+
+<!--------------------LOGUOT?---->
+<a href="includes/logout.php">Logout</a>
+<!-------------------LOGOUT?----->
 
       <div class="gallery-container">
             <?php
