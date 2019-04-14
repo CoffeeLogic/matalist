@@ -1,4 +1,7 @@
-<?php include 'header.php'?>
+<?php 
+include 'header.php';
+$_SESSION['username'] = "Admin";
+?>
 
 <!DOCTYPE html>
 <html lang="en" >
