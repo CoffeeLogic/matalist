@@ -1,7 +1,4 @@
-<?php
-  session_start();
-#require_once('includes/dbh.inc.php');
-?>
+<?php include 'header.php'?>
 
 <!DOCTYPE html>
 <html>

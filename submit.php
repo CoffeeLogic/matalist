@@ -1,3 +1,5 @@
+<?php include 'header.php'?>
+
 <!DOCTYPE html>
 <html lang="en" >
 
@@ -34,7 +36,21 @@
   </div>
 </form>
   
-
+    <!--Logged in message & logout-->
+    <div align="center">   
+      <?php
+        if(isset($_SESSION["uid"]))
+          {
+            $uid = $_SESSION["uidUsers"];
+            echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+          }//if
+        else
+          {
+            echo "not logged in";
+          }//else
+        ?>
+      </div>
+    <!--Logged in message & logout-->
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
