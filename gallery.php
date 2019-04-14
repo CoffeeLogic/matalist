@@ -101,7 +101,7 @@
     <div class="hdr__inr">
       <section class="buttons">
         <div class="buttoncont">
-          <a href="login.php" class="headerbtn headerbtn-1">Not You?</a>
+          <a href="login.php" class="headerbtn headerbtn-1">Login</a>
           <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
         </div>
       </section>
@@ -147,7 +147,7 @@
               }
             }
           echo '</div>';
-          /////////////////////////////////
+          ////////////////////////////////
           }//if
         else
           {
@@ -156,31 +156,6 @@
         ?>
       </div>
     <!--Logged in message & logout-->
-
-          <!------------------
-          <div class="gallery-container">
-            <?php
-            include_once 'includes/dbh.inc.php';
-
-            $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
-            $stmt = mysqli_stmt_init($conn);
-            if (!mysqli_stmt_prepare($stmt, $sql)) {
-              echo "SQL statement failed!";
-            } else {
-              mysqli_stmt_execute($stmt);
-              $result = mysqli_stmt_get_result($stmt);
-
-              while ($row = mysqli_fetch_assoc($result)) {
-                echo '<a href="#">
-                  <div style="background-image: url(/img/gallery/'.$row["imgFullNameGallery"].');"></div>
-                  <h3>'.$row["titleGallery"].'</h3>
-                  <p>'.$row["descGallery"].'</p>
-                </a>';
-              }
-            }
-            ?>
-          </div>
-          ----------------------->
 
 
         </div>
