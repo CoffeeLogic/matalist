@@ -1,4 +1,5 @@
 <?php
+
   $_SESSION['username'] = "Admin";
 
 // Check if form was submitted:
