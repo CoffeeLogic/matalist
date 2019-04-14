@@ -25,7 +25,7 @@ $_SESSION['username'] = "Admin";
       <input type="text" id="input-name" placeholder="Name">
       <input type="email" id="input-email" placeholder="Email address">
       <p class="margin">Select images to upload:</p>
-      <input type="file" name="fileToUpload.jpg" id="fileToUpload">
+      <input type="file" name="fileToUpload" id="fileToUpload">
       <input type="submit" value="Upload Image" name="submit">
     </div>
 
