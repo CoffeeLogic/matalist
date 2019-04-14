@@ -119,21 +119,22 @@
        <section class="gallery-links">
         <div class="wrapper">
           <h2>Gallery</h2>
-            <!--Logged in message & logout-->
-            <div>
-              <?php
-                if(isset($_SESSION["uid"]))
-                  {
-                    $uid = $_SESSION["uidUsers"];
-                    echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
-                  }
-                else
-                  {
-                    echo "not logged in";
-                  }
-              ?>
-            </div>
-<!--Logged in & logout end-->
+<br>
+    <!--Logged in message & logout-->
+    <div align="center">   
+      <?php
+        if(isset($_SESSION["uid"]))
+          {
+            $uid = $_SESSION["uidUsers"];
+            echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+          }//if
+        else
+          {
+            echo "not logged in";
+          }//else
+        ?>
+      </div>
+    <!--Logged in message & logout-->
 
           <div class="gallery-container">
             <?php
