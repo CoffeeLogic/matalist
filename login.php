@@ -113,7 +113,7 @@
             </form>
             </section>
 
-      
+      <div>
 <!--Logged in message & logout-->
 <?php
         if(isset($_SESSION["uid"]))
@@ -127,7 +127,7 @@
         }
     ?>
 <!--Logged in & logout end-->
-
+      </div>
     
   </main>
   
