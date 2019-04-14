@@ -61,7 +61,6 @@
 
     <!----------------------Tag checkboxes------------------->
 
-    <main class="app--core">
   <h2 class="app--logo">Login - CSUN</h2>
   <header class="app--hdr">
     <div class="hdr__inr">
