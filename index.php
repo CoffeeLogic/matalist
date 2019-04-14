@@ -122,7 +122,7 @@
           }//if
         else
           {
-            echo "not logged in";
+            echo "Not logged in";
           }//else
         ?>
       </div>
