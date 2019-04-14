@@ -1,4 +1,7 @@
-
+<?php
+  session_start();
+#require_once('includes/dbh.inc.php');
+?>
 
 <!DOCTYPE html>
 <html>
