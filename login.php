@@ -17,6 +17,11 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,700,300'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab'>
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/buttoncss.css">
+  <link rel="stylesheet" href="css/aboutus.css">
 
   
 </head>
@@ -92,7 +97,18 @@
     <!----------------------Tag checkboxes------------------->
 </div>
 </nav>
-      
+
+<main class="app--core">
+  <h2 class="app--logo">Matalist</h2>
+  <header class="app--hdr">
+    <div class="hdr__inr">
+      <section class="buttons">
+        <div class="buttoncont">
+          <a href="login.php" class="headerbtn headerbtn-1">Index</a>
+          <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
+        </div>
+      </section>
+
           <section class="section-default">
             <p>
             <h1>Login</h1>
