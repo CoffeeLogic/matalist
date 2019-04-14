@@ -24,7 +24,7 @@ if (isset($_POST['submit'])) {
 
   $allowed = array("jpg", "jpeg", "png");
 
-  if (in_array($allowed)) {
+  if (in_array($fileActualExt, $allowed)) {
     if ($fileError === 0) {
       if ($fileSize < 2000000) {
         $imageFullName = $newFileName . "." . uniqid("", true) . "." . $fileActualExt;
