@@ -47,7 +47,8 @@
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,700,300'>
   <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab'>
   <link rel="stylesheet" href="css/style.css">
-
+  <link rel="stylesheet" href="css/buttoncss.css">
+  <link rel="stylesheet" href="css/aboutus.css">
   
 </head>
 
@@ -123,6 +124,16 @@
 </div>
 </nav>
     
+<main class="app--core">
+  <h2 class="app--logo">CSUN</h2>
+  <header class="app--hdr">
+    <div class="hdr__inr">
+      <section class="buttons">
+        <div class="buttoncont">
+          <a href="index.php" class="headerbtn headerbtn-1">Index</a>
+          <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
+        </div>
+      </section>
 
         <section class="section-default">
           <h1>Signup Now</h1>
