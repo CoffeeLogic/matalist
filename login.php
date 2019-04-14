@@ -139,11 +139,11 @@
         if(isset($_SESSION["uid"]))
           {
             $uid = $_SESSION["uidUsers"];
-            echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+            echo "<br> Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
           }//if
         else
           {
-            echo "Not logged in";
+            echo "<br> Not logged in";
           }//else
         ?>
       </div>
