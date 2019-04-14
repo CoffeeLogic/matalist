@@ -182,21 +182,20 @@
           </form>
            </section>
     <!--Logged in message & logout-->
-           <div align="center">
-              
-                <?php
-                    if(isset($_SESSION["uid"]))
-                    {
-                      $uid = $_SESSION["uidUsers"];
-                      echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
-                    }
-                    else
-                    {
-                      echo "not logged in";
-                    }
-                ?>
-            </div>
-      <!--Logged in message & logout-->
+    <div align="center">   
+      <?php
+        if(isset($_SESSION["uid"]))
+          {
+            $uid = $_SESSION["uidUsers"];
+            echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+          }//if
+        else
+          {
+            echo "not logged in";
+          }//else
+        ?>
+      </div>
+    <!--Logged in message & logout-->
 
 </main>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>

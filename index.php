@@ -114,19 +114,21 @@
     <a href="gallery.php" class="matalist aboutbtn">Matalist Gallery</a>
   </div>
 
-<!--Logged in message & logout-->
-    <?php
+    <!--Logged in message & logout-->
+    <div align="center">   
+      <?php
         if(isset($_SESSION["uid"]))
-        {
-          $uid = $_SESSION["uidUsers"];
-          echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
-        }
+          {
+            $uid = $_SESSION["uidUsers"];
+            echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+          }//if
         else
-        {
-          echo "not logged in";
-        }
-    ?>
-<!--Logged in & logout end-->
+          {
+            echo "not logged in";
+          }//else
+        ?>
+      </div>
+    <!--Logged in message & logout-->
     
 </section>
 </main>
