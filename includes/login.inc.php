@@ -64,7 +64,7 @@ if (isset($_POST['login-submit'])) {
                     $_SESSION['uid'] = $row['uidUsers'];
                     $_SESSION['email'] = $row['emailUsers'];
                     // Now the user is registered as logged in and we can now take them back to the front page! :)
-                    header("Location: ../index.php");
+                    header("Location: ../gallery.php");
                     exit();
                 }
             }
