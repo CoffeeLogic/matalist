@@ -111,9 +111,9 @@
     <br>
               <center><a href="signup.php">Not a member? Create an Account</a></center>
             </form>
-            
+            </section>
 
-      <div>
+      <div align="center">
 <!--Logged in message & logout-->
 <?php
         if(isset($_SESSION["uid"]))
@@ -128,7 +128,7 @@
     ?>
 <!--Logged in & logout end-->
       </div>
-      </section>
+      
   </main>
   
   
