@@ -111,7 +111,7 @@
     <br>
               <center><a href="signup.php">Not a member? Create an Account</a></center>
             </form>
-            </section>
+            
 
       <div>
 <!--Logged in message & logout-->
@@ -128,7 +128,7 @@
     ?>
 <!--Logged in & logout end-->
       </div>
-    
+      </section>
   </main>
   
   
