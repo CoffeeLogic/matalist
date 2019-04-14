@@ -114,6 +114,20 @@
             </section>
 
       
+<!--Logged in message & logout-->
+<?php
+        if(isset($_SESSION["uid"]))
+        {
+          $uid = $_SESSION["uidUsers"];
+          echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+        }
+        else
+        {
+          echo "not logged in";
+        }
+    ?>
+<!--Logged in & logout end-->
+
     
   </main>
   
