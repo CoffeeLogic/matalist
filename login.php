@@ -60,6 +60,18 @@
 
 
     <!----------------------Tag checkboxes------------------->
+
+    <main class="app--core">
+  <h2 class="app--logo">Login - CSUN</h2>
+  <header class="app--hdr">
+    <div class="hdr__inr">
+      <section class="buttons">
+        <div class="buttoncont">
+          <a href="index.php" class="headerbtn headerbtn-1">Index</a>
+          <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
+        </div>
+      </section>
+      
     <div class="rslt__fltr ui-nav-menu state--expanded" js-ui-menu>
       <button class="ui-nav-menu-trgr" js-ui-menu-trigger>
         <i class="btn__seg ion ion-pricetag"></i><span class="btn__seg btn__seg--txt">for sale</span><i class="btn__seg ion ion-ios-arrow-down menu-arrow"></i>
