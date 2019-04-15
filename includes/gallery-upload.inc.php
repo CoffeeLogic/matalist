@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
     if ($fileError === 0) {
       if ($fileSize < 2000000) {
         $imageFullName = $newFileName . "." . uniqid("", true) . "." . $fileActualExt;
-        $fileDestination = "/img/gallery" . $imageFullName;
+        $fileDestination = "../img/gallery" . $imageFullName;
         include_once "dbh.inc.php";
 
         if (empty($imageTitle) || empty($imageDesc)) {
@@ -52,7 +52,7 @@ if (isset($_POST['submit'])) {
               mysqli_stmt_bind_param($stmt, "ssss", $imageTitle, $imageDesc, $imageFullName, $setImageOrder);
               mysqli_stmt_execute($stmt);
 
-              move_uploaded_file($fileTempName, "/img/gallery");
+              move_uploaded_file($fileTempName, $fileDestination);
 
               header("Location: ../gallery.php?upload=success");
             }
