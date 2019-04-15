@@ -52,7 +52,7 @@ if (isset($_POST['submit'])) {
               mysqli_stmt_bind_param($stmt, "ssss", $imageTitle, $imageDesc, $imageFullName, $setImageOrder);
               mysqli_stmt_execute($stmt);
 
-              move_uploaded_file($fileTempName, $fileDestination);
+              move_uploaded_file($fileTempName, "/gallery");
 
               header("Location: ../gallery.php?upload=success");
             }
