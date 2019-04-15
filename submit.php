@@ -1,5 +1,5 @@
 <?php 
-include 'header.php';
+//include 'header.php';
 $_SESSION['username'] = "Admin";
 ?>
 
@@ -58,7 +58,7 @@ $_SESSION['username'] = "Admin";
 
 
 
-        
+
     <!--Logged in message & logout-->
     <div align="center">   
       <?php
