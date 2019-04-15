@@ -28,7 +28,7 @@ if (isset($_POST['submit'])) {
     if ($fileError === 0) {
       if ($fileSize < 2000000) {
         $imageFullName = $newFileName . "." . uniqid("", true) . "." . $fileActualExt;
-        $fileDestination = "img/gallery/" . $imageFullName;
+        $fileDestination = "/var/www/html/matalist/img/gallery/" . $imageFullName;
 
         include_once "dbh.inc.php";
 
