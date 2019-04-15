@@ -1,7 +1,7 @@
 <?php
 
 $link = mysql_connect("Matalistdb.cbhzd1fnevha.us-east-2.rds.amazonaws.com", "matalist", "csunmatalist");
-$target_dir = "img/gallery";
+$target_dir = "img/gallery/";
 $target_file = $target_dir . basename($_FILES["fileToUpload"]["name"]);
 $uploadOk = 1;
 /*$imageFileType = strtolower(pathinfo($target_file,PATHINFO_EXTENSION));
