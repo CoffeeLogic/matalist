@@ -13,9 +13,14 @@ if (isset($_POST['login-submit'])) {
 
     // We check for any empty inputs. (PS: This is where most people get errors because of typos! Check that your code is identical to mine. Including missing parenthesis!)
     if (empty($username) || empty($password)) {
-        header("Location: ../index.php?error=emptyfields&mailuid=".$mailuid);
+        header("Location: ../login.php?error=emptyfields&mailuid=".$mailuid);
         exit();
     }
+    else if (!preg_match("/^[a-zA-Z0-9]*$/", $username) && !filter_var($email, FILTER_VALIDATE_EMAIL)) {
+    header("Location: ../login.php?error=invaliduidmail");
+    exit();
+  }
+
     else {
         // If we got to this point, it means the user didn't make an error! :)
 
@@ -42,13 +47,13 @@ if (isset($_POST['login-submit'])) {
             // Then we store the result into a variable.
             if ($row = mysqli_fetch_assoc($result)) {
                 // Then we match the password from the database with the password the user submitted. The result is returned as a boolean.
-                //$pwdCheck = password_verify($password, $row['pwdUsers']);
+                $pwdCheck = password_verify($password, $row['pwdUsers']);
                 // If they don't match then we create an error message!
-                //printf ($row["uidUsers"]);
+                printf ($row["uidUsers"]);
                 $hash = $row["pwdUsers"];
                 if (!password_verify($password, $hash)) {
                     // If there is an error we send the user back to the signup page.
-                    header("Location: ../index.php?error=wrongpwd");
+                    header("Location: ../login.php?error=wrongpwd");
                     exit();
                 }
                 // Then if they DO match, then we know it is the correct user that is trying to log in!
@@ -64,12 +69,12 @@ if (isset($_POST['login-submit'])) {
                     $_SESSION['uid'] = $row['uidUsers'];
                     $_SESSION['email'] = $row['emailUsers'];
                     // Now the user is registered as logged in and we can now take them back to the front page! :)
-                    header("Location: ../gallery.php");
+                    header("Location: ../login.php?login=success");
                     exit();
                 }
             }
             else {
-                header("Location: ../index.php?login=wronguidpwd");
+                header("Location: ../login.php?login=wronguidpwd");
                 exit();
             }
         }

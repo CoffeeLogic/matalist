@@ -164,6 +164,9 @@
             if ($_GET["signup"] == "success") {
               echo '<p class="signupsuccess">Signup successful!</p>';
             }
+            else{
+              echo '<p class="signupsuccess">Signup is not successful!</p>';
+            }
           }
           ?>
           <form class="form-signup" action="includes/signup.inc.php" method="post">

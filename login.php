@@ -113,7 +113,30 @@
             <p>
             <h1>Login</h1>
             <?php
-            // Here we create a success message if the new user was created.
+            // Invalid field inputs
+            if (isset($_GET["error"])) {
+            if ($_GET["error"] == "emptyfields") {
+              echo '<p class="signuperror">Fill in all fields!</p>';
+            }
+
+            }
+          // Here we create a success message if the user logins and if username is invalid.
+          else if (isset($_GET["login"])) {
+            if ($_GET["login"] == "success") {
+              echo '<p class="signupsuccess">Login successful!</p>';
+            }
+            else {
+              echo '<p class="signuperror">Invalid Username </p>';
+            }
+
+          }
+          // Invalid Password
+          if (isset($_GET["error"])) {
+            if ($_GET["error"] == "wrongpwd") {
+               echo '<p class="signuperror">Invalid Password </p>';
+            }
+          }
+
             ?>
             <form class="form-signup" action="includes/login.inc.php" method="post">
               <?php
