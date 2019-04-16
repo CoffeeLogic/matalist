@@ -120,7 +120,7 @@
               $result = mysqli_stmt_get_result($stmt);
               while ($row = mysqli_fetch_assoc($result)) {
                 echo '<a href="#">
-                  <div style="background-image: url(img/'.$row["imgFullNameGallery"] = 26.');"></div>
+                  <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
                   <h3>'.$row["titleGallery"].'</h3>
                   <p>'.$row["descGallery"].'</p>
                 </a>';
