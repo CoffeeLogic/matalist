@@ -165,7 +165,7 @@
               echo '<p class="signupsuccess">Signup successful!</p>';
             }
             else{
-              echo '<p class="signupsuccess">Signup is not successful!</p>';
+              echo '<p class="signuperror">Signup is not successful!</p>';
             }
           }
           ?>
