@@ -32,7 +32,8 @@ $_SESSION['username'] = "Admin";
                 <input type="text" name="filetitle" placeholder="Image title...">
                 <input type="text" name="filedesc" placeholder="Image description...">
                 <input type="file" name="file">
-                <button type="submit" name="submit" class="headerbtn headerbtn-1"><br>UPLOAD</button>
+                <br>
+                <button type="submit" name="submit" class="headerbtn headerbtn-1">UPLOAD</button>
               </form>
               </div>
           </section>
