@@ -103,8 +103,8 @@
         <div class="buttoncont">
           <a href="index.php" class="headerbtn headerbtn-1">Index</a>
           <a href="login.php" class="headerbtn headerbtn-1">Login</a>
-          <a href="aboutus.html" class="headerbtn headerbtn-1">About Us
-          <a href="submit.php" class="headerbtn headerbtn-1">Post</a></a>
+          <a href="submit.php" class="headerbtn headerbtn-1">Post</a>
+          <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
         </div>
       </section>
 
@@ -116,7 +116,7 @@
         <button class="btn__rd btn--usr-avtr" onclick="window.location.href='submit.php'"></button>
       </div>
          -->
-         
+
     </div>
   </header>
 
