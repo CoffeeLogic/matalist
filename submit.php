@@ -13,6 +13,8 @@ $_SESSION['username'] = "Admin";
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
     <link rel="stylesheet" href="css/submitcss.css">
 
+    <link rel="stylesheet" href="css/buttoncss.css">
+    <link rel="stylesheet" href="css/aboutus.css">
   
 </head>
 
@@ -23,13 +25,17 @@ $_SESSION['username'] = "Admin";
   <?php
           if (isset($_SESSION['username'])) {
             echo '<div class="gallery-upload">
+            <section class="buttons">
+            <div class="buttoncont">
               <form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
                 <input type="text" name="filename" placeholder="File name...">
                 <input type="text" name="filetitle" placeholder="Image title...">
                 <input type="text" name="filedesc" placeholder="Image description...">
                 <input type="file" name="file">
-                <button type="submit" name="submit">UPLOAD</button>
+                <button type="submit" name="submit" class="headerbtn headerbtn-1">UPLOAD</button>
               </form>
+              </div>
+          </section>
             </div>';
           }
           ?> 
