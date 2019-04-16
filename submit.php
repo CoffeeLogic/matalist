@@ -8,9 +8,6 @@ $_SESSION['username'] = "Admin";
 
 <head>
   <meta charset="UTF-8">
-  <div>
-		<a href="index.php" class="matalist aboutbtn">Back to Matalist</a>
-	</div>
   <title>Post your item/service</title>
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
@@ -84,6 +81,10 @@ $_SESSION['username'] = "Admin";
         ?>
       </div>
     <!--Logged in message & logout-->
+
+    <div>
+		<a href="index.php" class="matalist aboutbtn">Back to Matalist</a>
+	  </div>
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
