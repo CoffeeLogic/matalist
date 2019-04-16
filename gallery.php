@@ -116,8 +116,8 @@
         <button class="btn__rd btn--usr-avtr" onclick="window.location.href='submit.php'"></button>
       </div>
     </div>
-  </header>
      -->
+  </header>
 
 
        <section class="gallery-links">
