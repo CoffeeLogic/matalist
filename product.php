@@ -112,6 +112,7 @@
             include_once 'includes/dbh.inc.php';
             $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
             $stmt = mysqli_stmt_init($conn);
+ 
             if (!mysqli_stmt_prepare($stmt, $sql)) {
               echo "SQL statement failed!";
             } else {
@@ -119,9 +120,9 @@
               $result = mysqli_stmt_get_result($stmt);
               while ($row = mysqli_fetch_assoc($result)) {
                 echo '<a href="#">
-                  <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
-                  <h3>'.$row["titleGallery"].'</h3>
-                  <p>'.$row["descGallery"].'</p>
+                  <div style="background-image: url(img/'.$row["imgFullNameGallery==26"].');"></div>
+                  <h3>'.$row["titleGallery"==26].'</h3>
+                  <p>'.$row["descGallery"]==26.'</p>
                 </a>';
               }
             }
