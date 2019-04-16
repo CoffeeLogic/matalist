@@ -102,7 +102,8 @@
       <section class="buttons">
         <div class="buttoncont">
           <a href="login.php" class="headerbtn headerbtn-1">Login</a>
-          <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
+          <a href="aboutus.html" class="headerbtn headerbtn-1">About Us
+          <a href="submit.php" class="headerbtn headerbtn-1">Post</a></a>
         </div>
       </section>
 
