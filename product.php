@@ -83,7 +83,7 @@
             } else {
               mysqli_stmt_execute($stmt);
               $result = mysqli_stmt_get_result($stmt);
-              while ($_Get["imgFullNameGallery"] == "imgFullNameGallery")
+              while ($_GET["imgFullNameGallery"] == "imgFullNameGallery")
                 echo '<a href="product.php">
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
                   <h3>'.$row["titleGallery"].'</h3>
