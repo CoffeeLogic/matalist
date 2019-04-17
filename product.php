@@ -49,7 +49,7 @@
         </li>
       </ul>
     </div>
-
+</nav>
       
       <div class="hdr__acts">
         <button class="btn__rd btn--fav-cnt" onclick="window.location.href='includes/logout.php'">
