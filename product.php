@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  <title>Craigslist Dashboard</title>
+  <title>Matalist Product</title>
   
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'>
@@ -50,28 +50,21 @@
 </nav>
 <!-------------MAIN GALLERY------------>
 <main class="app--core">
-  <h2 class="app--logo">Gallery - CSUN</h2>
+  <h2 class="app--logo">Product - CSUN</h2>
   <header class="app--hdr">
     <div class="hdr__inr">
       <section class="buttons">
         <div class="buttoncont">
-          <a href="login.php" class="headerbtn headerbtn-1">Login</a>
-          <a href="submit.php" class="headerbtn headerbtn-1">Post</a>
+          <a href="includes/logout.php" class="headerbtn headerbtn-1">Log out</a>
+          <a href="gallery.php" class="headerbtn headerbtn-1">Return to Gallery</a>
           <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
         </div>
       </section>
-      
-      <div class="hdr__acts">
-        <button class="btn__rd btn--fav-cnt" onclick="window.location.href='includes/logout.php'">
-          <i class="btn__seg ion-android-favorite"></i>
-        </button>
-       <button class="btn__rd btn--usr-avtr" onclick="window.location.href='submit.php'"></button>
-      </div>
     </div>
   </header>
        <section class="gallery-links">
         <div class="wrapper">
-          <h2>Gallery</h2>
+          <h2>Product</h2>
 <br>
     <!--Logged in message & logout-->
     <div align="center">   
