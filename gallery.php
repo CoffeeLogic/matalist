@@ -143,7 +143,7 @@
 
                while ($row = mysqli_fetch_assoc($result)) {
               $item_id = $row["imgFullNameGallery"];
-                echo <a href="itemdetail.php?varname=$item_id>
+                echo <a href="itemdetail.php/varname=$item_id>
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
                   <h3>'.$row["titleGallery"].'</h3>
                   <p>'.$row["descGallery"].'</p>
