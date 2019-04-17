@@ -16,6 +16,39 @@
   
 </head>
 <body>
+<nav class="app--nav state--loaded">
+
+  <!--Logo-->
+  <a href="#" class="app--logo">MataList</a>
+
+  <!--Side nav filters-->
+  <div class="rslt__fltr">  
+
+      <!--area filter-->
+     <div class="rslt__fltr ui-nav-menu state--expanded">
+      <button class="ui-nav-menu-trgr">
+        <i class="btn__seg ion ion-ios-location"></i><span class="btn__seg btn__seg--txt">CSUN</span>
+      </button>
+
+      <ul class="ui-nav-menu-opts">
+        <li class="menu__fltr fltr-type__row">
+          <span class="menu__fltr__lgnd lgnd-clr--1"></span>
+          <span class="menu__fltr__lbl"><a href="index.php" title="Index">Index</a></span>
+        </li>
+         <li class="menu__fltr fltr-type__row">
+          <span class="menu__fltr__lgnd lgnd-clr--1"></span>
+          <span class="menu__fltr__lbl"><a href="login.php" title="Login">Login</a></span>
+        </li>
+        <li class="menu__fltr fltr-type__row">
+          <span class="menu__fltr__lgnd lgnd-clr--1"></span>
+          <span class="menu__fltr__lbl"><a href="signup.php" title="Signup">Signup</a></span>
+        </li>
+         <li class="menu__fltr fltr-type__row">
+          <span class="menu__fltr__lgnd lgnd-clr--1"></span>
+          <span class="menu__fltr__lbl"><a href="gallery.php" title="Gallery">Gallery</a></span>
+        </li>
+      </ul>
+    </div>
 
       
       <div class="hdr__acts">
