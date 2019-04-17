@@ -17,19 +17,15 @@
 </head>
 <body>
 <nav class="app--nav state--loaded">
-
   <!--Logo-->
   <a href="#" class="app--logo">MataList</a>
-
   <!--Side nav filters-->
   <div class="rslt__fltr">  
-
       <!--area filter-->
      <div class="rslt__fltr ui-nav-menu state--expanded">
       <button class="ui-nav-menu-trgr">
         <i class="btn__seg ion ion-ios-location"></i><span class="btn__seg btn__seg--txt">CSUN</span>
       </button>
-
       <ul class="ui-nav-menu-opts">
         <li class="menu__fltr fltr-type__row">
           <span class="menu__fltr__lgnd lgnd-clr--1"></span>
@@ -49,13 +45,29 @@
         </li>
       </ul>
     </div>
+    
+  </div>
 </nav>
+<!-------------MAIN GALLERY------------>
+<main class="app--core">
+  <h2 class="app--logo">Gallery - CSUN</h2>
+  <header class="app--hdr">
+    <div class="hdr__inr">
+      <section class="buttons">
+        <div class="buttoncont">
+          <a href="login.php" class="headerbtn headerbtn-1">Login</a>
+          <a href="submit.php" class="headerbtn headerbtn-1">Post</a>
+          <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
+        </div>
+      </section>
       
       <div class="hdr__acts">
         <button class="btn__rd btn--fav-cnt" onclick="window.location.href='includes/logout.php'">
           <i class="btn__seg ion-android-favorite"></i>
         </button>
-  </div>
+       <button class="btn__rd btn--usr-avtr" onclick="window.location.href='submit.php'"></button>
+      </div>
+    </div>
   </header>
        <section class="gallery-links">
         <div class="wrapper">
@@ -79,7 +91,7 @@
               mysqli_stmt_execute($stmt);
               $result = mysqli_stmt_get_result($stmt);
               while ($row = mysqli_fetch_assoc($result)) {
-                echo '<a href="#">
+                echo '<a href="product.php">
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
                   <h3>'.$row["titleGallery"].'</h3>
                   <p>'.$row["descGallery"].'</p>
