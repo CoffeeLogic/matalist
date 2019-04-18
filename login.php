@@ -134,15 +134,15 @@
 
             ?>
             <form class="form-signup" action="includes/login.inc.php" method="post">
+              <input type="email" name="mail" placeholder="Email">  
               <?php
-
-              // We check username.
-              if (!empty($_GET["uid"])) {
-                echo '<input type="text" name="uid" placeholder="Username" value="'.$_GET["uid"].'">';
-              }
-              else {
-                echo '<input type="text" name="uid" placeholder="Username">';
-              }
+                // We check username.
+                if (!empty($_GET["uid"])) {
+                  echo '<input type="text" name="uid" placeholder="Username" value="'.$_GET["uid"].'">';
+                }
+                else {
+                  echo '<input type="text" name="uid" placeholder="Username">';
+                }
               ?>
               <input type="password" name="pwd" placeholder="Password">
           <button type="submit" name="login-submit">Login</button>    
