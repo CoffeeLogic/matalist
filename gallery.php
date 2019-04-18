@@ -126,7 +126,7 @@
     <!--Logged in message & logout-->
     <div align="center">   
       <?php
-        if(isset($_SESSION["uid"]))
+        if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
           {
             $uid = $_SESSION["uidUsers"];
             echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
@@ -152,7 +152,7 @@
           echo '</div>';
           ////////////////////////////////
           }//if
-        else
+        else//ELSE DON'T SEE GALLERY**************
           {
             echo "Please log in to view gallery.";
           }//else

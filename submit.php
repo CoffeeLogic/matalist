@@ -22,61 +22,36 @@ $_SESSION['username'] = "Admin";
 
   <h1>Post your item/service</h1>
 
-  <?php
-          if (isset($_SESSION['username'])) {
-            echo '<div class="gallery-upload">
-            <section class="buttons">
-            <div class="buttoncont">
-              <form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
-                <input type="text" name="filename" placeholder="File name...">
-                <input type="text" name="filetitle" placeholder="Image title...">
-                <input type="text" name="filedesc" placeholder="Image description...">
-                <input type="file" name="file">
-                <br>
-                <button type="submit" name="submit" class="headerbtn headerbtn-1">UPLOAD</button>
-              </form>
-              </div>
-          </section>
-            </div>';
-          }
-          ?> 
-
-<!--
-  <form class="form-signup" action="includes/gallery-upload.inc.php" method="post" enctype-"multipart/form-data">
-    <div class="half left cf">
-      <input type="text" id="input-product" placeholder="Product">
-      <input type="text" id="input-name" placeholder="Name">
-      <input type="email" id="input-email" placeholder="Email address">
-      <p class="margin">Select images to upload:</p>
-      <input type="file" name="fileToUpload" id="fileToUpload">
-      <input type="submit" value="Upload Image" name="submit">
-    </div>
-
-    <div class="half right cf">
-      <textarea name="message" type="text" id="input-description" placeholder="Description"></textarea>
-    </div>  
-
-
-  <div>
-    <input type="submit" value="Submit" id="input-submit">
-  </div>
-</form>
-        -->
-
-
-
 
     <!--Logged in message & logout-->
     <div align="center">   
       <?php
         if(isset($_SESSION["uid"]))
           {
+            
+            if (isset($_SESSION['username'])) {
+              echo '<div class="gallery-upload">
+              <section class="buttons">
+              <div class="buttoncont">
+                <form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
+                  <input type="text" name="filename" placeholder="completely pointless">
+                  <input type="text" name="filetitle" placeholder="Post title (limit to 35 char)">
+                  <input type="text" name="filedesc" placeholder="description (limit to 200 char)">
+                  <input type="file" name="file">
+                  <br>
+                  <button type="submit" name="submit" class="headerbtn headerbtn-1">UPLOAD</button>
+                </form>
+                </div>
+            </section>
+              </div>';
+            }//if
+            
             $uid = $_SESSION["uidUsers"];
             echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
           }//if
         else
           {
-            echo "Not logged in";
+            echo "Not logged in. Please Login to make a post.";
           }//else
         ?>
       </div>
