@@ -106,6 +106,7 @@
 
           <section class="section-default">
             <p>
+            <br>
             <h1>Login</h1>
             <?php
             // Invalid field inputs

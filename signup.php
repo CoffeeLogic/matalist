@@ -131,7 +131,7 @@
 
 
         <section class="section-default">
-          <h1>Signup Now</h1>
+          <h1><br>Signup Now</h1>
           <?php
           // Here we create an error message if the user made an error trying to sign up.
           if (isset($_GET["error"])) {
