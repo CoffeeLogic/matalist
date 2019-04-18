@@ -129,9 +129,7 @@
         if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
           {
             $uid = $_SESSION["uidUsers"];
-            $email = $_SESSION["email"];
             echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
-            echo "Email is: '{$_SESSION['email']}' <br> <a href=includes/logout.php>Logout</a>";
             //////////////////////////////////////
             echo '<div class="gallery-container">';
             include_once 'includes/dbh.inc.php';

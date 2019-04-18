@@ -48,6 +48,8 @@ $_SESSION['username'] = "Admin";
             
             $uid = $_SESSION["uidUsers"];
             echo "<br><br>Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a><br>";
+            $email = $_SESSION["email"];
+            echo "<br><br>Email is: '{$_SESSION['email']}' <br> <a href=includes/logout.php>Logout</a><br>";
           }//if
         else
           {
