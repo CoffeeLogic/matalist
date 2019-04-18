@@ -1,5 +1,7 @@
 <?php
 
+include 'header.php';
+
 if (isset($_POST['submit'])) {
 
   $newFileName = $_POST['filename'];
@@ -10,9 +12,8 @@ if (isset($_POST['submit'])) {
   }
   $imageTitle = $_POST['filetitle'];
   $imageDesc = $_POST['filedesc'];
-  
   $file = $_FILES['file'];
-  $email = $_SESSION["email"];
+  $email = $_SESSION["email"];////////////////////
   $fileName = $file["name"];
   $fileType = $file["type"];
   $fileTempName = $file["tmp_name"];
