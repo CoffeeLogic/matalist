@@ -50,7 +50,7 @@ if (isset($_POST['submit'])) {
             if (!mysqli_stmt_prepare($stmt, $sql)) {
               echo "SQL statement failed!";
             } else {
-              mysqli_stmt_bind_param($stmt, "sssss", $imageTitle, $imageDesc, $imageFullName, $setImageOrder, $email);
+              mysqli_stmt_bind_param($stmt, "ssssi", $imageTitle, $imageDesc, $imageFullName, $setImageOrder, $email);
               mysqli_stmt_execute($stmt);
 
               move_uploaded_file($fileTempName, $fileDestination);
