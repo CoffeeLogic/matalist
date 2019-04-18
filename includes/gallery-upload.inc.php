@@ -19,6 +19,7 @@ if (isset($_POST['submit'])) {
   $fileTempName = $file["tmp_name"];
   $fileError = $file["error"];
   $fileSize = $file["size"];
+  $tag = "1";
 
   $fileExt = explode(".", $fileName);
   $fileActualExt = strtolower(end($fileExt));
@@ -50,7 +51,7 @@ if (isset($_POST['submit'])) {
             if (!mysqli_stmt_prepare($stmt, $sql)) {
               echo "SQL statement failed!";
             } else {
-              mysqli_stmt_bind_param($stmt, "sssssi", $imageTitle, $imageDesc, $imageFullName, $setImageOrder, $email, "1");
+              mysqli_stmt_bind_param($stmt, "sssssi", $imageTitle, $imageDesc, $imageFullName, $setImageOrder, $email, $tag);
               mysqli_stmt_execute($stmt);
 
               move_uploaded_file($fileTempName, $fileDestination);
