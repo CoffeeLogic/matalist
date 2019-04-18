@@ -47,7 +47,7 @@ $_SESSION['username'] = "Admin";
             }//if
             
             $uid = $_SESSION["uidUsers"];
-            echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+            echo "<br><br>Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a><br>";
           }//if
         else
           {
