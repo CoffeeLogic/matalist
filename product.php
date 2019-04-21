@@ -66,7 +66,12 @@
         <div class="wrapper">
           <h2>Product</h2>
          
-          
+       <form action="relative/path/to/the/php/page">
+    Image filename:<br>
+    <input type="text" name="imageSelection"><br>
+
+    <input type="submit" value="Submit">
+</form>   
           
     <!--Logged in message & logout-->
     <div align="center">   
