@@ -65,7 +65,9 @@
        <section class="gallery-links">
         <div class="wrapper">
           <h2>Product</h2>
-<br>
+         
+          
+          
     <!--Logged in message & logout-->
     <div align="center">   
       <?php
@@ -77,13 +79,29 @@
             //////////////////////////////////////
             echo '<div class="gallery-container">';
             include_once 'includes/dbh.inc.php';
-            $sql = "SELECT * FROM gallery WHERE "imgFullNameGallery"=$itemselected;";
-            $stmt = mysqli_stmt_init($conn);
-            if (!mysqli_stmt_prepare($stmt, $sql)) {
-              echo "SQL statement failed!";
-            } else {
+            if ($_GET['imageSelection']) {
+              $imageSelection = $_GET['imageSelection']
+              $sql = "SELECT * FROM gallery WHERE imgFullNameGallery = '$imageSelection' ORDER BY idGallery DESC;";
+              $stmt = mysqli_stmt_init($conn);
+              if(!mysqli_stmt_prepare($stmt, $sql);
+                 echo "SQL statement failed";
+                 } else {
               mysqli_stmt_execute($stmt);
               $result = mysqli_stmt_get_result($stmt);
+
+                   
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src="img/gallery/'.$row["imgFullNameGallery"].'" >
+      </div>
+
+    </div>
+   ';
+} 
                
                 echo '<a href="product.php">
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
