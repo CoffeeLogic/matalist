@@ -71,6 +71,7 @@
       <?php
         if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
           {
+            $itemselected = $_GET{"item"];
             $uid = $_SESSION["uidUsers"];
             echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
             //////////////////////////////////////
@@ -83,13 +84,13 @@
             } else {
               mysqli_stmt_execute($stmt);
               $result = mysqli_stmt_get_result($stmt);
-               $_GET["imgFullNameGallery"] {
+               
                 echo '<a href="product.php">
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
                   <h3>'.$row["titleGallery"].'</h3>
                   <p>'.$row["descGallery"].'</p>
                 </a>';
-              }
+              
             }
           echo '</div>';
           ////////////////////////////////
