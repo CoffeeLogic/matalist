@@ -76,15 +76,15 @@
             //////////////////////////////////////
             echo '<div class="gallery-container">';
             include_once 'includes/dbh.inc.php';
-            $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
+            $sql = "SELECT * FROM gallery WHERE "imgFullNameGallery"=$itemselected;";
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
               echo "SQL statement failed!";
             } else {
               mysqli_stmt_execute($stmt);
               $result = mysqli_stmt_get_result($stmt);
-               while ($row = mysqli_fetch_assoc($result)) {
-                echo '<a href="product.php?item=.row["imgFullNameGallery"]">
+               while ($_GET["imgFullNameGallery"]) {
+                echo '<a href="product.php">
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
                   <h3>'.$row["titleGallery"].'</h3>
                   <p>'.$row["descGallery"].'</p>
