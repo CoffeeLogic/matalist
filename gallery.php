@@ -174,16 +174,16 @@
 
 
 
-
+///////////////////////////////////////////////////////////////////////////////////////////////////
             if(!empty($_GET['check_list'])) {
-              $i="0";
+              $i = "0";
               foreach($_GET['check_list'] as $check){
                 if ($i != "0"){
                   $list.=", ";
                   $list.=$check;
                 }else{
                   $list=$check;
-                  $i="1";
+                  $i = "1";
                 }
               }//for
                 //$sql = "SELECT * FROM gallery WHERE tag IN $list ORDER BY orderGallery DESC";  
@@ -191,7 +191,7 @@
                 $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
               }//else
 
-
+/////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
             $stmt = mysqli_stmt_init($conn);
