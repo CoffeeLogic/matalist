@@ -58,16 +58,17 @@
               $result = mysqli_stmt_get_result($stmt);
               $row = mysqli_fetch_assoc($result);
               
-              
-              echo '<a href="#" style="text-decoration:none; align: middle;">
-                  <div style="display: flex; justify-content: center; background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>
+                 <center>
+              echo '<a href="#" style="text-decoration:none;">
+                  <div style= background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
                   <p><font size="4" face="arial" color="black">'.$row["descGallery"].'</font></p>
                   <br>
                   <p><font size="4" face="arial" color="blue">Contact:'.$row["users_email"].'</font></p>
                   <p><font size="4" face="arial" color="red">Gallery ID:'.$row["idGallery"].'</font></p>
-                </a>';     
+                </a>';   
+              </center>
               }
             
           echo '</div>';
