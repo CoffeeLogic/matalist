@@ -18,7 +18,7 @@
 <body>
 
 <!-------------MAIN GALLERY------------>
-<main class="app--core">
+<class="app--core">
   <h2 class="app--logo">Product - CSUN</h2>
   <header class="app--hdr">
     <div class="hdr__inr">
@@ -81,7 +81,7 @@
         </div>
       </section>
     
-</main><!--MAIN-->
+<!--MAIN-->
 
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
