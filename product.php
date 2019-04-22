@@ -88,10 +88,10 @@
               $result = mysqli_stmt_get_result($stmt);
               
                 echo '<a href="product.php">
-                  <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
-                  <h3>'.$row["titleGallery"].'</h3>
-                  <p>'.$row["descGallery"].'</p>
-                  <p> ' .$r
+                  <div style="background-image: url(img/["imgFullNameGallery"].');"></div>
+                  <h3>'["titleGallery"].'</h3>
+                  <p>'["descGallery"].'</p>
+                  
                 </a>';
               }
             
