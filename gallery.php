@@ -219,7 +219,7 @@
             }
           echo '</div>';
           ////////////////////////////////
-          }//if
+          //}//if
         else//ELSE DON'T SEE GALLERY**************
           {
             echo "Please log in to view gallery.";
