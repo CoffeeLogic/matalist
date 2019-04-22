@@ -17,12 +17,9 @@
 </head>
 <body>
 
-    <!----------------------Tag checkboxes------------------->
-    
-    <!----------------------Tag checkboxes------------------->
 <!-------------MAIN GALLERY------------>
 
-  <h2 class="app--logo">Gallery - CSUN</h2>
+  <h2 class="app--logo">Product - CSUN</h2>
   <header class="app--hdr">
     <div class="hdr__inr">
       <section class="buttons">
@@ -32,13 +29,6 @@
           <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
         </div>
       </section>
-      
-      <div class="hdr__acts">
-        <button class="btn__rd btn--fav-cnt" onclick="window.location.href='includes/logout.php'">
-          <i class="btn__seg ion-android-favorite"></i>
-        </button>
-       <button class="btn__rd btn--usr-avtr" onclick="window.location.href='submit.php'"></button>
-      </div>
     </div>
   </header>
        <section class="gallery-links">
