@@ -58,8 +58,9 @@
               $result = mysqli_stmt_get_result($stmt);
               $row = mysqli_fetch_assoc($result);
               
-             <div align="center"> 
+             
               echo '<a href="#" style="text-decoration:none;">
+                 <div align="center"> 
                   <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
@@ -67,8 +68,9 @@
                   <br>
                   <p><font size="4" face="arial" color="blue">Contact:'.$row["users_email"].'</font></p>
                   <p><font size="4" face="arial" color="red">Gallery ID:'.$row["idGallery"].'</font></p>
+                 </div>
                 </a>';   
-              </div>
+              
               }
             
           echo '</div>';
