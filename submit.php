@@ -37,7 +37,7 @@ $_SESSION['username'] = "Admin";
                   
                   <input type="text" name="filetitle" placeholder="Post title (limit to 35 char)">
                   <input type="text" name="filedesc" placeholder="description (limit to 200 char)">
-		  <input type="text" name="fileuseremail" placeholder="email">
+		  <input type="text" name="filename" placeholder="pointless">
                   <input type="file" name="file">
                   <br>
                   <button type="submit" name="submit" class="headerbtn headerbtn-1">UPLOAD</button>
