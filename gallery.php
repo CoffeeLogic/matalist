@@ -176,7 +176,7 @@
 
 
             if(!empty($_GET['check_list'])) {
-              $i=0;
+              $i="0";
               foreach($_GET['check_list'] as $check){
                 if ($i != "0"){
                   $list.=", ";
