@@ -1027,9 +1027,9 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
 
 .gallery-links h2 {
   font-family: Catamaran;
-  font-size: 28px;
+  font-size: 34px;
   color: #111;
-  text-align: center;
+  text-align: left;
   padding-top: 15px;
 }
 
