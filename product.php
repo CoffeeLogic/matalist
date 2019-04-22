@@ -90,7 +90,7 @@
                 echo '<a href="product.php">
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
                   <h3>'.$row["titleGallery"].'</h3>
-                  <p>'.$row["descGallery"].'</p>
+                  <p>gello</p>
                   
                 </a>';
               }
