@@ -195,7 +195,7 @@
     //            //$sql = "SELECT * FROM gallery WHERE tag IN $list ORDER BY orderGallery DESC";  
       //      }else{
                 $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
-              }//else
+             // }//else
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -216,10 +216,10 @@
                   </a>';
                  //}//if
               }//while
-            }
+            }//else
           echo '</div>';
           ////////////////////////////////
-          //}//if
+          }//if
         else//ELSE DON'T SEE GALLERY**************
           {
             echo "Please log in to view gallery.";
