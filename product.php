@@ -56,18 +56,16 @@
               $result = mysqli_stmt_get_result($stmt);
               $row = mysqli_fetch_assoc($result);
               
-              echo '<a href="gallery.php">
-              <div class="gallery-container">'
-              <h1> '.$row["titleGallery"].'</h1>
-              <br>
+              echo '<a href="gallery.php">   
+                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 500px; width: 1000px; border: 1px solid black";</div>
+                   <h1> '.$row["titleGallery"].'</h1>
+                   <br>
               <p>'.$row["users_email"].'</p>
               <br>
               <p>'.$row["idGallery"].'</p>
               <br>
               <p>'.$row["descGallery"].'</p>
               <br>
-              <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 500px; width: 1000px; border: 1px solid black";</div>
-             </div>
               </a>';
             
                      
