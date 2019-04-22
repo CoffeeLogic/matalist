@@ -33,7 +33,7 @@
   </header>
        <section class="gallery-links">
         <div class="wrapper">
-          <h2>Product</h2>
+          
          
       
           
@@ -44,9 +44,9 @@
           {
             $itemselected = $_GET["item"];
             $uid = $_SESSION["uidUsers"];
-            echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+            echo "Logged in as '{$_SESSION['uid']}'";
             //////////////////////////////////////
-            echo '<div class="gallery-container">';
+            
             include_once 'includes/dbh.inc.php';
             $sql = "SELECT * FROM gallery WHERE idGallery = '$itemselected'";
             $stmt = mysqli_stmt_init($conn);
