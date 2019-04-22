@@ -161,7 +161,7 @@
 
 
             if(!empty($_GET['check_list'])) {
-                $sql = "SELECT * FROM gallery WHERE tag  IN $_GET['check_list'] ORDER BY orderGallery DESC;";  
+                $sql = "SELECT * FROM gallery WHERE tag  IN ( '".implode("', '", $_GET['check_list'])."' )") ORDER BY orderGallery DESC;";  
             }else{
                 $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
               }//else
