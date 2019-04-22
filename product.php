@@ -31,7 +31,8 @@
       </section>
     </div>
   </header>
-             
+        <section class="gallery-links">
+        <div class="wrapper">         
     <!--Logged in message & logout-->
     <div align="center">   
       <?php
