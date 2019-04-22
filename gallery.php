@@ -156,12 +156,20 @@
             echo '<div class="gallery-container">';
             include_once 'includes/dbh.inc.php';
 
+
+
+
+            
             if(!empty($_GET['check_list'])) {
               foreach($_GET['check_list'] as $check) {
                 $sql = "SELECT * FROM gallery WHERE tag==$check ORDER BY orderGallery DESC;";
-              }else{
+              }//foreach  
+            }else{
                 $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
-              }
+              }//else
+
+
+
 
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
