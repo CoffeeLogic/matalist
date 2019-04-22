@@ -59,10 +59,11 @@
 
                 echo '<a href="gallery.php">
                   
-                  <div style="background-image: url(img/'.$row["imgFullNameGallery"].');  align: center; height: 500px; width: 1000px; border: 2px solid black"></div>
-                  <h3>'.$row["titleGallery"].'</h3>
+                  <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 500px; width: 1000px; border: 2px solid black"></div>
+                  <h5>'.$row["titleGallery"].'</h5>
                   <p>'.$row["descGallery"].'</p>
-                  
+                  <p>'.$row["users_email"].'</p>
+                  <p>'.$row["idGallery"].'</p>
                 </a>';
 
               }
