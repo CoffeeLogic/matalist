@@ -56,9 +56,9 @@
               mysqli_stmt_execute($stmt);
               $result = mysqli_stmt_get_result($stmt);
               $row = mysqli_fetch_assoc($result);
-              <div align="left">
-              echo '<a href="gallery.php">
               
+              echo '<a href="gallery.php">
+              <div align="center">
               <h1>'.$row["titleGallery"].'</h1>
               <br>
               <p>'.$row["users_email"].'</p>
@@ -67,7 +67,7 @@
               <br>
               <p>'.$row["descGallery"].'</p>
               <br>
-              <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 500px; width: 1000px; border: 2px solid black";</div>
+              <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 500px; width: 1000px; border: 1px solid black";</div>
               </div>
               </a>';
             
