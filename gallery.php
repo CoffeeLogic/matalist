@@ -180,7 +180,7 @@
               foreach($_GET['check_list'] as $check){
                 if ($i != "0"){
                   $list.=", ";
-                  $list.=$check
+                  $list.=$check;
                 }else{
                   $list.=$check;
                   $i="1";
