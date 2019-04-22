@@ -159,11 +159,9 @@
 
 
 
-            
+
             if(!empty($_GET['check_list'])) {
-              foreach($_GET['check_list'] as $check) {
-                $sql = "SELECT * FROM gallery WHERE tag==$check ORDER BY orderGallery DESC;";
-              }//foreach  
+                $sql = "SELECT * FROM gallery WHERE tag  IN $_GET['check_list'] ORDER BY orderGallery DESC;";  
             }else{
                 $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
               }//else
