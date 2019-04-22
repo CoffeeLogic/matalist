@@ -60,7 +60,7 @@
               
               
               echo '<a href="#" style="text-decoration:none; align: middle;">
-                  <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>
+                  <div class="centerImage" style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
                   <p><font size="4" face="arial" color="black">'.$row["descGallery"].'</font></p>
