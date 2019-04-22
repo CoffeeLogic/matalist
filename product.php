@@ -59,7 +59,7 @@
               $row = mysqli_fetch_assoc($result);
               
               
-              echo '<a href="#" style="text-decoration:none; align: center;">
+              echo '<a href="#" style="text-decoration:none; align: middle;">
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
