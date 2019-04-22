@@ -88,7 +88,12 @@
           <span class="menu__fltr__lbl">Food</span>
           <span class="menu__fltr__cntr cntr-clr--4">0</span>
         </li>
-        <input type="submit" value="Submit">
+        <li>
+          <input type="submit" value="Submit">
+        </li>
+        <li>
+          <button href="gallery.php">
+        </li>
       </ul>
       
 
