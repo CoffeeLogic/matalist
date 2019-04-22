@@ -27,7 +27,7 @@
           <a href="includes/logout.php" class="headerbtn headerbtn-1">Logout</a>
           <a href="submit.php" class="headerbtn headerbtn-1">Post</a>
           <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
-          <a href="gallery.html" class="headerbtn headerbtn-1">Return to Gallery</a>
+          <a href="gallery.php" class="headerbtn headerbtn-1">Return to Gallery</a>
           
         </div>
       </section>
