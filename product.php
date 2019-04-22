@@ -57,8 +57,8 @@
               $row = mysqli_fetch_assoc($result);
               
               echo '<a href="gallery.php">
-              <div align="left">
-              <h1 class> '.$row["titleGallery"].' ; align="left"</h1>
+              <div class align="left">
+              <h1> '.$row["titleGallery"].'</h1>
               <br>
               <p>'.$row["users_email"].'</p>
               <br>
