@@ -137,8 +137,9 @@
       
                     if(!empty($_GET['check_list'])) {
                         foreach($_GET['check_list'] as $check) {
-                                echo "$check <br>";
+                                echo "$check ";
                         }
+                        echo "<br>";
                     }
 
 
