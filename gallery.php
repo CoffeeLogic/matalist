@@ -69,22 +69,22 @@
       <ul class="ui-nav-menu-opts">
       <form action='gallery.php' method='GET'>
         <li class="menu__fltr fltr-type__row">
-          <input type="checkbox" name="tag" value="1" />
+          <input type="checkbox" name="check_list[]" value="1" />
           <span class="menu__fltr__lbl">Books</span>
           <span class="menu__fltr__cntr cntr-clr--1">0</span>
         </li>        
         <li class="menu__fltr fltr-type__row">
-          <input type="checkbox" name="tag" value="2" />
+          <input type="checkbox" name="check_list[]" value="2" />
           <span class="menu__fltr__lbl">Tutoring</span>
           <span class="menu__fltr__cntr cntr-clr--2">0</span>
         </li>
         <li class="menu__fltr fltr-type__row">
-          <input type="checkbox" name="tag" value="3" />
+          <input type="checkbox" name="check_list[]" value="3" />
           <span class="menu__fltr__lbl">Dorm goods</span>
           <span class="menu__fltr__cntr cntr-clr--3">0</span>
         </li>
         <li class="menu__fltr fltr-type__row">
-          <input type="checkbox" name="tag" value="4" />
+          <input type="checkbox" name="check_list[]" value="4" />
           <span class="menu__fltr__lbl">Food</span>
           <span class="menu__fltr__cntr cntr-clr--4">0</span>
         </li>
@@ -130,7 +130,21 @@
     <!--Logged in message & logout-->
     <div align="center">   
       <?php
-      echo "variable sale = '{$_GET["tag"]}'<br>";
+      
+      
+
+
+      
+                    if(!empty($_POST['check_list'])) {
+                        foreach($_POST['check_list'] as $check) {
+                                echo $check;
+                        }
+                    }
+
+
+
+
+
         if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
           {
             $uid = $_SESSION["uidUsers"];
