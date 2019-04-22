@@ -58,7 +58,7 @@
               
               echo '<a href="gallery.php">
               <div align="left">
-              <h1 align="left">'.$row["titleGallery"].'</h1>
+              <h1 class> '.$row["titleGallery"].' ; align="left"</h1>
               <br>
               <p>'.$row["users_email"].'</p>
               <br>
