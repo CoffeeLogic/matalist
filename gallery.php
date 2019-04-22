@@ -67,30 +67,34 @@
       </button>
 
       <ul class="ui-nav-menu-opts">
+      <form action='gallery.php' method='post'>
         <li class="menu__fltr fltr-type__row">
-          <input type="checkbox" name="sale" value="cars & trucks" />
+          <input type="checkbox" name="sale" value="1" />
           <span class="menu__fltr__lbl">Books</span>
           <span class="menu__fltr__cntr cntr-clr--1">0</span>
         </li>        
         <li class="menu__fltr fltr-type__row">
-          <input type="checkbox" name="sale" value="auto parts" />
+          <input type="checkbox" name="sale" value="2" />
           <span class="menu__fltr__lbl">Tutoring</span>
           <span class="menu__fltr__cntr cntr-clr--2">0</span>
         </li>
         <li class="menu__fltr fltr-type__row">
-          <input type="checkbox" name="sale" value="wanted" />
+          <input type="checkbox" name="sale" value="3" />
           <span class="menu__fltr__lbl">Dorm goods</span>
           <span class="menu__fltr__cntr cntr-clr--3">0</span>
         </li>
         <li class="menu__fltr fltr-type__row">
-          <input type="checkbox" name="sale" value="wanted" />
+          <input type="checkbox" name="sale" value="4" />
           <span class="menu__fltr__lbl">Food</span>
           <span class="menu__fltr__cntr cntr-clr--4">0</span>
         </li>
+        <input type="submit" value="Submit">
       </ul>
+      
+
     </div>
     <!----------------------Tag checkboxes------------------->
-  </div>
+  </div><!--side nav filters div-->
 </nav>
 
 
