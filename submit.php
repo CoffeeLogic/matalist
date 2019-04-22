@@ -34,9 +34,10 @@ $_SESSION['username'] = "Admin";
               <section class="buttons">
               <div class="buttoncont">
                 <form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
-                  <input type="text" name="filename" placeholder="completely pointless">
+                  
                   <input type="text" name="filetitle" placeholder="Post title (limit to 35 char)">
                   <input type="text" name="filedesc" placeholder="description (limit to 200 char)">
+		  <input type="text" name="fileuseremail" placeholder="email">
                   <input type="file" name="file">
                   <br>
                   <button type="submit" name="submit" class="headerbtn headerbtn-1">UPLOAD</button>
