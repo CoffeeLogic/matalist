@@ -182,7 +182,7 @@
                   $list.=", ";
                   $list.=$check;
                 }else{
-                  $list.=$check;
+                  $list=$check;
                   $i="1";
                 }
               }//for
