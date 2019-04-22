@@ -103,15 +103,16 @@
 <br>
     <!--Logged in message & logout-->
     <div align="center">     
+ 
       <?php
         if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
           {
             $itemselected = $_GET["item"];
             $uid = $_SESSION["uidUsers"];
-            echo "Logged in as '{$_SESSION['uid']}'";
+            echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
             //////////////////////////////////////
-     </div>       
-            include_once 'includes/dbh.inc.php';       
+            echo '<div class="gallery-container">';
+            include_once 'includes/dbh.inc.php';   
             $sql = "SELECT * FROM gallery WHERE idGallery = '$itemselected'";
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
