@@ -67,7 +67,7 @@
       </button>
 
       <ul class="ui-nav-menu-opts">
-      <form action='gallery.php' method='post'>
+      <form action='gallery.php' method='GET'>
         <li class="menu__fltr fltr-type__row">
           <input type="checkbox" name="sale" value="1" />
           <span class="menu__fltr__lbl">Books</span>
