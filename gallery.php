@@ -166,7 +166,7 @@
               foreach($_GET['check_list'] as $check) {
                       $list.=$check;
               }
-              echo $check"<br>";
+              echo "$check <br>";
             }else{
 
           }
