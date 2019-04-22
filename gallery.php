@@ -130,7 +130,7 @@
     <!--Logged in message & logout-->
     <div align="center">   
       <?php
-      echo "variable sale = '{$_GET["item"]}'<br>";
+      echo "variable sale = '{$_GET["tag"]}'<br>";
         if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
           {
             $uid = $_SESSION["uidUsers"];
