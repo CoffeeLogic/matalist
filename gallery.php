@@ -162,6 +162,16 @@
             include_once 'includes/dbh.inc.php';
 
 
+            if(!empty($_GET['check_list'])) {
+              foreach($_GET['check_list'] as $check) {
+                      $list.=$check;
+              }
+              echo $check"<br>";
+            }else{
+
+          }
+
+
 
 
 
@@ -174,7 +184,7 @@
                 $list.=$check;
                 $i="1";
               }//for
-                $sql = "SELECT * FROM gallery WHERE tag IN $list ORDER BY orderGallery DESC";  
+                //$sql = "SELECT * FROM gallery WHERE tag IN $list ORDER BY orderGallery DESC";  
             }else{
                 $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
               }//else
