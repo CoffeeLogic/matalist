@@ -58,13 +58,11 @@
               $row = mysqli_fetch_assoc($result);
               echo '<a href="gallery.php">
               <h1>'.$row["titleGallery"].'</h1>   
+              <p>'.$row["descGallery"].'</p>
+              <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 500px; width: 1000px; border: 2px solid black";</div>
               
-              
-              <figure>
-                  <img src="background-image: url(img/'.$row["imgFullNameGallery"].')" style="width:100%">
-              </figure>
-              
-              
+            
+                  <div align="center">   
               
                   
                   
