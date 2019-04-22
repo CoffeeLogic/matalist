@@ -87,7 +87,7 @@
               mysqli_stmt_execute($stmt);
               $result = mysqli_stmt_get_result($stmt);
               
-                echo '<a href="product.php">
+                echo '
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
                   <h3>'.$row["titleGallery"].'</h3>
                   <p>gello</p>
