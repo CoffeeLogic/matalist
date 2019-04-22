@@ -167,6 +167,8 @@
                       $list.=$check;
               }
               echo "$check <br>";
+              $asdfasdf.=$check;
+              echo "$asdfasdf <br>";
             }else{
 
           }
@@ -202,7 +204,7 @@
               $result = mysqli_stmt_get_result($stmt);
 
                while ($row = mysqli_fetch_assoc($result)) {
-                 if in_array($row["tag"], $GET_['check_list']){
+                 if in_array($row["tag"], ($GET_['check_list'])){
                   echo '<a href="product.php?item='.$row["idGallery"].'">
                     <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
                     <h3>'.$row["titleGallery"].'</h3>
