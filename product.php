@@ -24,7 +24,7 @@
     <div class="hdr__inr">
       <section class="buttons">
         <div class="buttoncont">
-          <a href="logout.php" class="headerbtn headerbtn-1">Logout</a>
+          <a href="includes/logout.php" class="headerbtn headerbtn-1">Logout</a>
           <a href="submit.php" class="headerbtn headerbtn-1">Post</a>
           <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
           <a href="gallery.html" class="headerbtn headerbtn-1">Return to Gallery</a>
@@ -61,11 +61,11 @@
               
               echo '<a href="#" style="text-decoration:none;">
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>
-                  <p><font size="9" face="arial" color="red">'.$row["titleGallery"].'</font><p>
-                  <p>'.$row["descGallery"].'</p>
+                  <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
-                  <p>'.$row["users_email"].'</p>
+                  <p><font size="4" face="arial" color="black">'.$row["descGallery"].'</font></p>
                   <br>
+                  <p><font size="4" face="arial" color="blue">Contact:'.$row["users_email"].'</font></p>
                   <p>'.$row["idGallery"].'</p>
                 </a>';     
               }
