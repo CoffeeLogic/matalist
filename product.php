@@ -31,10 +31,7 @@
       </section>
     </div>
   </header>
-      
-         
-      
-          
+             
     <!--Logged in message & logout-->
     <div align="center">   
       <?php
@@ -44,8 +41,8 @@
             $uid = $_SESSION["uidUsers"];
             echo "Logged in as '{$_SESSION['uid']}'";
             //////////////////////////////////////
+     </div>       
             
-            include_once 'includes/dbh.inc.php';
             $sql = "SELECT * FROM gallery WHERE idGallery = '$itemselected'";
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
