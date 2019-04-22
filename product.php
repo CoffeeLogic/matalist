@@ -31,9 +31,7 @@
       </section>
     </div>
   </header>
-       <section class="gallery-links">
-        <div class="wrapper">
-          
+      
          
       
           
