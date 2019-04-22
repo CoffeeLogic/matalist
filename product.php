@@ -59,7 +59,7 @@
               
               echo '<a href="#" style="text-decoration:none;">
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>
-                  <p><font size="5" face="arial" color="red">'.$row["titleGallery"].'<p>
+                  <p><font size="9" face="arial" color="red">'.$row["titleGallery"].'</font><p>
                   <p>'.$row["descGallery"].'</p>
                   <br>
                   <p>'.$row["users_email"].'</p>
