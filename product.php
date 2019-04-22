@@ -45,7 +45,7 @@
             $uid = $_SESSION["uidUsers"];
             echo "Logged in as '{$_SESSION['uid']}'";
             //////////////////////////////////////
-            echo '<div class="gallery-container">';
+            
             include_once 'includes/dbh.inc.php';   
             $sql = "SELECT * FROM gallery WHERE idGallery = '$itemselected'";
             $stmt = mysqli_stmt_init($conn);
