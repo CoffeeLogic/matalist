@@ -163,13 +163,12 @@
             if(!empty($_GET['check_list'])) {
               $i=0;
               foreach($_GET['check_list'] as $check){
-                if (i != 0){
+                if (i != "0"){
                   $list.=", ";
-                }
+                }//if
                 $list.=$check;
-                
-                $i++;
-              }
+                $i="1";
+              }//for
                 $sql = "SELECT * FROM gallery WHERE tag IN $list ORDER BY orderGallery DESC";  
             }else{
                 $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
