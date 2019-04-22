@@ -135,8 +135,8 @@
 
 
       
-                    if(!empty($_POST['check_list'])) {
-                        foreach($_POST['check_list'] as $check) {
+                    if(!empty($_GET['check_list'])) {
+                        foreach($_GET['check_list'] as $check) {
                                 echo $check;
                         }
                     }
