@@ -167,6 +167,7 @@
                       $list.=$check;
               }
               echo "$check <br>";
+              $asdfasdf = "1";
               $asdfasdf.=$check;
               echo "$asdfasdf <br>";
             }else{
