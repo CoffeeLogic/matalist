@@ -89,7 +89,7 @@
               $row = mysqli_fetch_assoc($result);
 
                 echo '<a href="gallery.php">
-                  <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 200px; width: 400px; border: 1px solid black"></div>
+                  <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 600px; width: 1200px; border: 1px solid black"></div>
                   <h3>'.$row["titleGallery"].'</h3>
                   <p>'.$row["descGallery"].'</p>
                 </a>';
