@@ -2,13 +2,7 @@
   session_start();
 
 if (isset($_POST['submit'])) {
-
-  $newFileName = $_POST['filename'];
-  if (empty($newFileName)) {
-    $newFileName = "gallery";
-  } else {
-    $newFileName = strtolower(str_replace(" ", "-", $newFileName));
-  }
+  $newFileName = "gallery";
   $imageTitle = $_POST['filetitle'];
   $imageDesc = $_POST['filedesc'];
   $file = $_FILES['file'];
