@@ -58,6 +58,7 @@
               
               echo '<a href="gallery.php">   
                    <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 500px; width: 1000px; border: 1px solid black";</div>
+                   <br>
                    <h1> '.$row["titleGallery"].'</h1>
                    <br>
               <p>'.$row["users_email"].'</p>
