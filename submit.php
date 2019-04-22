@@ -37,11 +37,13 @@ $_SESSION['username'] = "Admin";
                   
                   <input type="text" name="filetitle" maxlength="35" placeholder="Post title">
                   <input type="text" name="filedesc" maxlength="200" placeholder="description">
-                  <input type="radio" name="tag" value="1"> Books<br>
-                  <input type="radio" name="tag" value="2"> Tutoring<br>
-                  <input type="radio" name="tag" value="3"> Dorm Goods<br> 
-                  <input type="radio" name="tag" value="4"> Food<br>
-                  <input type="radio" name="tag" value="0"> Other<br>
+                  <br>
+                  <input type="radio" name="tag" value="1"> Books
+                  <input type="radio" name="tag" value="2"> Tutoring
+                  <input type="radio" name="tag" value="3"> Dorm Goods
+                  <input type="radio" name="tag" value="4"> Food
+                  <input type="radio" name="tag" value="0"> Other
+                  <br>
                   <input type="file" name="file">
                   <br>
                   <button type="submit" name="submit" class="headerbtn headerbtn-1">UPLOAD</button>
