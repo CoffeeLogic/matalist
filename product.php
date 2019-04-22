@@ -33,7 +33,7 @@
   </header>
        <section class="gallery-links">
         <div class="wrapper">
-          <h2>Gallery</h2>
+        
 <br>
     <!--Logged in message & logout-->
     <div align="center">     
@@ -43,7 +43,7 @@
           {
             $itemselected = $_GET["item"];
             $uid = $_SESSION["uidUsers"];
-            echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+            echo "Logged in as '{$_SESSION['uid']}'";
             //////////////////////////////////////
             echo '<div class="gallery-container">';
             include_once 'includes/dbh.inc.php';   
