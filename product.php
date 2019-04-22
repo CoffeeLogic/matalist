@@ -66,12 +66,7 @@
         <div class="wrapper">
           <h2>Product</h2>
          
-       <form action="relative/path/to/the/php/page">
-    Image filename:<br>
-    <input type="text" name="imageSelection"><br>
-
-    <input type="submit" value="Submit">
-</form>   
+      
           
     <!--Logged in message & logout-->
     <div align="center">   
@@ -91,7 +86,7 @@
               mysqli_stmt_execute($stmt);
               $result = mysqli_stmt_get_result($stmt);
                while ($row = mysqli_fetch_assoc($result)) {
-                echo '<a href="product.php?item="imgFullNameGallery"">
+                echo '<a href="product.php?item=.$["imgFullNameGallery"]">
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
                   <h3>'.$row["titleGallery"].'</h3>
                   <p>'.$row["descGallery"].'</p>
