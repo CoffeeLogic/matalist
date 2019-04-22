@@ -45,7 +45,7 @@
             $uid = $_SESSION["uidUsers"];
             echo "Logged in as '{$_SESSION['uid']}'";
             //////////////////////////////////////
-            
+            echo '<div class="gallery-container">';
             include_once 'includes/dbh.inc.php';   
             $sql = "SELECT * FROM gallery WHERE idGallery = '$itemselected'";
             $stmt = mysqli_stmt_init($conn);
@@ -57,7 +57,7 @@
               $row = mysqli_fetch_assoc($result);
               
               echo '<a href="gallery.php">
-              <div class float="left">
+              
               <h1> '.$row["titleGallery"].'</h1>
               <br>
               <p>'.$row["users_email"].'</p>
@@ -67,7 +67,7 @@
               <p>'.$row["descGallery"].'</p>
               <br>
               <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 500px; width: 1000px; border: 1px solid black";</div>
-              </div>
+             
               </a>';
             
                      
