@@ -89,7 +89,7 @@
               
                 echo '<a href="product.php">
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
-                  <h3>(img/'.$itemselected["titleGallery"].')</h3>
+                  <h3>img/'.$itemselected["titleGallery"].'</h3>
                   <p>gello</p>
                   
                 </a>';
