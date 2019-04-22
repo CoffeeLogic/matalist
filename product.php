@@ -57,7 +57,7 @@
               $result = mysqli_stmt_get_result($stmt);
               $row = mysqli_fetch_assoc($result);
               echo '<a href="gallery.php">
-              <div align="center">
+              <div align="right">
               <h1>'.$row["titleGallery"].'</h1>
               <br>
               <p>'.$row["users_email"].'</p>
