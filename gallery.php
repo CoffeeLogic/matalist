@@ -161,21 +161,21 @@
             echo '<div class="gallery-container">';
             include_once 'includes/dbh.inc.php';
 
-            $asdfasdf = "1";
-            echo "$asdfasdf <br>";
+            //$asdfasdf = "1";
+           // echo "$asdfasdf <br>";
 
 
-            if(!empty($_GET['check_list'])) {
-              foreach($_GET['check_list'] as $check) {
-                      $list.=$check;
-              }
-              echo "$check <br>";
-              
-              $asdfasdf.=$check;
-              echo "$asdfasdf <br>";
-            }else{
-
-          }
+//            if(!empty($_GET['check_list'])) {
+  //            foreach($_GET['check_list'] as $check) {
+    //                  $list.=$check;
+      //        }
+        //      echo "$check <br>";
+          //    
+            //  $asdfasdf.=$check;
+              //echo "$asdfasdf <br>";
+//            }else{
+//
+  //       }
 
 
 
