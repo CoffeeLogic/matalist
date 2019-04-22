@@ -140,6 +140,8 @@
                                 echo "$check ";
                         }
                         echo "<br>";
+                    }else{
+
                     }
 
 
@@ -153,7 +155,14 @@
             //////////////////////////////////////
             echo '<div class="gallery-container">';
             include_once 'includes/dbh.inc.php';
-            $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
+
+            if(!empty($_GET['check_list'])) {
+              foreach($_GET['check_list'] as $check) {
+                $sql = "SELECT * FROM gallery WHERE tag==$check ORDER BY orderGallery DESC;";
+              }else{
+                $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
+              }
+
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
               echo "SQL statement failed!";
