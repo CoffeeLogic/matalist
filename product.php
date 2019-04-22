@@ -61,7 +61,7 @@
                   
                   <div style="background-image: url(img/'.$row["imgFullNameGallery"].'); height: 500px; width: 1000px; border: 2px solid black">
                   </div>
-                  <p class="lead">
+                  <div align="center"> 
                   <h1>'.$row["titleGallery"].'</h1>
                   </p>
                   <p>'.$row["descGallery"].'</p>
