@@ -66,7 +66,7 @@
                   <p><font size="4" face="arial" color="black">'.$row["descGallery"].'</font></p>
                   <br>
                   <p><font size="4" face="arial" color="blue">Contact:'.$row["users_email"].'</font></p>
-                  <p>'.$row["idGallery"].'</p>
+                  <p><font size="4" face="arial" color="red">Gallery ID:'.$row["idGallery"].'</font></p>
                 </a>';     
               }
             
