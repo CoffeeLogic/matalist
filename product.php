@@ -64,6 +64,7 @@
                   <p>'.$row["descGallery"].'</p>
                   <p>'.$row["users_email"].'</p>
                   <p>'.$row["idGallery"].'</p>
+                  </div>
                 </a>';
 
               }
