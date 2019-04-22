@@ -175,19 +175,19 @@
 
 
 ///////////////////////////////////////////////////////////////////////////////////////////////////
-            if(!empty($_GET['check_list'])) {
-              $i = "0";
-              foreach($_GET['check_list'] as $check){
-                if ($i != "0"){
-                  $list.=", ";
-                  $list.=$check;
-                }else{
-                  $list=$check;
-                  $i = "1";
-                }
-              }//for
-                //$sql = "SELECT * FROM gallery WHERE tag IN $list ORDER BY orderGallery DESC";  
-            }else{
+//            if(!empty($_GET['check_list'])) {
+  //            $i = "0";
+    //          foreach($_GET['check_list'] as $check){
+      //          if ($i != "0"){
+        //          $list.=", ";
+          //        $list.=$check;
+            //    }else{
+              //    $list=$check;
+                //  $i = "1";
+//                }
+  //            }//for
+    //            //$sql = "SELECT * FROM gallery WHERE tag IN $list ORDER BY orderGallery DESC";  
+      //      }else{
                 $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
               }//else
 
@@ -202,12 +202,14 @@
               $result = mysqli_stmt_get_result($stmt);
 
                while ($row = mysqli_fetch_assoc($result)) {
-                echo '<a href="product.php?item='.$row["idGallery"].'">
-                  <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
-                  <h3>'.$row["titleGallery"].'</h3>
-                  
-                </a>';
-              }
+                 if in_array($row["tag"], $GET_['check_list']){
+                  echo '<a href="product.php?item='.$row["idGallery"].'">
+                    <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
+                    <h3>'.$row["titleGallery"].'</h3>
+                    
+                  </a>';
+                 }//if
+              }//while
             }
           echo '</div>';
           ////////////////////////////////
