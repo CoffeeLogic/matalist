@@ -1042,7 +1042,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   padding-bottom: 20px;
   padding-left: 100px;
   padding-right: 100px;
-  text-align: center;
+  text-align: left;
 }
 
 .gallery-container a {
