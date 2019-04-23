@@ -170,7 +170,6 @@ $whateverthingy = ", ";
                         $tag_list .= "'";
                       }
               }//loop
-              echo "$tag_list <br>";
             $sql = "SELECT * FROM gallery WHERE tag IN ($tag_list) ORDER BY orderGallery DESC;";
           }else{
             $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
