@@ -192,6 +192,7 @@ $whateverthingy = ", ";
                   echo '<a href="product.php?item='.$row["idGallery"].'">
                     <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
                     <h3>'.$row["titleGallery"].'</h3>
+                    <h4>'.$row["tag"].'</h4>
                     
                   </a>';
                  //}//if
