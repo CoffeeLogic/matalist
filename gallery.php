@@ -160,7 +160,33 @@
             //////////////////////////////////////
             echo '<div class="gallery-container">';
             include_once 'includes/dbh.inc.php';
+            $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
+            $stmt = mysqli_stmt_init($conn);
+            if (!mysqli_stmt_prepare($stmt, $sql)) {
+              echo "SQL statement failed!";
+            } else {
+              mysqli_stmt_execute($stmt);
+              $result = mysqli_stmt_get_result($stmt);
 
+               while ($row = mysqli_fetch_assoc($result)) {
+                 //if in_array($row["tag"], ($GET_['check_list'])){
+                  echo '<a href="product.php?item='.$row["idGallery"].'">
+                    <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
+                    <h3>'.$row["titleGallery"].'</h3>
+                    
+                  </a>';
+                 //}//if
+              }//while
+            }//else
+          echo '</div>';
+          ////////////////////////////////
+          }//if
+        else//ELSE DON'T SEE GALLERY**************
+          {
+            echo "Please log in to view gallery.";
+          }//else
+        
+                    
             //$asdfasdf = "1";
            // echo "$asdfasdf <br>";
 
@@ -194,36 +220,10 @@
   //            }//for
     //            //$sql = "SELECT * FROM gallery WHERE tag IN $list ORDER BY orderGallery DESC";  
       //      }else{
-                $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
+                
              // }//else
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-            $stmt = mysqli_stmt_init($conn);
-            if (!mysqli_stmt_prepare($stmt, $sql)) {
-              echo "SQL statement failed!";
-            } else {
-              mysqli_stmt_execute($stmt);
-              $result = mysqli_stmt_get_result($stmt);
-
-               while ($row = mysqli_fetch_assoc($result)) {
-                 //if in_array($row["tag"], ($GET_['check_list'])){
-                  echo '<a href="product.php?item='.$row["idGallery"].'">
-                    <div style="background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
-                    <h3>'.$row["titleGallery"].'</h3>
-                    
-                  </a>';
-                 //}//if
-              }//while
-            }//else
-          echo '</div>';
-          ////////////////////////////////
-          }//if
-        else//ELSE DON'T SEE GALLERY**************
-          {
-            echo "Please log in to view gallery.";
-          }//else
         ?>
      
       </div>
