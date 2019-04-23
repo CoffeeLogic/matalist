@@ -141,23 +141,10 @@ $tag_list = "";
 $whateverthingy = ", ";
 
       
-                    if(!empty($_GET['check_list'])) {
-                        foreach($_GET['check_list'] as $check) {
-                                echo "$check ";
-                                if($tag_list == ""){
-                                  $tag_list .= $check;
-                                }else{
-                                  $tag_list .= $whateverthingy;
-                                  $tag_list .= $check;
-                                }
-                        }
-                        echo "<br>";
-                    }else{
-
-                    }
 
 
-echo "$tag_list";
+
+
 
 
         if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
@@ -166,7 +153,30 @@ echo "$tag_list";
             echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
             echo '<div class="gallery-container">';
             include_once 'includes/dbh.inc.php';
+            //$sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
+
+
+
+            if(!empty($_GET['check_list'])) {
+              foreach($_GET['check_list'] as $check) {
+                      echo "$check ";
+                      if($tag_list == ""){
+                        $tag_list .= $check;
+                      }else{
+                        $tag_list .= $whateverthingy;
+                        $tag_list .= $check;
+                      }
+              }//loop
+            $sql = "SELECT * FROM gallery WHERE tag IN $tag_list ORDER BY orderGallery DESC;";
+          }else{
             $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
+          }//else
+
+
+
+
+
+
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
               echo "SQL statement failed!";
