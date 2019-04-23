@@ -137,12 +137,13 @@
       <?php
       
       
-
+$tag_list = "";
 
       
                     if(!empty($_GET['check_list'])) {
                         foreach($_GET['check_list'] as $check) {
                                 echo "$check ";
+                                $tag_list .= $check;
                         }
                         echo "<br>";
                     }else{
@@ -150,14 +151,13 @@
                     }
 
 
-
+echo "$tag_list";
 
 
         if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
           {
             $uid = $_SESSION["uidUsers"];
             echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
-            //////////////////////////////////////
             echo '<div class="gallery-container">';
             include_once 'includes/dbh.inc.php';
             $sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
@@ -179,51 +179,11 @@
               }//while
             }//else
           echo '</div>';
-          ////////////////////////////////
           }//if
         else//ELSE DON'T SEE GALLERY**************
           {
             echo "Please log in to view gallery.";
           }//else
-        
-                    
-            //$asdfasdf = "1";
-           // echo "$asdfasdf <br>";
-
-
-//            if(!empty($_GET['check_list'])) {
-  //            foreach($_GET['check_list'] as $check) {
-    //                  $list.=$check;
-      //        }
-        //      echo "$check <br>";
-          //    
-            //  $asdfasdf.=$check;
-              //echo "$asdfasdf <br>";
-//            }else{
-//
-  //       }
-
-
-
-
-///////////////////////////////////////////////////////////////////////////////////////////////////
-//            if(!empty($_GET['check_list'])) {
-  //            $i = "0";
-    //          foreach($_GET['check_list'] as $check){
-      //          if ($i != "0"){
-        //          $list.=", ";
-          //        $list.=$check;
-            //    }else{
-              //    $list=$check;
-                //  $i = "1";
-//                }
-  //            }//for
-    //            //$sql = "SELECT * FROM gallery WHERE tag IN $list ORDER BY orderGallery DESC";  
-      //      }else{
-                
-             // }//else
-
-/////////////////////////////////////////////////////////////////////////////////////////////////////
         ?>
      
       </div>
