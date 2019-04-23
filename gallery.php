@@ -159,12 +159,15 @@ $whateverthingy = ", ";
 
             if(!empty($_GET['check_list'])) {
               foreach($_GET['check_list'] as $check) {
-                      echo "$check ";
                       if($tag_list == ""){
+                        $tag_list .= "\"";
                         $tag_list .= $check;
+                        $tag_list .= "\"";
                       }else{
                         $tag_list .= $whateverthingy;
+                        $tag_list .= "\"";
                         $tag_list .= $check;
+                        $tag_list .= "\"";
                       }
               }//loop
             $sql = "SELECT * FROM gallery WHERE tag IN $tag_list ORDER BY orderGallery DESC;";
