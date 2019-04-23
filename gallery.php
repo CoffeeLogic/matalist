@@ -160,14 +160,14 @@ $whateverthingy = ", ";
             if(!empty($_GET['check_list'])) {
               foreach($_GET['check_list'] as $check) {
                       if($tag_list == ""){
-                        $tag_list .= "\"";
+                        $tag_list .= "\'";
                         $tag_list .= $check;
-                        $tag_list .= "\"";
+                        $tag_list .= "\'";
                       }else{
                         $tag_list .= $whateverthingy;
-                        $tag_list .= "\"";
+                        $tag_list .= "\'";
                         $tag_list .= $check;
-                        $tag_list .= "\"";
+                        $tag_list .= "\'";
                       }
               }//loop
               echo "$tag_list <br>";
