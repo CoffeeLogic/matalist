@@ -138,12 +138,18 @@
       
       
 $tag_list = "";
+$whateverthingy = ", ";
 
       
                     if(!empty($_GET['check_list'])) {
                         foreach($_GET['check_list'] as $check) {
                                 echo "$check ";
-                                $tag_list .= $check;
+                                if($tag_list == ""){
+                                  $tag_list .= $check;
+                                }else{
+                                  $tag_list .= $whateverthingy;
+                                  $tag_list .= $check;
+                                }
                         }
                         echo "<br>";
                     }else{
