@@ -113,6 +113,7 @@
             if (isset($_GET["error"])) {
             if ($_GET["error"] == "emptyfields") {
               echo '<p class="signuperror">Fill in all fields!</p>';
+             
             }
 
             }
@@ -120,7 +121,6 @@
           else if (isset($_GET["login"])) {
             if ($_GET["login"] == "success") {
               echo '<p class="signupsuccess">Login successful!</p>';
-              echo '<a href="gallery.php"></a>';
 
             }
             else {
@@ -161,7 +161,6 @@
           {
             $uid = $_SESSION["uidUsers"];
             echo "<br> Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
-            echo '<a href="gallery.php"></a>';
           }//if
         else
           {
