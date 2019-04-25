@@ -99,7 +99,7 @@ if (isset($_POST['signup-submit'])) {
           // This means the user is now registered! :)
           mysqli_stmt_execute($stmt);
           // Lastly we send the user back to the signup page with a success message!
-          header("Location: ../signup.php?signup=success");
+          header("Location: ../login.php?signup=success");
           exit();
 
         }
