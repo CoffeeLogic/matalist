@@ -89,10 +89,10 @@
           <span class="menu__fltr__cntr cntr-clr--4">0</span>
         </li> 
         <li>
-         <div class="buttoncont">
-           <input type="submit" class="headerbtn headerbtn-1">Submit</a>  
-           
-           <a href="gallery.php" class="headerbtn headerbtn-1">Reset</a>  
+         <div class="buttoncont">  
+          <input type="submit" value="Submit" class="headerbtn headerbtn-1">
+          <br> 
+          <a href="gallery.php" class="headerbtn headerbtn-1">Reset</a>  
           </div>
         </li>
         </li>
