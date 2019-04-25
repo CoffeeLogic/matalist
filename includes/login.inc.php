@@ -70,6 +70,8 @@ if (isset($_POST['login-submit'])) {
                     $_SESSION['email'] = $row['email'];
                     // Now the user is registered as logged in and we can now take them back to the front page! :)
                     header("Location: ../gallery.php?login=success");
+                    echo '<p class="signupsuccess">Login successful!</p>';
+
                     
                     exit();
                 }
