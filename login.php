@@ -161,6 +161,7 @@
           {
             $uid = $_SESSION["uidUsers"];
             echo "<br> Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+            echo '<a href="gallery.php"></a>';
           }//if
         else
           {
