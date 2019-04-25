@@ -93,6 +93,8 @@
         </li>
         <li>
          <div class="buttoncont">
+           <input type="submit" class="headerbtn headerbtn-1">Submit</a>  
+           <br>
            <a href="gallery.php" class="headerbtn headerbtn-1">Reset</a>  
           </div>
         </li>
