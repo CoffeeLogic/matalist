@@ -120,7 +120,7 @@
           else if (isset($_GET["login"])) {
             if ($_GET["login"] == "success") {
               echo '<p class="signupsuccess">Login successful!</p>';
-              echo <a href="gallery.php"></a>;
+              echo '<a href="gallery.php"></a>';
 
             }
             else {
