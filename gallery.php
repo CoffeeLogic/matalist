@@ -87,14 +87,11 @@
           <input type="checkbox" name="check_list[]" value="4" />
           <span class="menu__fltr__lbl">Food</span>
           <span class="menu__fltr__cntr cntr-clr--4">0</span>
-        </li>
-         <li>
-          <input type="submit" value="Submit">
-        </li>
+        </li> 
         <li>
          <div class="buttoncont">
            <input type="submit" class="headerbtn headerbtn-1">Submit</a>  
-           <br>
+           
            <a href="gallery.php" class="headerbtn headerbtn-1">Reset</a>  
           </div>
         </li>
