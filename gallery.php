@@ -88,12 +88,7 @@
           <span class="menu__fltr__lbl">Food</span>
           <span class="menu__fltr__cntr cntr-clr--4">0</span>
         </li>
-      /*  <li>
-          <input type="submit" value="Submit">
-        </li>
-        <li>
-          <button href="gallery.php">
-        </li> */
+     
       </ul>
       
 
@@ -115,14 +110,6 @@
           <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
         </div>
       </section>
-
-      
-      /*<div class="hdr__acts">
-        <button class="btn__rd btn--fav-cnt" onclick="window.location.href='includes/logout.php'">
-          <i class="btn__seg ion-android-favorite"></i>
-        </button>
-       <button class="btn__rd btn--usr-avtr" onclick="window.location.href='submit.php'"></button>
-      </div>*/
 
     </div>
   </header>
