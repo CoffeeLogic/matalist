@@ -128,7 +128,7 @@ $tag_list = "";
 $whateverthingy = ", ";
 
 
-              echo '<p class="signupsuccess">Login successful!<font size="10" face="arial" color="green"></font></p>';
+              echo '<p class="signupsuccess">Login successful!</p>';
             
             
         if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
