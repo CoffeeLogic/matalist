@@ -130,6 +130,9 @@ $whateverthingy = ", ";
       
 
 
+              echo '<p class="signupsuccess">Login successful!</p>';
+            
+            
 
 
 
