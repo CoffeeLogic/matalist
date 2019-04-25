@@ -92,8 +92,8 @@
          <li div class="buttoncont">  
           <input type="submit" value="Submit" class="headerbtn headerbtn-1">
         </li>
-          <li a href="gallery.php" class="headerbtn headerbtn-1">Reset</a>
-        </li>
+          <a href="gallery.php" class="headerbtn headerbtn-1">Reset</a>
+        
           </div>
         </li>
         
