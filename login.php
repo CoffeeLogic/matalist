@@ -121,10 +121,12 @@
           else if (isset($_GET["login"])) {
             if ($_GET["login"] == "success") {
               echo '<p class="signupsuccess">Login successful!</p>';
+              header("Location: ../gallery.php?login=success");
 
             }
             else {
               echo '<p class="signuperror">Invalid Username </p>';
+              
             }
 
           }
