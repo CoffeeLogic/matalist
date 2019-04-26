@@ -1029,7 +1029,7 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-family: Catamaran;
   font-size: 34px;
   color: #111;
-  text-align: left;
+  text-align: center;
   padding-top: 15px;
 }
 
