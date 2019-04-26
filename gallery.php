@@ -137,10 +137,10 @@
 $tag_list = "";
 $whateverthingy = ", ";
 
-
-              echo '<p class="signupsuccess">Login successful!</p>';
-            
-            
+#Login Success
+if ($_GET["login"] == "success") {
+  echo '<p class="signupsuccess">Login successful!</p>';
+}            
         if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
           {
             $uid = $_SESSION["uidUsers"];
