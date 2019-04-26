@@ -109,6 +109,16 @@
             <br>
             <h1>Login</h1>
             <?php
+
+else if (isset($_GET["signup"])) {
+  if ($_GET["signup"] == "success") {
+    echo '<p class="signupsuccess">Signup successful!</p>';
+  }
+  else{
+    echo '<p class="signuperror">Signup is not successful!</p>';
+  }
+}
+
             // Invalid field inputs
             if (isset($_GET["error"])) {
             if ($_GET["error"] == "emptyfields") {
