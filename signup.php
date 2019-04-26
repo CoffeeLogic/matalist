@@ -135,7 +135,7 @@
           <h1><br>Signup Now</h1>
           <?php
           // CAPTCHA STUFF
-          if (isset($_POST['signup'])) {
+          if (isset($_POST['submit'])) {
             $username = $_POST['username'];
             $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
             $responseKey = $_POST['g-recaptcha-response'];
