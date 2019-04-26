@@ -127,7 +127,7 @@
 
        <section class="gallery-links">
         <div class="wrapper">
-          <center><h2>Gallery</h2></center>
+          <h2>Gallery</h2>
           <br>
     <!--Logged in message & logout-->
     <div align="center">   
