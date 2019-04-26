@@ -136,7 +136,7 @@
           <?php
           // CAPTCHA STUFF
           if (isset($_GET['signup'])) {
-            $username = $_GET['username'];
+            $username = $_GET['uid'];
             $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
             $responseKey = $_GET['g-recaptcha-response'];
             $userIP = $_SERVER['REMOTE_ADDR'];
