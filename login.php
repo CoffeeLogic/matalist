@@ -110,11 +110,11 @@
             <h1>Login</h1>
             <?php
 
-else if (isset($_GET["signup"])) {
+#sign up successfull redirect
   if ($_GET["signup"] == "success") {
     echo '<p class="signupsuccess">Signup successful!</p>';
   }
-}
+
 
             // Invalid field inputs
             if (isset($_GET["error"])) {
