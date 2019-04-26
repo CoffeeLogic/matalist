@@ -151,7 +151,7 @@
          
 
           <?php
-           if (isset($_GET['submit'])) {
+           if (isset($_GET['signup'])) {
             $username = $_GET['username'];
             $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
             $responseKey = $_GET['g-recaptcha-response'];
