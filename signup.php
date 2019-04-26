@@ -149,22 +149,24 @@
         <section class="section-default">
           <h1><br>Signup Now</h1>
           <?php
-          // CATCHA - Darryll Test
-          if (isset($_POST['submit'])) {
-            $username = $_POST['username'];
-            $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
-            $responseKey = $_POST['g-recaptcha-response'];
-            $userIP = $_SERVER['REMOTE_ADDR'];
-    
-            $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
-            $response = file_get_contents($url);
-            $response = json_decode($response);
-            if ($response->success)
-                echo "Verification success. Your username is: $username";
-            else
-                echo "Verification failed!";
-        }
+ // CATCHA - Darryll Test
+ if (isset($_POST['submit'])) {
+  $username = $_POST['username'];
+  $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
+  $responseKey = $_POST['g-recaptcha-response'];
+  $userIP = $_SERVER['REMOTE_ADDR'];
 
+  $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
+  $response = file_get_contents($url);
+  $response = json_decode($response);
+  if ($response->success)
+      echo "Verification success. Your username is: $username";
+  else
+      echo "Verification failed!";
+}
+          ?>
+
+          <?php
           // Here we create an error message if the user made an error trying to sign up.
           if (isset($_GET["error"])) {
             if ($_GET["error"] == "emptyfields") {
@@ -218,13 +220,11 @@
             ?>
             <input type="password" name="pwd" placeholder="Password">
             <input type="password" name="pwd-repeat" placeholder="Repeat password">
-            <!-- Recaptcha -->
-            
-           
             <button type="submit" name="signup-submit">Signup</button>
             <br>
             <center><a href="login.php">Already a member? Log In</a></center>
             <br>
+            <!-- Recaptcha -->
             <center><div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div></center>
           </form>
            </section>
