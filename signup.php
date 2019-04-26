@@ -135,19 +135,21 @@
           <h1><br>Signup Now</h1>
           <?php
           // CAPTCHA STUFF
-          if (isset($_POST['signup'])) {
-            $username = $_POST['username'];
+          if (isset($_GET['signup'])) {
+            $username = $_GET['username'];
             $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
-            $responseKey = $_POST['g-recaptcha-response'];
+            $responseKey = $_GET['g-recaptcha-response'];
             $userIP = $_SERVER['REMOTE_ADDR'];
           
             $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
             $response = file_get_contents($url);
             $response = json_decode($response);
-            if ($response->success)
+            if ($response->success){
                 echo '<p class="signupsuccess">Verification success!</p>';
-            else
+            }
+            else{
                 echo '<p class="signuperror"> Verification failed!</p>';
+            }
           }
           ?>
           <?php
