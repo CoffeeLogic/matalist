@@ -143,6 +143,8 @@
           
             $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
             $response = file_get_contents($url);
+            each $response;
+            /*
             $response = json_decode($response);
             if ($_GET["response"] == "success"){
                 echo '<p class="signupsuccess">Verification success!</p>';
@@ -150,6 +152,7 @@
             else{
                 echo '<p class="signuperror"> Verification failed!</p>';
             }
+            */
           
           }
           ?>
