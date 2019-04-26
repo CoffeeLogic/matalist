@@ -2,7 +2,7 @@
   include 'header.php';
   $_SESSION['username'] = "Admin";
 
-// Check if form was submitted:
+/* // Check if form was submitted: (Garett's CAPTCHA )
     if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])) {
     
         // Build POST request:
@@ -20,7 +20,22 @@
         } else {
             // Not verified - show form error
         }
-    
+    */ 
+    if (isset($_POST['submit'])) {
+      $username = $_POST['username'];
+      $secretKey = "6LccCSMUAAAAAKkTzemiArEQkQ5hKcgKJG8NQO0-";
+      $responseKey = $_POST['g-recaptcha-response'];
+      $userIP = $_SERVER['REMOTE_ADDR'];
+
+      $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
+      $response = file_get_contents($url);
+      $response = json_decode($response);
+      if ($response->success)
+          echo "Verification success. Your name is: $username";
+      else
+          echo "Verification failed!";
+  }
+
     }?>
 
 <!DOCTYPE html>
@@ -29,6 +44,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Craigslist Dashboard</title>
+  <!-- CAPTCHA Script should be on Header -->
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
     <script>
@@ -133,6 +149,22 @@
         <section class="section-default">
           <h1><br>Signup Now</h1>
           <?php
+          // CATCHA - Darryll Test
+          if (isset($_POST['submit'])) {
+            $username = $_POST['username'];
+            $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
+            $responseKey = $_POST['g-recaptcha-response'];
+            $userIP = $_SERVER['REMOTE_ADDR'];
+    
+            $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
+            $response = file_get_contents($url);
+            $response = json_decode($response);
+            if ($response->success)
+                echo "Verification success. Your username is: $username";
+            else
+                echo "Verification failed!";
+        }
+
           // Here we create an error message if the user made an error trying to sign up.
           if (isset($_GET["error"])) {
             if ($_GET["error"] == "emptyfields") {
