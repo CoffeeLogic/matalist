@@ -21,22 +21,7 @@
             // Not verified - show form error
         }
     */ 
-    if (isset($_POST['submit'])) {
-      $username = $_POST['username'];
-      $secretKey = "6LccCSMUAAAAAKkTzemiArEQkQ5hKcgKJG8NQO0-";
-      $responseKey = $_POST['g-recaptcha-response'];
-      $userIP = $_SERVER['REMOTE_ADDR'];
-
-      $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
-      $response = file_get_contents($url);
-      $response = json_decode($response);
-      if ($response->success)
-          echo "Verification success. Your name is: $username";
-      else
-          echo "Verification failed!";
-  }
-
-    }?>
+?>
 
 <!DOCTYPE html>
 <html>
@@ -149,7 +134,6 @@
         <section class="section-default">
           <h1><br>Signup Now</h1>
          
-          
           <?php
           // Here we create an error message if the user made an error trying to sign up.
           if (isset($_GET["error"])) {
