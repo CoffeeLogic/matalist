@@ -29,7 +29,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Craigslist Dashboard</title>
-
+  <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
     <script>
         grecaptcha.ready(function () {
@@ -186,6 +186,8 @@
             ?>
             <input type="password" name="pwd" placeholder="Password">
             <input type="password" name="pwd-repeat" placeholder="Repeat password">
+            <!-- Recaptcha -->
+            <center><div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div></center>
             <button type="submit" name="signup-submit">Signup</button>
             <br>
             <center><a href="login.php">Already a member? Log In</a></center>
