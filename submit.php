@@ -39,6 +39,8 @@ $_SESSION['username'] = "Admin";
                     <textarea name="details" class="descriptionbox" placeholder="Details"></textarea>
                     <br>
 
+                  </div>
+
 
               <div class="tagbutton">
                 <label for="books">
@@ -57,6 +59,8 @@ $_SESSION['username'] = "Admin";
                   <input type="radio" name="tag" value="0" id="other"> Other
                 </label>
               </div>
+
+              <div class="gallery-upload">
 
               <section class="buttons">
                 <div class="buttoncont">
