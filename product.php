@@ -2,13 +2,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <style>
-img {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-</style>
+  
   <meta charset="UTF-8">
   <title>Craigslist Dashboard</title>
   
@@ -68,9 +62,15 @@ img {
               
               
               echo '<a href="#" style="text-decoration:none;">
+              
+              <!-- moved "vertical-align:middle" style from span to img -->
+
+              
+              
+              
                   
-                  <img src <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"</div>>
-                  
+                  <div style=" background-image:middle url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"</div>
+                  <span style="">
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
                   <p><font size="4" face="arial" color="black">'.$row["descGallery"].'</font></p>
@@ -80,7 +80,8 @@ img {
                   <br>
                   <p><font size="4" face="arial" color="blue">Contact:'.$row["users_email"].'</font></p>
                   <p><font size="4" face="arial" color="red">Gallery ID:'.$row["idGallery"].'</font></p>
-                 
+                  </span>
+                  </div>
                 </a>';   
               
               }
