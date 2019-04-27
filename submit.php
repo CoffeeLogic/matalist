@@ -37,6 +37,7 @@ $_SESSION['username'] = "Admin";
                   
                   <input type="text" name="filetitle" maxlength="35" placeholder="Post title">
                   <input type="text" name="filedesc" maxlength="200" placeholder="description">
+                  <input type="text" name="details" placeholder="details...">
                   <br>
                   <input type="radio" name="tag" value="1"> Books
                   <input type="radio" name="tag" value="2"> Tutoring
