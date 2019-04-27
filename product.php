@@ -61,10 +61,9 @@
               $row = mysqli_fetch_assoc($result);
                
                
-              echo '<a href="#" style="text-align:center;">
-                  
+              echo '<a href="#" style="text-decoration:none;">
+                  <div class="col-sm-6 col-md-6 col-xs-12 image-container">
                   <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>
-		  
                   <br>
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
@@ -74,8 +73,7 @@
                   <br>
                   <p><font size="4" face="arial" color="blue">Contact:'.$row["users_email"].'</font></p>
                   <p><font size="4" face="arial" color="red">Gallery ID:'.$row["idGallery"].'</font></p>
-                 
-                 
+                 </div>
                 </a>';   
               
               }
@@ -98,9 +96,9 @@
     
 <!--MAIN-->
 
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
-<script src='http://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js'></script>
 <script  src="js/index.js"></script>
 
 
