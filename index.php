@@ -58,6 +58,10 @@
           <span class="menu__fltr__lgnd lgnd-clr--1"></span>
           <span class="menu__fltr__lbl"><a href="gallery.php" title="Gallery">Gallery</span></a>
         </li>
+          <li class="menu__fltr fltr-type__row">
+          <span class="menu__fltr__lgnd lgnd-clr--1"></span>
+          <span class="menu__fltr__lbl"><a href="faq.html" title="Signup">FAQ</span></a>
+        </li>
       </ul>
     </div>
 
@@ -102,6 +106,7 @@
         <div class="buttoncont">
           <a href="login.php" class="headerbtn headerbtn-1">Login</a>
           <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
+          <a href="faq.html" class="headerbtn headerbtn-1">FAQ</a>
         </div>
       </section>
 
