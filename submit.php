@@ -31,8 +31,7 @@ $_SESSION['username'] = "Admin";
             
             if (isset($_SESSION['username'])) {
               echo '<div class="gallery-upload">
-              <section class="buttons">
-                <div class="buttoncont">
+
                   <form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
                     
                     <input type="text" name="filetitle" maxlength="35" placeholder="Post title">
@@ -40,8 +39,6 @@ $_SESSION['username'] = "Admin";
                     <textarea name="details" class="descriptionbox" placeholder="Details"></textarea>
                     <br>
 
-                </div>
-              </section>
 
               <div class="tagbutton">
                 <label for="books">
