@@ -37,7 +37,7 @@ $_SESSION['username'] = "Admin";
                     
                     <input type="text" name="filetitle" maxlength="35" placeholder="Post title">
                     <input type="text" name="filedesc" maxlength="200" placeholder="Description">
-                    <input type="textbox" name="details" class="descriptionbox" placeholder="Details">
+                    <textarea name="details" class="descriptionbox" placeholder="Details">
                     <br>
 
                 </div>
