@@ -67,11 +67,11 @@
 		  <div class="cf para">
 		  <p align="center">
                   <br>
-                  <p class=""><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
+                  <p class="center"><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
-                  <p class=""><font size="6" face="arial" color="black">'.$row["descGallery"].'</font><p>
+                  <p class="center"><font size="6" face="arial" color="black">'.$row["descGallery"].'</font><p>
                   <br>
-                  <p class=""><font size="6" face="arial" color="black">'.$row["details"].'</font><p>
+                  <p class="center"><font size="6" face="arial" color="black">'.$row["details"].'</font><p>
                   <br>
                   <p><font size="4" face="arial" color="blue">Contact:'.$row["users_email"].'</font></p>
                   <p><font size="4" face="arial" color="red">Gallery ID:'.$row["idGallery"].'</font></p>
