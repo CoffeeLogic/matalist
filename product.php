@@ -3,14 +3,12 @@
 <html>
 <head>
   <style>
-  .center-div {
-   width: 600px;
-   height: 600px;
-   position: relative;
-   margin-left: auto;
-   margin-right: auto;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
-  </style>
+</style>
   <meta charset="UTF-8">
   <title>Craigslist Dashboard</title>
   
@@ -24,6 +22,7 @@
   <link rel="stylesheet" href="css/buttoncss.css">
   
 </head>
+  
 <body>
 
 <!-------------MAIN GALLERY------------>
@@ -69,9 +68,9 @@
               
              
               echo '<a href="#" style="text-decoration:none;">
-                   <div align="center"> 
-                  <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>
-                  </div>
+                  
+                 <img src <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>>
+                  
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
                   <p><font size="4" face="arial" color="black">'.$row["descGallery"].'</font></p>
