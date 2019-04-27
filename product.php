@@ -65,7 +65,7 @@
               
              
 
-              
+              <div class="col-sm-6 col-md-6 col-xs-12 image-container">
               
   
                   <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"</div>
