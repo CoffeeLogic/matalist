@@ -109,33 +109,19 @@
           <a href="faq.html" class="headerbtn headerbtn-1">FAQ</a>
         </div>
       </section>
-    
-    <div class="row">
-            <div class="col-md-6">
-                <img class="img-responsive" src="capture (3).png" alt="">
-            </div>
 	    
 	    <div class="col-sm-6 col-md-6 col-xs-12 image-container">
 		<div>
-			<img src="img/gallery/darryll.jpg" alt="Daryll" class="img-fluid">
-			<p class="bio">Daryll</p><br>
-			<p class="bio">I'm Darryll, but you can call me tonight. </p><br>
+			<img src="img/gallery/capture (3).jpg" alt="Daryll" class="img-fluid">
+			<p class="bio">About MataList</p><br>
+			<p>MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login is required,   
+				we assure you that Matalist is safe and more reliable trading site for students. There will be other features like club and organization activities posting and viewing to 
+				make it easier to access what events and fundraisers are happening on campus to increase campus activity. Come and visit Matalist. SHOP, SELL, MEET NEW FRIENDS, HAVE FUN!!! 
+				</p>   <br>
 			
 		</div>
 	    </div>
-	    
-            <div class="col-md-6">
-                <h2>About MataList</h2>
-                <p>MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login is required,   
-				we assure you that Matalist is safe and more reliable trading site for students. There will be other features like club and organization activities posting and viewing to 
-				make it easier to access what events and fundraisers are happening on campus to increase campus activity. Come and visit Matalist. SHOP, SELL, MEET NEW FRIENDS, HAVE FUN!!! 
-				</p>         
-            </div>
-        </div>
 
-    <div class="para">
-      <p align="center">MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login with your CSUN email is required, we assure you that Matalist is safe and more reliable trading site for students. There will be other features like club and organization activities posting and viewing to make it easier to access what events and fundraisers are happening on campus to increase campus activity. This is our senior design project and we hope you enjoy this!</p>
-    </div>
     <div>
     <a href="gallery.php" class="matalist aboutbtn">Matalist Gallery</a>
   </div>
