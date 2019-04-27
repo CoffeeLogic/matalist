@@ -104,6 +104,6 @@ form textarea {
 .descriptionbox
 {
   height: 200px;
-  width: auto;
+  width: 100%;
   font-size: 14px;
 }
