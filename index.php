@@ -112,7 +112,7 @@
     
     <div class="row">
             <div class="col-md-6">
-                <img class="img-responsive" src="capture.png" alt="">
+                <img class="img-responsive" src="capture.png (3)" alt="">
             </div>
             <div class="col-md-6">
                 <h2>About MataList</h2>
