@@ -69,7 +69,7 @@ img {
               
               echo '<a href="#" style="text-decoration:none;">
                   
-                  <img src = url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"</div>>
+                  <img src <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"</div>>
                   
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
