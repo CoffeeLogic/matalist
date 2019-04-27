@@ -40,19 +40,19 @@ $_SESSION['username'] = "Admin";
                   <input type="text" name="details" class="descriptionbox" placeholder="details...">
                   <br>
                   <label for="books">
-                    <input type="radio" name="tag" class="tagbutton" value="1" id="books" /> Books
+                    <input type="radio" name="tag" class="tagbutton" value="1" id="books"> Books
                   </label>
                   <label for="tutoring">
-                   <input type="radio" name="tag" class="tagbutton" value="2" id="tutoring" /> Tutoring
+                   <input type="radio" name="tag" class="tagbutton" value="2" id="tutoring"> Tutoring
                   </label>
                   <label for="dorm">
-                    <input type="radio" name="tag" class="tagbutton" value="3" id="dorm" /> Dorm Goods
+                    <input type="radio" name="tag" class="tagbutton" value="3" id="dorm"> Dorm Goods
                   </label>
                   <label for="food">
-                    <input type="radio" name="tag" class="tagbutton" value="4" id="food" /> Food
+                    <input type="radio" name="tag" class="tagbutton" value="4" id="food"> Food
                   </label>
                   <label for="other">
-                    <input type="radio" name="tag" class="tagbutton" value="0" id="other" /> Other
+                    <input type="radio" name="tag" class="tagbutton" value="0" id="other"> Other
                   </label>
                   <input type="file" name="file">
                   <br>
