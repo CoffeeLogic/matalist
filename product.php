@@ -62,9 +62,10 @@
                
                
               echo '<a href="#" style="text-decoration:none;">
-                  <div class="cf para">
-		              <p align="center">
+                  
                   <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>
+		  <div class="cf para">
+		              <p align="center">
                   <br>
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
