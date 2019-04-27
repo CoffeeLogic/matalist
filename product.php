@@ -38,7 +38,7 @@
         
 <br>
     <!--Logged in message & logout-->
-    <div align="center">     
+       
  
       <?php
         if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
