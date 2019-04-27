@@ -36,11 +36,12 @@ $_SESSION['username'] = "Admin";
                   <form action="includes/gallery-upload.inc.php" method="post" enctype="multipart/form-data">
                     
                     <input type="text" name="filetitle" maxlength="35" placeholder="Post title">
-                    <input type="text" name="filedesc" maxlength="200" placeholder="description">
-                    <input type="textbox" name="details" class="descriptionbox" placeholder="details...">
-                    <br>
+                    <input type="text" name="filedesc" maxlength="200" placeholder="Description">
+                    
 
                 </div>
+                <input type="textbox" name="details" class="descriptionbox" placeholder="Details">
+                  <br>
               </section>
 
               <div class="tagbutton">
