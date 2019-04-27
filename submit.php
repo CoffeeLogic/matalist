@@ -11,7 +11,7 @@ $_SESSION['username'] = "Admin";
   <title>Post your item/service</title>
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-    <link rel="stylesheet" href="css/submitcss.css">
+    <link rel="stylesheet" media="all" href="css/submitcss.css">
 
     <link rel="stylesheet" href="css/buttoncss.css">
     <link rel="stylesheet" href="css/aboutus.css">
@@ -40,9 +40,13 @@ $_SESSION['username'] = "Admin";
                   <input type="text" name="details" placeholder="details...">
                   <br>
                   <input type="radio" name="tag" class="tagbutton" value="1"> Books
+                  <br>
                   <input type="radio" name="tag" class="tagbutton" value="2"> Tutoring
+                  <br>
                   <input type="radio" name="tag" class="tagbutton" value="3"> Dorm Goods
+                  <br>
                   <input type="radio" name="tag" class="tagbutton" value="4"> Food
+                  <br>
                   <input type="radio" name="tag" class="tagbutton" value="0"> Other
                   <br>
                   <input type="file" name="file">
