@@ -100,4 +100,6 @@ form textarea {
 .tagbutton
 {
   text-align: center;
+  margin: none;
+  padding: none;
 }
