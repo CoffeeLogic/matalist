@@ -97,7 +97,11 @@ form textarea {
 {
   margin-top: 10px;
 }
-.tagbutton
+#tagbutton
 {
   display: inline;
+}
+.descriptionbox
+{
+  height: 200px;
 }
