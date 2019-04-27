@@ -63,14 +63,14 @@
               
               echo '<a href="#" style="text-decoration:none;">
               
-              <!-- moved "vertical-align:middle" style from span to img -->
+             
 
               
               
               
-                  
-                  <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"</div>
                   <span style="">
+                  <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"</div>
+                  
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
                   <p><font size="4" face="arial" color="black">'.$row["descGallery"].'</font></p>
