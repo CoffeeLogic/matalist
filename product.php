@@ -66,10 +66,10 @@ img {
               $result = mysqli_stmt_get_result($stmt);
               $row = mysqli_fetch_assoc($result);
               
-             
+              
               echo '<a href="#" style="text-decoration:none;">
                   
-                 <img src <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>>
+                 <img  <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"</div>>
                   
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
