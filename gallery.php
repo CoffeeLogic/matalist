@@ -131,7 +131,7 @@
 
        <section class="gallery-links">
         <div class="wrapper">
-          <h2>Gallery</h2>
+          <h2 class="app--logo">Gallery</h2>
           <br>
     <!--Logged in message & logout-->
     <div align="center">   
