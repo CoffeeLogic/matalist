@@ -97,11 +97,13 @@ form textarea {
 {
   margin-top: 10px;
 }
-#tagbutton
+.tagbutton
 {
-  display: inline;
+  float: left;
 }
 .descriptionbox
 {
   height: 200px;
+  width: auto;
+  font-size: 14px;
 }
