@@ -60,12 +60,12 @@
               $result = mysqli_stmt_get_result($stmt);
               $row = mysqli_fetch_assoc($result);
               
-              
+             <div class="col-sm-6 col-md-6 col-xs-12 image-container">  
               echo '<a href="#" style="text-decoration:none;">
               
              
 
-              <div class="col-sm-6 col-md-6 col-xs-12 image-container">
+             
               
   
                   <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"</div>
