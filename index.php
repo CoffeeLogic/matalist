@@ -112,7 +112,7 @@
 	    
 	    <div class="col-sm-6 col-md-6 col-xs-12 image-container">
 		<div>
-			<img src="img/gallery/capture (3).jpg" alt="Daryll" class="img-fluid">
+			<img src="img/gallery/capture (3).png" alt="capture" class="img-fluid">
 			<p class="bio">About MataList</p><br>
 			<p>MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login is required,   
 				we assure you that Matalist is safe and more reliable trading site for students. There will be other features like club and organization activities posting and viewing to 
