@@ -131,7 +131,6 @@
 
        <section class="gallery-links">
         <div class="wrapper">
-          <h2 class="align">Gallery</h2>
           <br>
     <!--Logged in message & logout-->
     <div align="center">   
