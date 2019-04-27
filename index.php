@@ -114,6 +114,16 @@
             <div class="col-md-6">
                 <img class="img-responsive" src="capture (3).png" alt="">
             </div>
+	    
+	    <div class="col-sm-6 col-md-6 col-xs-12 image-container">
+		<div>
+			<img src="img/gallery/darryll.jpg" alt="Daryll" class="img-fluid">
+			<p class="bio">Daryll</p><br>
+			<p class="bio">I'm Darryll, but you can call me tonight. </p><br>
+			
+		</div>
+	    </div>
+	    
             <div class="col-md-6">
                 <h2>About MataList</h2>
                 <p>MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login is required,   
