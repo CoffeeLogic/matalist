@@ -104,5 +104,5 @@ form textarea {
 }
 .tagbutton
 {
-  display: inline;
+  justify-content: left;
 }
