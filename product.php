@@ -69,7 +69,7 @@
               
               
                   
-                  <div style=" background-image:middle url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"</div>
+                  <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"</div>
                   <span style="">
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
