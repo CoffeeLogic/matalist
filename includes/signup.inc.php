@@ -14,7 +14,7 @@ if (isset($_POST['signup-submit'])) {
 
 
     //sanitize email
-    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+    //$email = filter_var($email, FILTER_SANITIZE_EMAIL);
 
   // Then we perform a bit of error handling to make sure we catch any errors made by the user. Here you can add ANY error checks you might think of! I'm just checking for a few common errors in this tutorial so feel free to add more. If we do run into an error we need to stop the rest of the script from running, and take the user back to the signup page with an error message. As an additional feature we will also send all the data back to the signup page, to make sure all the fields aren't empty and the user won't need to type it all in again.
 
@@ -48,7 +48,7 @@ if (isset($_POST['signup-submit'])) {
     // We also need to include another error handler here that checks whether or the username is already taken. We HAVE to do this using prepared statements because it is safer!
 
     // First we create the statement that searches our database table to check for any identical usernames.
-    $sql = "SELECT uidUsers FROM users WHERE uidUsers=?;";
+    $sql = "SELECT email FROM users WHERE uidUsers=?;";
     // We create a prepared statement.
     $stmt = mysqli_stmt_init($conn);
     // Then we prepare our SQL statement AND check if there are any errors with it.
@@ -60,7 +60,7 @@ if (isset($_POST['signup-submit'])) {
     else {
       // Next we need to bind the type of parameters we expect to pass into the statement, and bind the data from the user.
       // In case you need to know, "s" means "string", "i" means "integer", "b" means "blob", "d" means "double".
-      mysqli_stmt_bind_param($stmt, "s", $username);
+      mysqli_stmt_bind_param($stmt, "s", $email);
       // Then we execute the prepared statement and send it to the database!
       mysqli_stmt_execute($stmt);
       // Then we store the result from the statement.
@@ -74,7 +74,7 @@ if (isset($_POST['signup-submit'])) {
         header("Location: ../signup.php?error=usertaken&mail=".$email);
         exit();
       }
-      else {
+      else{
         // If we got to this point, it means the user didn't make an error! :)
 
         // Next thing we do is to prepare the SQL statement that will insert the users info into the database. We HAVE to do this using prepared statements to make this process more secure. DON'T JUST SEND THE RAW DATA FROM THE USER DIRECTLY INTO THE DATABASE!
