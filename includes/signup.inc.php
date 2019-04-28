@@ -48,7 +48,7 @@ if (isset($_POST['signup-submit'])) {
     // We also need to include another error handler here that checks whether or the username is already taken. We HAVE to do this using prepared statements because it is safer!
 
     // First we create the statement that searches our database table to check for any identical usernames.
-    $sql = "SELECT email FROM users WHERE uidUsers=?;";
+    $sql = "SELECT email FROM users WHERE email=?;";
     // We create a prepared statement.
     $stmt = mysqli_stmt_init($conn);
     // Then we prepare our SQL statement AND check if there are any errors with it.
