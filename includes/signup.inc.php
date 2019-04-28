@@ -12,6 +12,10 @@ if (isset($_POST['signup-submit'])) {
   $password = $_POST['pwd'];
   $passwordRepeat = $_POST['pwd-repeat'];
 
+
+    //sanitize email
+    $email = filter_var($email, FILTER_SANITIZE_EMAIL);
+
   // Then we perform a bit of error handling to make sure we catch any errors made by the user. Here you can add ANY error checks you might think of! I'm just checking for a few common errors in this tutorial so feel free to add more. If we do run into an error we need to stop the rest of the script from running, and take the user back to the signup page with an error message. As an additional feature we will also send all the data back to the signup page, to make sure all the fields aren't empty and the user won't need to type it all in again.
 
   // We check for any empty inputs. (PS: This is where most people get errors because of typos! Check that your code is identical to mine. Including missing parenthesis!)
