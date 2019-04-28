@@ -150,9 +150,9 @@
 
             ?>
             <form class="form-signup" action="includes/login.inc.php" method="post">
-              <input type="email" name="mail" placeholder="Email">  
+              <!--<input type="email" name="mail" placeholder="Email">  -->
               <?php
-                // We check username.
+                // We check mail.
                 if (!empty($_GET["mail"])) {
                   echo '<input type="email" name="mail" placeholder="Email" value="'.$_GET["mail"].'">';
                   //echo '<input type="text" name="uid" placeholder="Username" value="'.$_GET["uid"].'">';
