@@ -177,8 +177,8 @@
             else if ($_GET["error"] == "passwordcheck") {
               echo '<p class="signuperror">Your passwords do not match!</p>';
             }
-            else if ($_GET["error"] == "usertaken") {
-              echo '<p class="signuperror">Username is already taken!</p>';
+            else if ($_GET["error"] == "emailTaken") {
+              echo '<p class="signuperror">Email is already taken!</p>';
             }
           }
           // Here we create a success message if the new user was created.

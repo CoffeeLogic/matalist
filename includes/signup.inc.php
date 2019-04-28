@@ -71,7 +71,7 @@ if (isset($_POST['signup-submit'])) {
       mysqli_stmt_close($stmt);
       // Here we check if the username exists.
       if ($resultCount > 0) {
-        header("Location: ../signup.php?error=usertaken&mail=".$email);
+        header("Location: ../signup.php?error=emailTaken");
         exit();
       }
       else{
