@@ -153,11 +153,13 @@
               <input type="email" name="mail" placeholder="Email">  
               <?php
                 // We check username.
-                if (!empty($_GET["uid"])) {
-                  echo '<input type="text" name="uid" placeholder="Username" value="'.$_GET["uid"].'">';
+                if (!empty($_GET["mail"])) {
+                  echo '<input type="email" name="mail" placeholder="Email" value="'.$_GET["mail"].'">';
+                  //echo '<input type="text" name="uid" placeholder="Username" value="'.$_GET["uid"].'">';
                 }
                 else {
-                  echo '<input type="text" name="uid" placeholder="Username">';
+                  echo '<input type="email" name="mail" placeholder="Email">';
+                  //echo '<input type="text" name="uid" placeholder="Username">';
                 }
               ?>
               <input type="password" name="pwd" placeholder="Password">

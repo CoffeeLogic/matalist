@@ -7,12 +7,12 @@ if (isset($_POST['login-submit'])) {
     // We grab all the data which we passed from the signup form so we can use it later.
     $mailuid = $_POST['mail'];
     $password = $_POST['pwd'];
-    $username = $_POST['uid'];
+    //$username = $_POST['uid'];
 
     // Then we perform a bit of error handling to make sure we catch any errors made by the user. Here you can add ANY error checks you might think of! I'm just checking for a few common errors in this tutorial so feel free to add more. If we do run into an error we need to stop the rest of the script from running, and take the user back to the login form with an error message.
 
     // We check for any empty inputs. (PS: This is where most people get errors because of typos! Check that your code is identical to mine. Including missing parenthesis!)
-    if (empty($username) || empty($password)) {
+    if (empty($mailuid) || empty($password)) {
         header("Location: ../login.php?error=emptyfields&mailuid=".$mailuid);
         exit();
     }
@@ -27,7 +27,7 @@ if (isset($_POST['login-submit'])) {
         // Next we need to get the password from the user in the database that has the same username as what the user typed in, and then we need to de-hash it and check if it matches the password the user typed into the login form.
 
         // We will connect to the database using prepared statements which work by us sending SQL to the database first, and then later we fill in the placeholders by sending the users data.
-        $sql = "SELECT * FROM users WHERE uidUsers=?;";
+        $sql = "SELECT * FROM users WHERE email=?;";
         // Here we initialize a new statement using the connection from the dbh.inc.php file.
         $stmt = mysqli_stmt_init($conn);
         // Then we prepare our SQL statement AND check if there are any errors with it.
@@ -39,7 +39,7 @@ if (isset($_POST['login-submit'])) {
         else {
             // If there is no error then we continue the script!                     
             // Next we need to bin the type of parameters we expect to pass into the statement, and bind the data from the user.
-            mysqli_stmt_bind_param($stmt, "s", $username);
+            mysqli_stmt_bind_param($stmt, "s", $mailuid);
             // Then we execute the prepared statement and send it to the database!
             mysqli_stmt_execute($stmt);
             // And we get the result from the statement.
