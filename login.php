@@ -136,7 +136,7 @@
 
             }
             else {
-              echo '<p class="signuperror">Invalid Email </p>';
+              echo '<p class="signuperror">Email not found</p>';
               
             }
 
