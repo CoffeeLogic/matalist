@@ -131,7 +131,7 @@
             echo "Not logged in";
           }//else
         ?>
-      </div>
+      
     <!--Logged in message & logout-->
 	  
 
@@ -145,7 +145,7 @@ we assure you that Matalist is safe and more reliable trading site for students.
 make it easier to access what events and fundraisers are happening on campus to increase campus activity. Come and visit Matalist. SHOP, SELL, MEET NEW FRIENDS, HAVE FUN!!! 
 </p><br>	    
 </div>
-
+	</div>
 
 
 
@@ -165,19 +165,19 @@ make it easier to access what events and fundraisers are happening on campus to 
     <div class="carousel-inner" role="listbox" >
 
       <div class="item active">
-        <src="img/gallery/csun.jpg" alt="csun" width="460" height="345">
+        <img src="img/gallery/csun.jpg" alt="csun" width="460" height="345">
       </div>
 
       <div class="item">
-        <src="img/gallery/capture (3).png" alt="matador" width="460" height="345">
+        <img src="img/gallery/capture (3).png" alt="matador" width="460" height="345">
       </div>
     
       <div class="item">
-        <src="img/gallery/jose.jpg" alt="Flower" width="460" height="345">
+        <img src="img/gallery/jose.jpg" alt="Flower" width="460" height="345">
       </div>
 
       <div class="item">
-        <src="img/gallery/garrett.jpg" alt="Flower" width="460" height="345">
+        <img src="img/gallery/garrett.jpg" alt="Flower" width="460" height="345">
       </div>
   
     </div>
