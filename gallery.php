@@ -122,6 +122,8 @@
           <a href="login.php" class="headerbtn headerbtn-1">Login</a>
           <a href="submit.php" class="headerbtn headerbtn-1">Post</a>
           <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
+          <a href="faq.html" class="headerbtn headerbtn-1">FAQ</a>
+
         </div>
       </section>
 
