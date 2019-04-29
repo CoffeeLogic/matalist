@@ -131,13 +131,13 @@
             echo "Not logged in";
           }//else
         ?>
-	</div>
+	
     <!--Logged in message & logout-->
 	  
 
 
 	
-	<div class="col-sm-6 col-md-6 col-xs-12 image-container">
+	
 		
 <br>			
 <p class="bio">MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login is required,   
