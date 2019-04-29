@@ -115,3 +115,33 @@ form textarea {
   width: 100%;
   border-bottom: 1px solid #ebebeb;
 }
+.app--core {
+  overflow-y: scroll;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 250px;
+  bottom: 0;
+  z-index: 10;
+  background-color: #fff;
+  border-left: 1px solid #d2dee2;
+  box-shadow: -2px 0 4px rgba(0, 0, 0, 0.04);
+  -moz-animation: introFadeIn 0.65s ease-out 0s 1 backwards;
+  -webkit-animation: introFadeIn 0.65s ease-out 0s 1 backwards;
+  animation: introFadeIn 0.65s ease-out 0s 1 backwards;
+}
+
+/*------------------------------------*\
+    $NAV
+\*------------------------------------*/
+.app--logo {
+  display: block;
+  padding: 18px 0;
+  font-family: "Roboto Slab", Times New Roman;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  color: #000;
+  border-bottom: 1px solid #e5e5e5;
+  text-decoration: none;
+}
