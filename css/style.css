@@ -1208,3 +1208,9 @@ h1 {
   font-family: arial;
   color: #111;
 }
+
+.item
+{
+  width: 50%;
+  height: 50%;
+}
