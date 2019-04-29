@@ -1208,13 +1208,3 @@ h1 {
   font-family: arial;
   color: #111;
 }
-.carousel-cont
-{
-  width: 50%;
-}
-.carousel-inner > .item > img,
-.carousel-inner > .item > a> img
-{
-  width: 50%;
-  margin: 0;
-}
