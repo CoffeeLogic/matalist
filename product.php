@@ -40,7 +40,7 @@
         
 <br>
     <!--Logged in message & logout-->
-       <div class="gallery-center">  
+       <div align="center">  
  
       <?php
         if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
@@ -49,7 +49,7 @@
             $uid = $_SESSION["uidUsers"];
             echo "Logged in as '{$_SESSION['uid']}'";
             //////////////////////////////////////
-            echo '<div class="gallery-container">';
+            echo '<div>';
             include_once 'includes/dbh.inc.php';   
             $sql = "SELECT * FROM gallery INNER JOIN users ON gallery.users_email = users.email WHERE idGallery = '$itemselected'";
             $stmt = mysqli_stmt_init($conn);
