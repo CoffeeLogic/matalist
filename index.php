@@ -117,6 +117,32 @@
           <a href="faq.html" class="headerbtn headerbtn-1">FAQ</a>
         </div>
       </section>
+	  	    <div class="col-sm-6 col-md-6 col-xs-12 image-container">
+		
+<br>			
+<p class="bio">MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login is required,   
+we assure you that Matalist is safe and more reliable trading site for students. There will be other features like club and organization activities posting and viewing to 
+make it easier to access what events and fundraisers are happening on campus to increase campus activity. Come and visit Matalist. SHOP, SELL, MEET NEW FRIENDS, HAVE FUN!!! 
+</p><br>
+	    </div>
+
+
+
+    <!--Logged in message & logout-->
+    <div align="center">   
+      <?php
+        if(isset($_SESSION["uid"]))
+          {
+            $uid = $_SESSION["uidUsers"];
+            echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+          }//if
+        else
+          {
+            echo "Not logged in";
+          }//else
+        ?>
+      </div>
+    <!--Logged in message & logout-->
 	  
       <div class="container">
   <br>
@@ -162,32 +188,7 @@
   </div>
 </div>
 	    
-	    <div class="col-sm-6 col-md-6 col-xs-12 image-container">
-		
-<br>			
-<p class="bio">MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login is required,   
-we assure you that Matalist is safe and more reliable trading site for students. There will be other features like club and organization activities posting and viewing to 
-make it easier to access what events and fundraisers are happening on campus to increase campus activity. Come and visit Matalist. SHOP, SELL, MEET NEW FRIENDS, HAVE FUN!!! 
-</p><br>
-	    </div>
 
-
-
-    <!--Logged in message & logout-->
-    <div align="center">   
-      <?php
-        if(isset($_SESSION["uid"]))
-          {
-            $uid = $_SESSION["uidUsers"];
-            echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
-          }//if
-        else
-          {
-            echo "Not logged in";
-          }//else
-        ?>
-      </div>
-    <!--Logged in message & logout-->
     
 </section>
 </main>
