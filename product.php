@@ -15,11 +15,6 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/buttoncss.css">
   
-  <style>
-img { 
-  width: 100%; 
-}
-</style>
   
 </head>
   
