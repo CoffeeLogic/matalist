@@ -16,17 +16,7 @@ $_SESSION['username'] = "Admin";
     <link rel="stylesheet" href="css/buttoncss.css">
     <link rel="stylesheet" href="css/aboutus.css">
 
-        <link rel="stylesheet" href="css/style.css">
-	
-	
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'>
-  <link rel='stylesheet' href='https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto:400,100,700,300'>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/buttoncss.css">
+
         
    <h2 class="app--logo">Post - CSUN</h2>
   <header class="app--hdr">
