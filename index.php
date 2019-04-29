@@ -122,17 +122,14 @@
     <!--Logged in message & logout-->
 	  
 
-
-	
-	
+ <div class="col-sm-6 col-md-6 col-xs-12 image-container">
 		
-<br>			
-<p class="bio">MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login is required,   
-we assure you that Matalist is safe and more reliable trading site for students. There will be other features like club and organization activities posting and viewing to 
-make it easier to access what events and fundraisers are happening on campus to increase campus activity. Come and visit Matalist. SHOP, SELL, MEET NEW FRIENDS, HAVE FUN!!! 
-</p><br>	    
-</div>
-	</div>
+			<img src="img/gallery/csun.jpg" alt="capture" class="img-fluid">
+			<p class="bio">MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login is required,   
+				we assure you that Matalist is safe and more reliable trading site for students. There will be other features like club and organization activities posting and viewing to 
+				make it easier to access what events and fundraisers are happening on campus to increase campus activity. Come and visit Matalist. SHOP, SELL, MEET NEW FRIENDS, HAVE FUN!!! 
+				</p>   <br>
+	    </div>
 
 
 
