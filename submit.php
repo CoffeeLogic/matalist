@@ -15,7 +15,20 @@ $_SESSION['username'] = "Admin";
 
     <link rel="stylesheet" href="css/buttoncss.css">
     <link rel="stylesheet" href="css/aboutus.css">
-  
+   <h2 class="app--logo">Post - CSUN</h2>
+  <header class="app--hdr">
+    <div class="hdr__inr">
+      <section class="buttons">
+        <div class="buttoncont">
+          <a href="index.php" class="headerbtn headerbtn-1">Back to Matalist</a>
+          <a href="aboutus.html" class="headerbtn headerbtn-1">About Us</a>
+          <a href="faq.html" class="headerbtn headerbtn-1">FAQ</a>
+
+        </div>
+      </section>
+
+    </div>
+  </header>
 </head>
 
 <body>
