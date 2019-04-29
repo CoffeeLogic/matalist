@@ -117,6 +117,7 @@
           <a href="faq.html" class="headerbtn headerbtn-1">FAQ</a>
         </div>
       </section>
+	</header>
 	      <!--Logged in message & logout-->
     <div align="center">   
       <?php
