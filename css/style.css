@@ -1136,6 +1136,11 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-weight: 700;
 }
 
+.gallery-center
+{
+  text-align: center;
+}
+
 input:focus {
     outline:none !important;
 }
