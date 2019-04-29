@@ -23,9 +23,9 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
   <style>
   .carousel-inner > .item > img,
-  .carousel-inner > .item > img {
+  .carousel-inner > .item > a> img {
     width: 75%;
-    margin: auto;
+    margin: 0;
   }
   </style>
 
