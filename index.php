@@ -146,7 +146,7 @@
       </div>
 
       <div class="item">
-        <img src="img_csun.jpg" alt="Chania" width="460" height="345">
+        <img src="csun.jpg" alt="Chania" width="460" height="345">
         <div class="carousel-caption">
           <h3>Chania</h3>
           <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
