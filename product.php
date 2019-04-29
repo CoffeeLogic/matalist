@@ -15,6 +15,12 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="css/buttoncss.css">
   
+  <style>
+img { 
+  width: 100%; 
+}
+</style>
+  
 </head>
   
 <body>
@@ -63,7 +69,7 @@
                
               echo '<a href="#" style="text-decoration:none;">
                   <div class="col-sm-6 col-md-6 col-xs-12 image-container">
-                  <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); height: 400px; width: 800px;"></div>
+                  <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); style = "height: 400px; width: 800px;"></div>
                   <br>
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
                   <br>
