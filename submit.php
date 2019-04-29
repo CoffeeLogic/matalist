@@ -92,7 +92,7 @@ $_SESSION['username'] = "Admin";
             }//if
             
             $uid = $_SESSION["uidUsers"];
-            echo "<br><br>Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a><br>";
+            echo "<br><br>Logged in as '{$_SESSION['uid']}' ";
             $email = $_SESSION["email"];
             echo "<br><br>Email is: '{$_SESSION['email']}' <br> <a href=includes/logout.php>Logout</a><br>";
           }//if
@@ -104,9 +104,7 @@ $_SESSION['username'] = "Admin";
       </div>
     <!--Logged in message & logout-->
 
-    <div>
-		<a href="index.php" class="matalist aboutbtn">Back to Matalist</a>
-	  </div>
+    
 
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
