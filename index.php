@@ -24,7 +24,7 @@
   <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a > img {
-    width: 70%;
+    width: 50%;
     margin: auto;
   }
   </style>
@@ -165,19 +165,19 @@ make it easier to access what events and fundraisers are happening on campus to 
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="img/gallery/csun.jpg" alt="csun" width="360" height="245">
+        <img src="img/gallery/csun.jpg" alt="csun" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="img/gallery/capture (3).png" alt="matador" width="360" height="245">
+        <img src="img/gallery/capture (3).png" alt="matador" width="460" height="345">
       </div>
     
       <div class="item">
-        <img src="img/gallery/jose.jpg" alt="Flower" width="360" height="245">
+        <img src="img/gallery/jose.jpg" alt="Flower" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="img/gallery/garrett.jpg" alt="Flower" width="360" height="245">
+        <img src="img/gallery/garrett.jpg" alt="Flower" width="460" height="345">
       </div>
   
     </div>
