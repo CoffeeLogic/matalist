@@ -174,6 +174,9 @@
             else if ($_GET["error"] == "invalidmail") {
               echo '<p class="signuperror">Invalid e-mail!</p>';
             }
+            else if ($_GET["error"] == "notCsun") {
+              echo '<p class="signuperror">Must use CSUN email!</p>';
+            }
             else if ($_GET["error"] == "passwordcheck") {
               echo '<p class="signuperror">Your passwords do not match!</p>';
             }

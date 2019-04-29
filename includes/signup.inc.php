@@ -38,6 +38,14 @@ if (isset($_POST['signup-submit'])) {
     header("Location: ../signup.php?error=invalidmail&uid=".$username);
     exit();
   }
+  //check email @csun.edu or @my.csun.edu
+  else if (preg_match('/^\w+@csun\.edu$/i', $email) > 0) {
+    header("Location: ../signup.php?error=notCsun&uid=".$username);
+    exit();
+  }
+
+//if(preg_match('/^\w+@school\.edu$/i', $source_string) > 0)
+
   // We check if the repeated password is NOT the same.
   else if ($password !== $passwordRepeat) {
     header("Location: ../signup.php?error=passwordcheck&uid=".$username."&mail=".$email);
