@@ -39,7 +39,7 @@ if (isset($_POST['signup-submit'])) {
     exit();
   }
   //check email @csun.edu or @my.csun.edu
-  else if (!preg_match('/^\w+@csun\.edu$/i', $email) || !preg_match('/^\w+@my.csun\.edu$/i', $email)) {
+  else if (preg_match('/^\w+@csun\.edu$/i', $email) || preg_match('/^\w+@my\.csun\.edu$/i', $email)) {
     header("Location: ../signup.php?error=notCsun&uid=".$username);
     exit();
   }
