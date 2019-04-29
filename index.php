@@ -134,7 +134,7 @@
       </div>
     <!--Logged in message & logout-->
 	  
-</main>
+
 
 	
 	<div class="col-sm-6 col-md-6 col-xs-12 image-container">
@@ -191,9 +191,9 @@ make it easier to access what events and fundraisers are happening on campus to 
       <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
       <span class="sr-only">Next</span>
     </a>
-  </div>
+  
 </div>
-	    
+	      </main>	    
 </body>
     
 
