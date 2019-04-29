@@ -131,7 +131,7 @@
             echo "Not logged in";
           }//else
         ?>
-      
+	</div>
     <!--Logged in message & logout-->
 	  
 
