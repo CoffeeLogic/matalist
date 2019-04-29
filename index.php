@@ -24,8 +24,8 @@
   <style>
   .carousel-inner > .item > img,
   .carousel-inner > .item > a> img {
-    width: 100%;
-    margin: 0;
+    width: 360px;
+    margin: 245px;
   }
   </style>
 
