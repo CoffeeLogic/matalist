@@ -107,3 +107,32 @@ form textarea {
 {
   display: inline;
 }
+
+.app--hdr {
+  width: 100%;
+  padding: 0 30px;
+  -moz-animation: shiftInBottom 0.45s ease 0.3s 1 backwards;
+  -webkit-animation: shiftInBottom 0.45s ease 0.3s 1 backwards;
+  animation: shiftInBottom 0.45s ease 0.3s 1 backwards;
+}
+
+.hdr__inr {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+}
+
+/*------------------------------------*\
+    $NAV
+\*------------------------------------*/
+.app--logo {
+  display: block;
+  padding: 18px 0;
+  font-family: "Roboto Slab", Times New Roman;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  color: #000;
+  border-bottom: 1px solid #e5e5e5;
+  text-decoration: none;
+}
