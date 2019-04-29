@@ -51,7 +51,7 @@
             //////////////////////////////////////
             echo '<div class="gallery-container">';
             include_once 'includes/dbh.inc.php';   
-            $sql = "SELECT * FROM gallery WHERE idGallery = '$itemselected'";
+            $sql = "SELECT * FROM gallery INNER JOIN users ON gallery.users_email = users.email WHERE idGallery = '$itemselected'";
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
               echo "SQL statement failed!";
@@ -72,6 +72,7 @@
                   <p><font size="6" face="arial" color="black">'.$row["details"].'</font><p>
                   <br>
                   <p><font size="4" face="arial" color="blue">Contact:'.$row["users_email"].'</font></p>
+                  <p><font size="4" face="arial" color="blue">Contact:'.$row["uidUsers"].'</font></p>
                   <p><font size="4" face="arial" color="red">Gallery ID:'.$row["idGallery"].'</font></p>
                  </div>
                 </a>';   
