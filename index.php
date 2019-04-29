@@ -134,7 +134,9 @@
     <!--Logged in message & logout-->
 	  
 </main>
-<div class="col-sm-6 col-md-6 col-xs-12 image-container">
+
+	
+	<div class="col-sm-6 col-md-6 col-xs-12 image-container">
 		
 <br>			
 <p class="bio">MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login is required,   
@@ -191,7 +193,7 @@ make it easier to access what events and fundraisers are happening on campus to 
   </div>
 </div>
 	    
-
+</body>
     
 
 
@@ -204,6 +206,6 @@ make it easier to access what events and fundraisers are happening on campus to 
 
 
 
-</body>
+
 
 </html>
