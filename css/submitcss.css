@@ -102,3 +102,16 @@ form textarea {
   height: 200px;
   font-size: 14px;
 }
+.app--hdr {
+  width: 100%;
+  padding: 0 30px;
+  -moz-animation: shiftInBottom 0.45s ease 0.3s 1 backwards;
+  -webkit-animation: shiftInBottom 0.45s ease 0.3s 1 backwards;
+  animation: shiftInBottom 0.45s ease 0.3s 1 backwards;
+}
+
+.hdr__inr {
+  position: relative;
+  width: 100%;
+  border-bottom: 1px solid #ebebeb;
+}
