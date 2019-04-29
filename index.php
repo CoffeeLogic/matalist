@@ -162,7 +162,7 @@ make it easier to access what events and fundraisers are happening on campus to 
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
+    <div class="">
 
       <div class="item active">
         <img src="img/gallery/csun.jpg" alt="csun" width="460" height="345">
