@@ -1136,14 +1136,6 @@ input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill {
   font-weight: 700;
 }
 
-.gallery-center
-{
-  margin: auto;
-  width: 80%;
-  border: 3px solid green;
-  padding: 10px;
-}
-
 input:focus {
     outline:none !important;
 }
