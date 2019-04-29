@@ -162,22 +162,22 @@ make it easier to access what events and fundraisers are happening on campus to 
     </ol>
 
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" >
+    <div class="carousel-inner" role="listbox" >
 
       <div class="item active">
-        <img src="img/gallery/csun.jpg" alt="csun" width="460" height="345">
+        <src="img/gallery/csun.jpg" alt="csun" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="img/gallery/capture (3).png" alt="matador" width="460" height="345">
+        <src="img/gallery/capture (3).png" alt="matador" width="460" height="345">
       </div>
     
       <div class="item">
-        <img src="img/gallery/jose.jpg" alt="Flower" width="460" height="345">
+        <src="img/gallery/jose.jpg" alt="Flower" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="img/gallery/garrett.jpg" alt="Flower" width="460" height="345">
+        <src="img/gallery/garrett.jpg" alt="Flower" width="460" height="345">
       </div>
   
     </div>
