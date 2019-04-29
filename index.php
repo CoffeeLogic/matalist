@@ -117,18 +117,7 @@
           <a href="faq.html" class="headerbtn headerbtn-1">FAQ</a>
         </div>
       </section>
-	  	    <div class="col-sm-6 col-md-6 col-xs-12 image-container">
-		
-<br>			
-<p class="bio">MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login is required,   
-we assure you that Matalist is safe and more reliable trading site for students. There will be other features like club and organization activities posting and viewing to 
-make it easier to access what events and fundraisers are happening on campus to increase campus activity. Come and visit Matalist. SHOP, SELL, MEET NEW FRIENDS, HAVE FUN!!! 
-</p><br>
-	    </div>
-
-
-
-    <!--Logged in message & logout-->
+	      <!--Logged in message & logout-->
     <div align="center">   
       <?php
         if(isset($_SESSION["uid"]))
@@ -143,6 +132,20 @@ make it easier to access what events and fundraisers are happening on campus to 
         ?>
       </div>
     <!--Logged in message & logout-->
+	  
+</main>
+<div class="col-sm-6 col-md-6 col-xs-12 image-container">
+		
+<br>			
+<p class="bio">MataList is a buy and sell marketplace website specifically for CSUN students to buy or sell items to their fellow students. Since a secure login is required,   
+we assure you that Matalist is safe and more reliable trading site for students. There will be other features like club and organization activities posting and viewing to 
+make it easier to access what events and fundraisers are happening on campus to increase campus activity. Come and visit Matalist. SHOP, SELL, MEET NEW FRIENDS, HAVE FUN!!! 
+</p><br>	    
+</div>
+
+
+
+
 	  
       <div class="container">
   <br>
@@ -163,15 +166,15 @@ make it easier to access what events and fundraisers are happening on campus to 
       </div>
 
       <div class="item">
-        <img src="img/gallery/capture.png" alt="matador" width="360" height="245">
+        <img src="img/gallery/capture (3).png" alt="matador" width="360" height="245">
       </div>
     
       <div class="item">
-        <img src="img/gallery/csun.jpg" alt="Flower" width="360" height="245">
+        <img src="img/gallery/jose.jpg" alt="Flower" width="360" height="245">
       </div>
 
       <div class="item">
-        <img src="img/gallery/csun.jpg" alt="Flower" width="360" height="245">
+        <img src="img/gallery/garrett.jpg" alt="Flower" width="360" height="245">
       </div>
   
     </div>
@@ -190,8 +193,7 @@ make it easier to access what events and fundraisers are happening on campus to 
 	    
 
     
-</section>
-</main>
+
 
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js'></script>
