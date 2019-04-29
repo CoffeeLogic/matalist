@@ -15,6 +15,21 @@ $_SESSION['username'] = "Admin";
 
     <link rel="stylesheet" href="css/buttoncss.css">
     <link rel="stylesheet" href="css/aboutus.css">
+  
+  <style>
+
+.app--logo {
+  display: block;
+  padding: 18px 0;
+  font-family: "Roboto Slab", Times New Roman;
+  font-size: 28px;
+  line-height: 36px;
+  text-align: center;
+  color: #000;
+  border-bottom: 1px solid #e5e5e5;
+  text-decoration: none;
+}
+  </style>
         
    <h2 class="app--logo">Post - CSUN</h2>
   <header class="app--hdr">
