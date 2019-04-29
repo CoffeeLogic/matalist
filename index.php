@@ -133,11 +133,11 @@
       </div>
 
       <div class="item">
-        <img src="chicago.jpg" alt="Chicago" style="width:100%;">
+        <img src="csun.jpg" alt="Chicago" style="width:100%;">
       </div>
     
       <div class="item">
-        <img src="ny.jpg" alt="New york" style="width:100%;">
+        <img src="garrett.jpg" alt="New york" style="width:100%;">
       </div>
     </div>
 
