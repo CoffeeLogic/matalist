@@ -43,7 +43,10 @@ if (isset($_POST['signup-submit'])) {
     header("Location: ../signup.php?error=notCsun&uid=".$username);
     exit();
   }
-
+  else if (!preg_match('/^\w+@my.csun\.edu$/i', $email)) {
+    header("Location: ../signup.php?error=notCsun&uid=".$username);
+    exit();
+  }
 //if(preg_match('/^\w+@school\.edu$/i', $source_string) > 0)
 
   // We check if the repeated password is NOT the same.
