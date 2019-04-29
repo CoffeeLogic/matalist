@@ -72,7 +72,7 @@
                   <p><font size="4" face="arial" color="blue">User:'.$row["uidUsers"].'</font></p>
                   <p><font size="4" face="arial" color="green">Contact:'.$row["users_email"].'</font></p>
                   <br>
-                  <p><font size="6" face="arial" color="black">'.$row["details"].'</font><p>
+                  <p><font size="6" face="arial" color="black">Details: '.$row["details"].'</font><p>
                   <br>
                  </div>
                 </a>';   
