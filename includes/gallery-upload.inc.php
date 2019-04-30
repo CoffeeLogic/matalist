@@ -25,7 +25,7 @@ if (isset($_POST['submit'])) {
       if ($fileSize < 2000000) {
         $imageFullName = $newFileName . "." . uniqid("", true) . "." . $fileActualExt;
         $fileDestination = "../img/" . $imageFullName;
-        include_once "dbh.inc.php";
+        include_once "spook/dbh.inc.php";
 
         if (empty($imageTitle) || empty($imageDesc)) {
           header("Location: ../gallery.php?upload=empty");
