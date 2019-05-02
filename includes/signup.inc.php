@@ -4,7 +4,7 @@ if (isset($_POST['signup-submit'])) {
 
   // We include the connection script so we can use it later.
   // We don't have to close the MySQLi connection since it is done automatically, but it is a good habit to do so anyways since this will immediately return resources to PHP and MySQL, which can improve performance.
-  require_once('/spook/dbh.inc.php');
+  require_once("/spook/dbh.inc.php');
 
   // We grab all the data which we passed from the signup form so we can use it later.
   $username = $_POST['uid'];
