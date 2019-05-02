@@ -48,7 +48,7 @@
           {
             $itemselected = $_GET["item"];
             $uid = $_SESSION["uidUsers"];
-            echo "Logged in as '{$_SESSION['uid']}'";
+            echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
             //////////////////////////////////////
             echo '<div>';
             include_once 'includes/spook/dbh.inc.php';   
