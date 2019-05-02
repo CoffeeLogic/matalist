@@ -152,10 +152,7 @@ if ($_GET["login"] == "success") {
             echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
             echo '<div class="gallery-container">';
             include_once 'spook/dbh.inc.php';
-            //$sql = "SELECT * FROM gallery ORDER BY orderGallery DESC;";
-
-
-
+            
             if(!empty($_GET['check_list'])) {
               foreach($_GET['check_list'] as $check) {
                       if($tag_list == ""){
