@@ -51,7 +51,7 @@
             echo "Logged in as '{$_SESSION['uid']}'";
             //////////////////////////////////////
             echo '<div>';
-            include_once '/home/ec2-user/dbh.inc.php';   
+            include_once 'includes/spook/dbh.inc.php';   
             $sql = "SELECT * FROM gallery INNER JOIN users ON gallery.users_email = users.email WHERE idGallery = '$itemselected'";
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
