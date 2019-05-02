@@ -151,7 +151,7 @@ if ($_GET["login"] == "success") {
             $uid = $_SESSION["uidUsers"];
             echo "Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
             echo '<div class="gallery-container">';
-            include_once 'spook/dbh.inc.php';
+            include_once 'includes/spook/dbh.inc.php';
             
             if(!empty($_GET['check_list'])) {
               foreach($_GET['check_list'] as $check) {
