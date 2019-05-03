@@ -147,9 +147,9 @@
           
             $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey";
             //$url = "https://www.google.com/recaptcha/api/siteverify";
-            $response = file_get_contents($url, false);
-            $response = json_decode($response, true);
-            if ($response->success == true) {
+            $response = file_get_contents($url);
+            $obj = json_decode($response);
+            if ($obj->success == true) {
                 echo '<p class="signupsuccess">Verification success!</p>';
             }
             else{
