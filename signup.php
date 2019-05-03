@@ -1,26 +1,6 @@
 <?php
   include 'header.php';
   $_SESSION['username'] = "Admin";
-
-/* // Check if form was submitted: (Garett's CAPTCHA )
-    if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['recaptcha_response'])) {
-    
-        // Build POST request:
-        $recaptcha_url = 'https://www.google.com/recaptcha/api/siteverify';
-        $recaptcha_secret = '6LcnM5UUAAAAAOQbmUg2K6C3EYgz1NY31rMqbp82';
-        $recaptcha_response = $_POST['recaptcha_response'];
-    
-        // Make and decode POST request:
-        $recaptcha = file_get_contents($recaptcha_url . '?secret=' . $recaptcha_secret . '&response=' . $recaptcha_response);
-        $recaptcha = json_decode($recaptcha);
-    
-        // Take action based on the score returned:
-        if ($recaptcha->score >= 0.5) {
-            // Verified - send email
-        } else {
-            // Not verified - show form error
-        }
-    */ 
 ?>
 
 <!DOCTYPE html>
@@ -29,19 +9,9 @@
 <head>
   <meta charset="UTF-8">
   <title>Matalist - Signup</title>
-  <!-- CAPTCHA Script should be on Header -->
+  <!-- CAPTCHA Script -->
   <script src='https://www.google.com/recaptcha/api.js'></script>
-  <!-- <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script> -->
-    <!--
-    <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LcnM5UUAAAAAOoucN6fP8FFyHgLaVw65xkzp2SF', { action: 'contact' }).then(function (token) {
-                var recaptchaResponse = document.getElementById('recaptchaResponse');
-                recaptchaResponse.value = token;
-            });
-        });
-    </script>
-      -->
+
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'>
@@ -142,36 +112,6 @@
           
           <?php
           
-          // CAPTCHA STUFF
-          /*
-          if (isset($_GET['signup'])) {
-            $secretKey = "6LdPjaEUAAAAAGywb5a5Kc8pqzq792X9LmpAhvxh";
-            $responseKey = $_POST['g-recaptcha-response'];
-            //$userIP = $_SERVER['REMOTE_ADDR'];
-          
-            $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey";
-            //$url = "https://www.google.com/recaptcha/api/siteverify";
-            $response = file_get_contents($url);
-            $result = json_decode($response, true);
-          
-           */
-          
-            //if (grecaptcha.getResponse() == ""){
-          //    echo '<p class="signuperror"> You must verify!!</p>';
-          //} else {
-          //  echo '<p class="signuperror"> Thanks for verifying</p>';
-          //}
-
-
-
-            //if ($result->success == true) {
-            //    echo '<p class="signupsuccess">Verification success!</p>';
-           // }
-            //else{
-             //  echo '<p class="signuperror"> Verification failed!</p>';
-           // }
-          
-          //}
           ?>
           <?php
           // Here we create an error message if the user made an error trying to sign up.
