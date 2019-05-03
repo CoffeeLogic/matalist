@@ -149,6 +149,11 @@
             //$url = "https://www.google.com/recaptcha/api/siteverify";
             $response = file_get_contents($url);
             $result = json_decode($response, true);
+            if (grecaptcha.getResponse() == ""){
+              echo '<p class="signuperror"> You must verify!!</p>';
+          } else {
+            echo '<p class="signuperror"> Thanks for verifying</p>';
+          }
             if ($result->success == true) {
                 echo '<p class="signupsuccess">Verification success!</p>';
             }
