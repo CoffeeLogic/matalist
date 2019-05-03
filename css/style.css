@@ -1212,8 +1212,8 @@ h1 {
 {
   padding: 30px;
 }
-.captchadiv
+.g-recaptcha
 {
-  display: block;
-  padding: 20px;
+  text-align: center;
+  display: inline-block;
 }
