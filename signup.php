@@ -32,6 +32,7 @@
   <!-- CAPTCHA Script should be on Header -->
   <script src='https://www.google.com/recaptcha/api.js'></script>
   <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+    <!--
     <script>
         grecaptcha.ready(function () {
             grecaptcha.execute('6LcnM5UUAAAAAOoucN6fP8FFyHgLaVw65xkzp2SF', { action: 'contact' }).then(function (token) {
@@ -40,7 +41,7 @@
             });
         });
     </script>
-  
+      -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 
   <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css'>
