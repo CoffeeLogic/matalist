@@ -176,9 +176,9 @@
 
             <button type="submit" name="signup-submit">Signup</button>
             <br>
-            <a href="login.php">Already a member? Log In</a>
             <br>
           </form>
+          <center><a href="login.php">Already a member? Log In</a></center>
            </section>
     <!--Logged in message & logout-->
     <div align="center">   
