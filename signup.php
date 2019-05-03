@@ -232,7 +232,7 @@
             <input type="password" name="pwd" placeholder="Password">
             <input type="password" name="pwd-repeat" placeholder="Repeat password">
             <center><div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div></center>
-            <br>
+            <br><br><br><br>
             <button type="submit" name="signup-submit">Signup</button>
             <br>
             <center><a href="login.php">Already a member? Log In</a></center>
