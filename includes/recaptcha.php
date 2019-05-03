@@ -136,5 +136,12 @@ class ReCaptcha
         return $recaptchaResponse;
     }
 }
-
+// your secret key
+$secret = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
+ 
+// empty response
+$response = null;
+ 
+// check secret key
+$reCaptcha = new ReCaptcha($secret);
 ?>

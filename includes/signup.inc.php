@@ -100,6 +100,20 @@ if (isset($_POST['signup-submit'])) {
 
           // If there is no error then we continue the script!
 
+
+// if submitted check response
+if ($_POST["g-recaptcha-response"]) {
+  $response = $reCaptcha->verifyResponse(
+      $_SERVER["REMOTE_ADDR"],
+      $_POST["g-recaptcha-response"]
+  );
+}
+
+if ($response != null && $response->success){
+  header("Location: ../signup.php?capchaPASSED??");
+}
+
+
           // Before we send ANYTHING to the database we HAVE to hash the users password to make it un-readable in case anyone gets access to our database without permission!
           // The hashing method I am going to show here, is the LATEST version and will always will be since it updates automatically. DON'T use md5 or sha256 to hash, these are old and outdated!
           $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
