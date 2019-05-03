@@ -179,7 +179,7 @@
 
             <button type="submit" name="signup-submit">Signup</button>
             <br>
-            <center><a href="login.php">Already a member? Log In</a></center>
+            <a href="login.php" class="login-block">Already a member? Log In</a>
             <br>
           </form>
            </section>
