@@ -109,24 +109,24 @@ if ($_POST["g-recaptcha-response"]) {
   );
 }
 
-if ($response != null && $response->success){
-  header("Location: ../signup.php?capchaPASSED??");
-  exit();
-}
+          if ($response != null && $response->success){
+            // Before we send ANYTHING to the database we HAVE to hash the users password to make it un-readable in case anyone gets access to our database without permission!
+           // The hashing method I am going to show here, is the LATEST version and will always will be since it updates automatically. DON'T use md5 or sha256 to hash, these are old and outdated!
+            $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 
+           //Next we need to bind the type of parameters we expect to pass into the statement, and bind the data from the user.
+            mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
+            // Then we execute the prepared statement and send it to the database!
+            // This means the user is now registered! :)
+           mysqli_stmt_execute($stmt);
+            // Lastly we send the user back to the signup page with a success message!
+            header("Location: ../signup.php?signup=success");
+            exit();
+          } else {
+            header("Location: ../signup.php?error=capchaError&uid=".$username."&mail=".$email);
+            exit();
+          }
 
-          // Before we send ANYTHING to the database we HAVE to hash the users password to make it un-readable in case anyone gets access to our database without permission!
-          // The hashing method I am going to show here, is the LATEST version and will always will be since it updates automatically. DON'T use md5 or sha256 to hash, these are old and outdated!
-          $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
-
-          // Next we need to bind the type of parameters we expect to pass into the statement, and bind the data from the user.
-          mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
-          // Then we execute the prepared statement and send it to the database!
-          // This means the user is now registered! :)
-          mysqli_stmt_execute($stmt);
-          // Lastly we send the user back to the signup page with a success message!
-          header("Location: ../signup.php?signup=success");
-          exit();
 
         }
       }

@@ -197,6 +197,9 @@
             else if ($_GET["error"] == "emailTaken") {
               echo '<p class="signuperror">Email is already taken!</p>';
             }
+            else if ($_GET["error"] == "capchaError") {
+              echo '<p class="signuperror">Please fill out captcha!</p>';
+            }
           }
           // Here we create a success message if the new user was created.
           else if (isset($_GET["signup"])) {
