@@ -140,7 +140,7 @@
           <h1><br>Signup Now</h1>
           <?php
           // CAPTCHA STUFF
-          if (isset($_GET['signup'])) {
+          if (isset($_POST['signup'])) {
             $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
             $responseKey = $_POST['g-recaptcha-response'];
             //$userIP = $_SERVER['REMOTE_ADDR'];
