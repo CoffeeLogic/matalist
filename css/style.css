@@ -1214,6 +1214,6 @@ h1 {
 }
 .captchadiv
 {
-  display: inline-block;
+  display: block;
   padding: 20px;
 }
