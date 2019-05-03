@@ -222,7 +222,7 @@
             <center><a href="login.php">Already a member? Log In</a></center>
             <br>
             <!-- Recaptcha -->
-            <!-- Recaptcha <center><div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div></center> -->
+            <center><div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div></center> -->
           </form>
            </section>
     <!--Logged in message & logout-->
