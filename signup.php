@@ -142,19 +142,19 @@
           // CAPTCHA STUFF
           if (isset($_GET['signup'])) {
             $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
-            $responseKey = $_GET['g-recaptcha-response'];
+            $responseKey = $_POST['g-recaptcha-response'];
             //$userIP = $_SERVER['REMOTE_ADDR'];
           
             $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey";
             //$url = "https://www.google.com/recaptcha/api/siteverify";
             $response = file_get_contents($url);
-            $obj = json_decode($response);
-            if ($obj->success == true) {
+            $result = json_decode($response);
+            if ($result->success == true) {
                 echo '<p class="signupsuccess">Verification success!</p>';
             }
-            else{
-                echo '<p class="signuperror"> Verification failed!</p>';
-            }
+           // else{
+            //   echo '<p class="signuperror"> Verification failed!</p>';
+            //}
           
           }
           ?>
