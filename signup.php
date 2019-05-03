@@ -141,7 +141,7 @@
           <?php
           // CAPTCHA STUFF
           if (isset($_GET['signup'])) {
-            $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
+            $secretKey = "6LdPjaEUAAAAAGywb5a5Kc8pqzq792X9LmpAhvxh";
             $responseKey = $_POST['g-recaptcha-response'];
             //$userIP = $_SERVER['REMOTE_ADDR'];
           
@@ -150,7 +150,7 @@
             $response = file_get_contents($url);
             $result = json_decode($response, true);
           
-            echo '<p class="signupsuccess">'.$responseKey.'</p>';
+           
           
             //if (grecaptcha.getResponse() == ""){
           //    echo '<p class="signuperror"> You must verify!!</p>';
@@ -227,12 +227,11 @@
             ?>
             <input type="password" name="pwd" placeholder="Password">
             <input type="password" name="pwd-repeat" placeholder="Repeat password">
+            <center><div class="g-recaptcha" data-sitekey="6LdPjaEUAAAAADAvyYgLExq0OE4YFoxU5lgl6tlo"></div></center>
             <button type="submit" name="signup-submit">Signup</button>
             <br>
             <center><a href="login.php">Already a member? Log In</a></center>
             <br>
-            <!-- Recaptcha -->
-            <center><div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div></center>
           </form>
            </section>
     <!--Logged in message & logout-->
