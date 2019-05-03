@@ -31,7 +31,7 @@
   <title>Matalist - Signup</title>
   <!-- CAPTCHA Script should be on Header -->
   <script src='https://www.google.com/recaptcha/api.js'></script>
-  <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script>
+  <!-- <script src="https://www.google.com/recaptcha/api.js?render=YOUR_RECAPTCHA_SITE_KEY"></script> -->
     <!--
     <script>
         grecaptcha.ready(function () {
