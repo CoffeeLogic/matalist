@@ -139,8 +139,11 @@
 
         <section class="section-default">
           <h1><br>Signup Now</h1>
+          
           <?php
+          
           // CAPTCHA STUFF
+          /*
           if (isset($_GET['signup'])) {
             $secretKey = "6LdPjaEUAAAAAGywb5a5Kc8pqzq792X9LmpAhvxh";
             $responseKey = $_POST['g-recaptcha-response'];
@@ -151,7 +154,7 @@
             $response = file_get_contents($url);
             $result = json_decode($response, true);
           
-           
+           */
           
             //if (grecaptcha.getResponse() == ""){
           //    echo '<p class="signuperror"> You must verify!!</p>';
@@ -161,14 +164,14 @@
 
 
 
-            if ($result->success == true) {
-                echo '<p class="signupsuccess">Verification success!</p>';
-            }
-            else{
-               echo '<p class="signuperror"> Verification failed!</p>';
-            }
+            //if ($result->success == true) {
+            //    echo '<p class="signupsuccess">Verification success!</p>';
+           // }
+            //else{
+             //  echo '<p class="signuperror"> Verification failed!</p>';
+           // }
           
-          }
+          //}
           ?>
           <?php
           // Here we create an error message if the user made an error trying to sign up.
