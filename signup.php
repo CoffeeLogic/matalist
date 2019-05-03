@@ -138,7 +138,27 @@
 
         <section class="section-default">
           <h1><br>Signup Now</h1>
-        
+          <*-
+          <?php
+          // CAPTCHA STUFF
+          if (isset($_GET['signup'])) {
+            $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
+            $responseKey = $_POST['g-recaptcha-response'];
+            //$userIP = $_SERVER['REMOTE_ADDR'];
+          
+            $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey";
+            //$url = "https://www.google.com/recaptcha/api/siteverify";
+            $response = file_get_contents($url);
+            $result = json_decode($response, true);
+            if ($result->success == true) {
+                echo '<p class="signupsuccess">Verification success!</p>';
+            }
+            else{
+               echo '<p class="signuperror"> Verification failed!</p>';
+            }
+          
+          }
+          ?>
           <?php
           // Here we create an error message if the user made an error trying to sign up.
           if (isset($_GET["error"])) {
@@ -202,7 +222,7 @@
             <center><a href="login.php">Already a member? Log In</a></center>
             <br>
             <!-- Recaptcha -->
-            <center><div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div></center>
+            <!-- Recaptcha <center><div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div></center> -->
           </form>
            </section>
     <!--Logged in message & logout-->
