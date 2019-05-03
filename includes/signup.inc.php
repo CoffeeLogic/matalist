@@ -111,6 +111,7 @@ if ($_POST["g-recaptcha-response"]) {
 
 if ($response != null && $response->success){
   header("Location: ../signup.php?capchaPASSED??");
+  exit();
 }
 
 
