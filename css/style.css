@@ -1214,7 +1214,7 @@ h1 {
   text-align: center;
   display: inline-block;
 }
-.login-block
+a:link
 {
-  /*display: inline-block;*/
+  display: inline-block;
 }
