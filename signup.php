@@ -174,6 +174,9 @@
             ?>
             <input type="password" name="pwd" placeholder="Password">
             <input type="password" name="pwd-repeat" placeholder="Repeat password">
+          
+            <div class="padding30"></div>
+
             <div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div>
             <button type="submit" name="signup-submit">Signup</button>
             <br>
