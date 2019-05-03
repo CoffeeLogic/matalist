@@ -140,13 +140,13 @@
           <h1><br>Signup Now</h1>
           <?php
           // CAPTCHA STUFF
-          if (isset($_POST['signup-submit'])) {
+          if (isset($_GET['signup'])) {
             $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
             $responseKey = $_POST['g-recaptcha-response'];
-            //$userIP = $_SERVER['REMOTE_ADDR'];
+            $userIP = $_SERVER['REMOTE_ADDR'];
           
-            // $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip=$userIP";
-            $url = "https://www.google.com/recaptcha/api/siteverify";
+             $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip";
+            //$url = "https://www.google.com/recaptcha/api/siteverify";
             $response = file_get_contents($url, false);
             $response = json_decode($response, true);
             if ($response['success']) {
@@ -193,6 +193,7 @@
             }
           }
           ?>
+
           <form class="form-signup" action="includes/signup.inc.php" method="post">
             <?php
             // Here we check if the user already tried submitting data.
