@@ -256,11 +256,7 @@
     <!--Logged in message & logout-->
 
 
-    <?php 
-  foreach ($_POST as $key => $value) {
-    echo '<p><strong>' . $key.':</strong> '.$value.'</p>';
-  }
-?>
+
 
 </main>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
