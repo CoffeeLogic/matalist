@@ -1214,3 +1214,7 @@ h1 {
   text-align: center;
   display: inline-block;
 }
+.submitblock
+{
+  display: block;
+}
