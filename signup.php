@@ -140,6 +140,7 @@
           <h1><br>Signup Now</h1>
           <?php
           // CAPTCHA STUFF
+          /*
           if (isset($_GET['signup'])) {
             $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
             $responseKey = $_POST['g-recaptcha-response'];
@@ -155,6 +156,7 @@
             else{
                echo '<p class="signuperror"> Verification failed!</p>';
             }
+            */
           
           }
           ?>
