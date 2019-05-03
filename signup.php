@@ -150,7 +150,7 @@
             $response = file_get_contents($url);
             $result = json_decode($response, true);
           
-          
+            echo '<p class="signupsuccess">'$responseKey'</p>';
           
             //if (grecaptcha.getResponse() == ""){
           //    echo '<p class="signuperror"> You must verify!!</p>';
@@ -159,7 +159,7 @@
           //}
 
 
-          
+
             if ($result->success == true) {
                 echo '<p class="signupsuccess">Verification success!</p>';
             }
