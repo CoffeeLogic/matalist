@@ -1211,8 +1211,7 @@ h1 {
 
 .g-recaptcha
 {
-  text-align: center;
-  display: inline-block;
+  display: block;
 }
 .submitblock
 {
