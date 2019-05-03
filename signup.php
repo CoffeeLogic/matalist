@@ -154,6 +154,7 @@
             }
             else{
                echo '<p class="signuperror"> Verification failed!</p>';
+               exit()
             }
           
           }
