@@ -138,6 +138,7 @@
 
         <section class="section-default">
           <h1><br>Signup Now</h1>
+          <*-
           <?php
           // CAPTCHA STUFF
           if (isset($_GET['signup'])) {
@@ -221,7 +222,7 @@
             <center><a href="login.php">Already a member? Log In</a></center>
             <br>
             <!-- Recaptcha -->
-            <center><div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div></center>
+            <!-- Recaptcha <center><div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div></center> -->
           </form>
            </section>
     <!--Logged in message & logout-->
