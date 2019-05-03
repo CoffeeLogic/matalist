@@ -101,8 +101,7 @@
     
 <main class="app--core">
   <h2 class="app--logo">CSUN</h2>
-  <header class="app--hdr">
-    <div class="hdr__inr">
+
 
 
         <section class="section-default">
