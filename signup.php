@@ -99,10 +99,7 @@
 </div>
 </nav>
     
-<main class="app--core">
-  <h2 class="app--logo">CSUN</h2>
-  <header class="app--hdr">
-    <div class="hdr__inr">
+
 
 
         <section class="section-default">
@@ -171,7 +168,7 @@
             }
             ?>
             <input type="password" name="pwd" placeholder="Password">
-            <input type="password" name="pwd-repeat" placeholder="Repeat password" class="password-repeat">
+            <input type="password" name="pwd-repeat" placeholder="Repeat password">
             <div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div>
 
             <button type="submit" name="signup-submit" class="submitblock">Signup</button>
