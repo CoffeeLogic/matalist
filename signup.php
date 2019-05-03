@@ -143,13 +143,13 @@
           if (isset($_GET['signup'])) {
             $secretKey = "6LeUYaAUAAAAALAOD0RyJglYHbO8xz7y3wqPhcX1";
             $responseKey = $_POST['g-recaptcha-response'];
-            $userIP = $_SERVER['REMOTE_ADDR'];
+            //$userIP = $_SERVER['REMOTE_ADDR'];
           
-             $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey&remoteip";
+            $url = "https://www.google.com/recaptcha/api/siteverify?secret=$secretKey&response=$responseKey";
             //$url = "https://www.google.com/recaptcha/api/siteverify";
             $response = file_get_contents($url, false);
             $response = json_decode($response, true);
-            if ($response['success']) {
+            if ($response->success == true) {
                 echo '<p class="signupsuccess">Verification success!</p>';
             }
             else{
