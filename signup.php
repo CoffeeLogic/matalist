@@ -174,12 +174,9 @@
             <input type="password" name="pwd-repeat" placeholder="Repeat password">
             <div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div>
 
-            <div class="padding30"></div>
-            <div class="padding30"></div>
-
             <button type="submit" name="signup-submit">Signup</button>
             <br>
-            <center><a href="login.php" class="login-block">Already a member? Log In</a></center>
+            <a href="login.php" class="login-block">Already a member? Log In</a>
             <br>
           </form>
            </section>
