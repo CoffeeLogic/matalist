@@ -11,6 +11,7 @@ $_SESSION['username'] = "Admin";
   <title>Post your item/service</title>
   
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto+Slab'>
     <link rel="stylesheet" media="all" href="css/submitcss.css">
 
     <link rel="stylesheet" href="css/buttoncss.css">
