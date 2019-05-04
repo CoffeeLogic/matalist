@@ -74,6 +74,8 @@
                   <br>
                   <p><font size="4" face="arial" color="blue">User:'.$row["uidUsers"].'</font></p>
                   <p><font size="4" face="arial" color="green">Contact:'.$row["users_email"].'</font></p>
+                  <p><font size="4" face="arial" color="pink">ItemID:'.$itemselected.'</font></p>
+                  <p><font size="4" face="arial" color="purple">Sanitized:'.$int_itemSelected.'</font></p>
                   <br>
                   <p><font size="6" face="arial" color="black">Details: '.$row["details"].'</font><p>
                   <br>
