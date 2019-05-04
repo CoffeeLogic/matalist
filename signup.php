@@ -175,7 +175,9 @@
             <div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div>
             <br>
             <br>
-            <button type="submit" name="signup-submit" class="submitblock">Signup</button>
+            <div class="submitblock">
+              <button type="submit" name="signup-submit">Signup</button>
+            </div>
             <br>
             <br>
           </form>
