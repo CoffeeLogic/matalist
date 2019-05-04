@@ -139,7 +139,7 @@
       
       
 $tag_list = "";
-$whateverthingy = ", ";
+$SPACER = ", ";
 
 #Login Success
 if ($_GET["login"] == "success") {
@@ -156,10 +156,10 @@ if ($_GET["login"] == "success") {
               foreach($_GET['check_list'] as $check) {
                       if($tag_list == ""){
                         $tag_list .= "'";
-                        $tag_list .= $check;
+                        $tag_list .= intval($check);
                         $tag_list .= "'";
                       }else{
-                        $tag_list .= $whateverthingy;
+                        $tag_list .= $SPACER;
                         $tag_list .= "'";
                         $tag_list .= $check;
                         $tag_list .= "'";
