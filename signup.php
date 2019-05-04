@@ -107,13 +107,9 @@
 
         <section class="section-default">
           <h1><br>Signup Now</h1>
-          <div class="submitblock">
-              <button type="submit" name="signup-submit">Signup</button>
-            </div>
           
-          <?php
           
-          ?>
+         
           <?php
           // Here we create an error message if the user made an error trying to sign up.
           if (isset($_GET["error"])) {
@@ -178,7 +174,9 @@
             <div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div>
             <br>
             <br>
-            
+            <div class="submitblock">
+              <button type="submit" name="signup-submit">Signup</button>
+            </div>
             <br>
             <br>
           </form>
@@ -190,7 +188,7 @@
         if(isset($_SESSION["uid"]))
           {
             $uid = $_SESSION["uidUsers"];
-            echo "<br> Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
+            echo "<br> Logged in as '{$_SESSION['uid']}' <br> <a href=gallery.php>Logout</a>";
           }//if
         else
           {
