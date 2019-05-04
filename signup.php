@@ -108,7 +108,9 @@
         <section class="section-default">
           <h1><br>Signup Now</h1>
           
+          <?php
           
+          ?>
          
           <?php
           // Here we create an error message if the user made an error trying to sign up.
@@ -188,7 +190,7 @@
         if(isset($_SESSION["uid"]))
           {
             $uid = $_SESSION["uidUsers"];
-            echo "<br> Logged in as '{$_SESSION['uid']}' <br> <a href=gallery.php>Logout</a>";
+             echo "<br> Logged in as '{$_SESSION['uid']}' <br> <a href=includes/logout.php>Logout</a>";
           }//if
         else
           {
