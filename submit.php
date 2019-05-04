@@ -21,7 +21,7 @@ $_SESSION['username'] = "Admin";
 .app--logo {
   display: block;
   padding: 18px 0;
-  font-family: "Roboto Slab", Times New Roman;
+  font-family: "Roboto Slab";
   font-size: 28px;
   line-height: 36px;
   text-align: center;
