@@ -163,7 +163,7 @@
                 }
               ?>
               <input type="password" name="pwd" placeholder="Password">
-          <button type="submit" name="login-submit">Login</button>    
+          <button type="submit" name="login-submit" class="headerbtn headerbtn-1">Login</button>    
     <br>
               <center><a href="signup.php">Not a member? Create an Account</a></center>
             </form>
