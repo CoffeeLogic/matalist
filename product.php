@@ -47,12 +47,13 @@
         if(isset($_SESSION["uid"]))//IF LOGGED IN DISPLAY*************
           {
             $itemselected = $_GET["item"];
+            $int_itemSelected = intval($itemselected);
             $uid = $_SESSION["uidUsers"];
             echo "Logged in as '{$_SESSION['uid']}'";
             //////////////////////////////////////
             echo '<div>';
             include_once 'includes/spook/dbh.inc.php';   
-            $sql = "SELECT * FROM gallery INNER JOIN users ON gallery.users_email = users.email WHERE idGallery = '$itemselected'";
+            $sql = "SELECT * FROM gallery INNER JOIN users ON gallery.users_email = users.email WHERE idGallery = '$int_itemSelected'";
             $stmt = mysqli_stmt_init($conn);
             if (!mysqli_stmt_prepare($stmt, $sql)) {
               echo "SQL statement failed!";
