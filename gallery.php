@@ -95,9 +95,9 @@
         <li
        
           <div class="buttoncont">  
-          <input type="submit" value="Submit" class="headerbtn headerbtn-1">
+          <input type="submit" value="Submit" class="headerbtn">
       
-          <a href="gallery.php" class="headerbtn-1">Reset</a>
+          <a href="gallery.php" class="headerbtn">Reset</a>
      
           </div>
         </li>
