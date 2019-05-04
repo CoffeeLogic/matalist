@@ -176,6 +176,8 @@
             <br>
             <br>
             <button type="submit" name="signup-submit" class="submitblock">Signup</button>
+            <br>
+            <br>
           </form>
           <center><a href="login.php">Already a member? Log In</a></center>
            </section>
