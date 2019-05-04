@@ -1215,5 +1215,5 @@ h1 {
 }
 .submitblock
 {
-  display: block;
+  display: inline-block;
 }
