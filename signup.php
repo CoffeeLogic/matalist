@@ -107,6 +107,9 @@
 
         <section class="section-default">
           <h1><br>Signup Now</h1>
+          <div class="submitblock">
+              <button type="submit" name="signup-submit">Signup</button>
+            </div>
           
           <?php
           
@@ -175,9 +178,7 @@
             <div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div>
             <br>
             <br>
-            <div class="submitblock">
-              <button type="submit" name="signup-submit">Signup</button>
-            </div>
+            
             <br>
             <br>
           </form>
