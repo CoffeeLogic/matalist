@@ -1222,4 +1222,7 @@ h1 {
   clear:both;
 }
 
-
+.pad-all
+{
+  padding:5px;
+}
