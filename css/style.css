@@ -1217,3 +1217,11 @@ h1 {
 {
   float: right;
 }
+.force
+{
+  display: block;
+  max-width: 300px;
+  max-height: 300px;
+  width: auto;
+  height: auto;
+}
