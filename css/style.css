@@ -1213,7 +1213,13 @@ h1 {
 {
   padding-top: 15px;
 }
+.clearfix::after
+{
+  content:"";
+  display:table;
+  clear:both;
+}
 .submitblock
 {
-  float: right;
+  /*float: right;*/
 }
