@@ -51,7 +51,7 @@
             $uid = $_SESSION["uidUsers"];
             echo "Logged in as '{$_SESSION['uid']}'";
             //////////////////////////////////////
-            echo '<div class="force-product">';
+            echo '<div>';
             include_once 'includes/spook/dbh.inc.php';   
             $sql = "SELECT * FROM gallery INNER JOIN users ON gallery.users_email = users.email WHERE idGallery = '$int_itemSelected'";
             $stmt = mysqli_stmt_init($conn);
@@ -65,7 +65,7 @@
                
               echo '<a style="text-decoration:none;">
                   <div class="col-sm-6 col-md-6 col-xs-12 image-container">
-                  <div style=" background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
+                  <div class="force-product" style=" background-image: url(img/'.$row["imgFullNameGallery"].');"></div>
                
                   <br>
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
