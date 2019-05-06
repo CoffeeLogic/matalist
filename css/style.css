@@ -1211,8 +1211,12 @@ h1 {
 
 .g-recaptcha
 {
- 
-  position: absolute;
+  transform:scale(0.77);
+  -webkit-transform:scale(0.77);
+  transform-origin:0 0;
+  -webkit-transform-origin:0 0;
+  transform: scaleY(-5);
+  transform: scaleX(.65);
   line-height:50px 
 }
 .clearfix::after
