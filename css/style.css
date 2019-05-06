@@ -1211,8 +1211,8 @@ h1 {
 
 .g-recaptcha
 {
-  transform:scale(0.77);
-  -webkit-transform:scale(0.77);
+  transform:scale(2);
+  -webkit-transform:scale(2);
   transform-origin:0 0;
   -webkit-transform-origin:0 0;
   transform: scaleY(4);
