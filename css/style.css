@@ -1217,9 +1217,11 @@ h1 {
   -webkit-transform-origin:0 0;
   transform: scaleY(1);
   transform: scaleX(.65);
-  line-height:50 px;
-  margin: 0 auto;
-  display: table;
+  width: desired_width;
+
+border-radius: 4px;
+border-right: 1px solid #d8d8d8;
+overflow: hidden;
 }
 .clearfix::after
 {
