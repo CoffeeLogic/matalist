@@ -1211,6 +1211,7 @@ h1 {
 
 .g-recaptcha
 {
+ /*
   transform:scale(0.77);
   -webkit-transform:scale(0.77);
   transform-origin:0 0;
@@ -1218,6 +1219,7 @@ h1 {
   transform: scaleY(1);
   transform: scaleX(.65);
   position: center;
+  */
   margin: 0 auto;
   display: table
 
