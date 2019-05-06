@@ -173,9 +173,12 @@
             ?>
             <input type="password" name="pwd" placeholder="Password">
             <input type="password" name="pwd-repeat" placeholder="Repeat password">
-      
-  
-              <div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"><button type="submit" name="signup-submit">Signup</button></div>
+            <div>
+            <div class="g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div>
+          </div>
+              <button type="submit" name="signup-submit">Signup</button>
+            <br>
+            <br>
             <center><a class="pad-all" href="login.php">Already a member? Log In</a></center>
           </form>
            </section>
