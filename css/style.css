@@ -1215,7 +1215,7 @@ h1 {
   -webkit-transform:scale(0.55);
   transform-origin:0 0;
   -webkit-transform-origin:0 0;
-  transform: scaleY(1);
+  transform: scaleY(0.8);
   transform: scaleX(.65);
   float: right;
 }
