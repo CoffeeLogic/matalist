@@ -1216,11 +1216,9 @@ h1 {
   transform-origin:0 0;
   -webkit-transform-origin:0 0;
   transform: scaleY(1);
-  transform: scaleX(.9);
+  transform: scaleX(.65);
   position: center;
-  margin: 0 auto;
-  display: table
-
+ 
 }
 .clearfix::after
 {
