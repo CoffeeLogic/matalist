@@ -179,6 +179,7 @@
               <button type="submit" name="signup-submit">Signup</button>
             </div>
             <br>
+            <center>Please Check reCAPTCHA</center> 
             <center><a class="pad-all" href="login.php">Already a member? Log In</a></center>
           </div>
           </form>
