@@ -1211,11 +1211,11 @@ h1 {
 
 .g-recaptcha
 {
-  transform:scale(0.37);
-  -webkit-transform:scale(0.37);
+  transform:scale(0.77);
+  -webkit-transform:scale(0.77);
   transform-origin:0 0;
   -webkit-transform-origin:0 0;
-  transform: scaleY(1);
+  transform: scaleY(.5);
   transform: scaleX(.91);
   float: right;
 }
