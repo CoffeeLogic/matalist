@@ -65,7 +65,7 @@
                
               echo '<a style="text-decoration:none;">
                   <div class="col-sm-6 col-md-6 col-xs-12 image-container">
-                  <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); background-size: cover; background-repeat:no-repeat;"></div>
+                  <div style=" background-image: url(img/'.$row["imgFullNameGallery"].'); background-position: center; background-repeat:no-repeat;"></div>
                
                   <br>
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
