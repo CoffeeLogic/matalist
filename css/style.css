@@ -1217,7 +1217,7 @@ h1 {
   -webkit-transform-origin:0 0;
   transform: scaleY(-5);
   transform: scaleX(.65);
-  line-height:50px 
+  margin: 0 auto;
   display: table;
 }
 .clearfix::after
