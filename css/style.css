@@ -1218,8 +1218,7 @@ h1 {
   transform: scaleY(-5);
   transform: scaleX(.65);
   line-height:50px 
-  margin-top: auto; 
-  margin-bottom: auto;
+  display: table;
 }
 .clearfix::after
 {
