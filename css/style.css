@@ -1218,6 +1218,7 @@ h1 {
   transform: scaleY(-5);
   transform: scaleX(.65);
   position: absolute;
+  line-height:50px 
 }
 .clearfix::after
 {
