@@ -1220,7 +1220,8 @@ h1 {
   transform: scaleX(.65);
   position: center;
   */
-  
+  transform:scale(0.77);
+  transform-origin:0 0;
   margin: 0 auto;
   display: table
 
