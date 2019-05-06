@@ -1221,6 +1221,7 @@ h1 {
        -ms-transform-origin: 0 0;
         -o-transform-origin: 0 0;
            transform-origin: 0 0;
+}
 .clearfix::after
 {
   content:"";
