@@ -1217,7 +1217,7 @@ h1 {
   -webkit-transform-origin:0 0;
   transform: scaleY(1);
   transform: scaleX(.65);
-  position: relative;
+  position: static;
 }
 .clearfix::after
 {
