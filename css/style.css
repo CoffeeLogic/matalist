@@ -1213,7 +1213,7 @@ h1 {
 .g-recaptcha
 {
   padding-top: 15px;
-  position: relative;
+  position: static;
 }
 .clearfix::after
 {
@@ -1224,5 +1224,7 @@ h1 {
 
 .pad-all
 {
-  padding:5px;
+  margin-left:auto;
+  margin-right:auto;
+  padding:2.5px;
 }
