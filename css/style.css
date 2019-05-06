@@ -1211,16 +1211,16 @@ h1 {
 
 .g-recaptcha
 {
-  -webkit-transform: scale(0.77);
-     -moz-transform: scale(0.77);
-      -ms-transform: scale(0.77);
-       -o-transform: scale(0.77);
-          transform: scale(0.77);
-   -webkit-transform-origin: 0 0;
-      -moz-transform-origin: 0 0;
-       -ms-transform-origin: 0 0;
-        -o-transform-origin: 0 0;
-           transform-origin: 0 0;
+  transform:scale(0.77);
+  -webkit-transform:scale(0.77);
+  transform-origin:0 0;
+  -webkit-transform-origin:0 0;
+  transform: scaleY(1);
+  transform: scaleX(.65);
+  line-height:50 px;
+  margin: 0 auto;
+  display: table
+
 }
 .clearfix::after
 {
