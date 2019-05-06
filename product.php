@@ -65,7 +65,7 @@
                
               echo '<a style="text-decoration:none;">
                   <div class="col-sm-6 col-md-6 col-xs-12 image-container">
-                  <div class="force" style=" background-image: url(img/'.$row["imgFullNameGallery"].'); "></div>
+                  <div class="force" style="img src: url(img/'.$row["imgFullNameGallery"].');"></div>
                
                   <br>
                   <p><font size="10" face="arial" color="black">'.$row["titleGallery"].'</font><p>
