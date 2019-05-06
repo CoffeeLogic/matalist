@@ -1212,12 +1212,12 @@ h1 {
 
 .g-recaptcha
 {
-  transform:scale(0.85);
+  transform:scale(0.77);
   -webkit-transform:scale(0.77);
   transform-origin:0 0;
   -webkit-transform-origin:0 0;
   transform: scaleY(1);
-  transform: scaleX(.7);
+  transform: scaleX(.65);
 }
 .clearfix::after
 {
