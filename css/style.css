@@ -1220,6 +1220,7 @@ h1 {
   line-height:50 px;
   margin: 0 auto;
   display: table
+  float: left;
 }
 .clearfix::after
 {
