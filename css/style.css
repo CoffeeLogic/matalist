@@ -1219,9 +1219,7 @@ h1 {
 }
 .force-product
 {
-  display: block;
-  max-width: 300px;
-  max-height: 300px;
-  width: auto;
-  height: auto;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 }
