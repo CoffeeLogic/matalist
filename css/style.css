@@ -1215,7 +1215,7 @@ h1 {
   -webkit-transform:scale(0.77);
   transform-origin:0 0;
   -webkit-transform-origin:0 0;
-  transform: scaleY(1.5);
+  transform: scaleY(-5);
   transform: scaleX(.65);
   position: absolute;
 }
