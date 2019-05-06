@@ -174,12 +174,9 @@
             <input type="password" name="pwd" placeholder="Password">
             <input type="password" name="pwd-repeat" placeholder="Repeat password">
             <div class="clearfix g-recaptcha" data-sitekey="6LeUYaAUAAAAAMHBRgXaugN7WkfgN0jl77UIFixM"></div>
-            <br>
-            <br>
-            <div class="submitblock">
+            <div>
               <button type="submit" name="signup-submit">Signup</button>
             </div>
-            <br>
             <div>
             <center><a href="login.php">Already a member? Log In</a></center>
             </div>

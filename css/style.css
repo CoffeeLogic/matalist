@@ -3,6 +3,7 @@
 \*------------------------------------*/
 * {
   box-sizing: border-box;
+  border: 1px solid black;
 }
 
 html, body {
@@ -1212,6 +1213,7 @@ h1 {
 .g-recaptcha
 {
   padding-top: 15px;
+  position: relative;
 }
 .clearfix::after
 {
@@ -1220,9 +1222,4 @@ h1 {
   clear:both;
 }
 
-/*
-.submitblock
-{
-  /*float: right;
-}
-*/
+
